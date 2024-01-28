@@ -1,19 +1,15 @@
 body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #f0f0f0;
 }
 
 .App-header {
   background-color: #414141;
-  display: flex; /* This will make the items align side by side */
-  align-items: center; /* This will align the items vertically in the center */
-  justify-content: space-between; /* This will distribute the remaining space evenly between the items */
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .Title {

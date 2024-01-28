@@ -12,7 +12,7 @@ function HomePage() {
     return (
         <div className="Content">
             <header className="Home-header">
-                <button className="Home-button">Home</button>
+                <button className="Home-button" onClick={() => window.location.href="/"}>Home</button>
                 <h1 className="Title">Gunn Math Resources</h1>
                 <button className="Search">Search</button>
             </header>

@@ -34,11 +34,6 @@ function Analysis() {
             <header className="App-header">
                 <button className="Menu-button" onClick={() => window.location.href = "/"} alt="Home">
                     <img src={home} alt="Home"/>
-                    {/* <div className="hamburger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    </div> */}
                 </button>
                 <h1 className="Title">ANALYSIS</h1>
                 <button className="Search-button">
