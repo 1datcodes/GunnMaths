@@ -1,5 +1,6 @@
 import React from 'react';
-//import logo from './images/logo.svg';
+
+// import all images
 import atps from './images/atps.png';
 import probability from './images/probability.jpg';
 import polar3d from './images/polar-3d.png';
