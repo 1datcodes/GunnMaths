@@ -1,4 +1,4 @@
-import logo from './images/logo.svg';
+//import logo from './images/logo.svg';
 import atps from './images/atps.png';
 import probability from './images/probability.jpg';
 import polar3d from './images/polar-3d.png';
@@ -11,7 +11,7 @@ import calculus from './images/calculus.jpg';
 import './App.css';
 
 const units = [
-  { url: "http://www.gunnmaths.org/analysis/atps", img: atps, alt: "AtPS", text: "AtPS" },
+  {url: "http://www.gunnmaths.org/analysis/atps", img: atps, alt: "AtPS", text: "AtPS"},
   {url: "http://www.gunnmaths.org/analysis/probability", img: probability, alt: "Probability", text: "Probability"},
   {url: "http://www.gunnmaths.org/analysis/polar", img: polar3d, alt: "Polar and 3D", text: "Polar and 3D"},
   {url: "http://www.gunnmaths.org/analysis/vectors", img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
