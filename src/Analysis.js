@@ -23,36 +23,38 @@ const units = [
   ];
 
 function Analysis() {
-    <div className="App">
-        <header className="App-header">
-            <button className="Menu-button">
-                <div className="hamburger-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-                </div>
-                {/* <text className="Menu-text">MENU</text> */}
-            </button>
-            <h1 className="Title">ANALYSIS</h1>
-            <button className="Search-button">
-                <div className="magnifying-glass"></div>
-                {/* <text className="Search-text">SEARCH</text> */}
-            </button>
-        </header>
+    return (
+        <div className="App">
+            <header className="App-header">
+                <button className="Menu-button">
+                    <div className="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    </div>
+                    {/* <text className="Menu-text">MENU</text> */}
+                </button>
+                <h1 className="Title">ANALYSIS</h1>
+                <button className="Search-button">
+                    <div className="magnifying-glass"></div>
+                    {/* <text className="Search-text">SEARCH</text> */}
+                </button>
+            </header>
 
-        <div className="Content">
-            <div className="icon-grid">
-                {units.map((unit, index) => (
-                <div className="units" key={index}>
-                    <a href={unit.url}>
-                    <img src={unit.img} alt={unit.alt}/>
-                    </a>
-                    <button onClick={() => window.location.href=unit.url}>{unit.text}</button>
+            <div className="Content">
+                <div className="icon-grid">
+                    {units.map((unit, index) => (
+                    <div className="units" key={index}>
+                        <a href={unit.url}>
+                        <img src={unit.img} alt={unit.alt}/>
+                        </a>
+                        <button onClick={() => window.location.href=unit.url}>{unit.text}</button>
+                    </div>
+                    ))}
                 </div>
-                ))}
             </div>
         </div>
-    </div>
+    );
 };
 
 export default Analysis;
