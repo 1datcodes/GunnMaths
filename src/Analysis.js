@@ -9,18 +9,20 @@ import matrices from './images/matrices.png';
 import gatm from './images/gatm.jpg';
 import limit from './images/limit.png';
 import calculus from './images/calculus.jpg';
-import './App.css';
+import './Analysis.css';
+
+const baseUrl = "http://www.gunnmaths.org/analysis/";
 
 const units = [
-    {url: "http://www.gunnmaths.org/analysis/atps", img: atps, alt: "AtPS", text: "AtPS"},
-    {url: "http://www.gunnmaths.org/analysis/probability", img: probability, alt: "Probability", text: "Probability"},
-    {url: "http://www.gunnmaths.org/analysis/polar", img: polar3d, alt: "Polar and 3D", text: "Polar and 3D"},
-    {url: "http://www.gunnmaths.org/analysis/vectors", img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
-    {url: "http://www.gunnmaths.org/analysis/growth", img: growth, alt: "Growth", text: "Growth"},
-    {url: "http://www.gunnmaths.org/analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
-    {url: "http://www.gunnmaths.org/analysis/gatm", img: gatm, alt: "GaTM", text: "GaTM"},
-    {url: "http://www.gunnmaths.org/analysis/limits", img: limit, alt: "Limits", text: "Limits"},
-    {url: "http://www.gunnmaths.org/analysis/calculus", img: calculus, alt: "Calculus", text: "Calculus"}
+    {url: `${baseUrl}atps`, img: atps, alt: "AtPS", text: "AtPS"},
+    {url: `${baseUrl}probability`, img: probability, alt: "Probability", text: "Probability"},
+    {url: `${baseUrl}polar`, img: polar3d, alt: "Polar and 3D", text: "Polar and 3D"},
+    {url: `${baseUrl}vectors`, img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
+    {url: `${baseUrl}growth`, img: growth, alt: "Growth", text: "Growth"},
+    {url: `${baseUrl}matrices`, img: matrices, alt: "Matrices", text: "Matrices"},
+    {url: `${baseUrl}gatm`, img: gatm, alt: "GaTM", text: "GaTM"},
+    {url: `${baseUrl}limits`, img: limit, alt: "Limits", text: "Limits"},
+    {url: `${baseUrl}calculus`, img: calculus, alt: "Calculus", text: "Calculus"}
   ];
 
 function Analysis() {
@@ -33,12 +35,10 @@ function Analysis() {
                     <div></div>
                     <div></div>
                     </div>
-                    {/* <text className="Menu-text">MENU</text> */}
                 </button>
                 <h1 className="Title">ANALYSIS</h1>
                 <button className="Search-button">
                     <div className="magnifying-glass"></div>
-                    {/* <text className="Search-text">SEARCH</text> */}
                 </button>
             </header>
 
