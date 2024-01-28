@@ -18,3 +18,30 @@
 .Title {
     color: #ffffff;
 } 
+
+.icon-grid .courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-grid .courseLink {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
+.icon-grid .courses :hover {
+    background-color: #dddddd;
+}
+
+.courses button {
+    border-radius: 4px;
+    border-color: #000000;
+    padding: 5px 20px;
+}

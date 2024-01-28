@@ -1,6 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './HomePage.css';
+
+// Logos
+import home from './images/home.png';
+import SearchButton from './SearchButton';
 
 const baseURL = 'https://gunnmaths.org/';
 
@@ -12,17 +15,22 @@ function HomePage() {
     return (
         <div className="Content">
             <header className="Home-header">
-                <button className="Home-button" onClick={() => window.location.href="/"}>Home</button>
-                <h1 className="Title">Gunn Math Resources</h1>
-                <button className="Search">Search</button>
+                <button className="Home-button" onClick={() => window.location.href="/"}>
+                        <img src={home} alt="Home"/>
+                    </button>
+                <h1 className="Title">Gunn Math Courses</h1>
+                <SearchButton />
             </header>
 
             <div className="Courses">
                 <div className="icon-grid">
                     {courses.map((course, index) => (
-                    <div className="courses" key={index}>
-                        <Link to={course.url}>{course.text}</Link>
-                    </div>
+                        <div className="courses" key={index}>
+                            <a className="courseLink" href={course.url}> 
+                                {course.text}
+                            </a>
+                            <button onClick={() => window.location.href=course.url}>{course.text}</button>
+                        </div>
                     ))}
                 </div>
             </div>

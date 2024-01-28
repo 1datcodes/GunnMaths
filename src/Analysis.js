@@ -45,8 +45,8 @@ function Analysis() {
                 <div className="icon-grid">
                     {units.map((unit, index) => (
                     <div className="units" key={index}>
-                        <a href={unit.url}>
-                        <img src={unit.img} alt={unit.alt}/>
+                        <a className="unitLink" href={unit.url}>
+                            <img src={unit.img} alt={unit.alt}/>
                         </a>
                         <button onClick={() => window.location.href=unit.url}>{unit.text}</button>
                     </div>
