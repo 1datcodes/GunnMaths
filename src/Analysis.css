@@ -1,7 +1,8 @@
-body, html, .App {
+body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f0f0f0;
 }
 
 .App-header {
@@ -19,7 +20,14 @@ body, html, .App {
   color: #ffffff;
 }
 
-.hamburger-menu {
+.Menu-button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .hamburger-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,9 +38,9 @@ body, html, .App {
   cursor: pointer;
   padding: 0;
   z-index: 10;
-}
+} */
 
-.hamburger-menu div {
+/* .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
   background: #333;
@@ -40,7 +48,7 @@ body, html, .App {
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
-}
+} */
 
 .Search-button {
   position: relative;
@@ -86,7 +94,7 @@ body, html, .App {
 }
 
 .icon-grid a:hover {
-  background-color: #f4f4f4;
+  background-color: #dddddd;
 }
 
 .units {

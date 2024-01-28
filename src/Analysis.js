@@ -10,6 +10,8 @@ import matrices from './images/matrices.png';
 import gatm from './images/gatm.jpg';
 import limit from './images/limit.png';
 import calculus from './images/calculus.jpg';
+import home from './images/home.png';
+
 import './Analysis.css';
 
 const baseUrl = "http://www.gunnmaths.org/analysis/";
@@ -28,14 +30,15 @@ const units = [
 
 function Analysis() {
     return (
-        <div className="App">
+        <div className="Content">
             <header className="App-header">
-                <button className="Menu-button">
-                    <div className="hamburger-menu">
+                <button className="Menu-button" onClick={() => window.location.href = "/"} alt="Home">
+                    <img src={home} alt="Home"/>
+                    {/* <div className="hamburger-menu">
                     <div></div>
                     <div></div>
                     <div></div>
-                    </div>
+                    </div> */}
                 </button>
                 <h1 className="Title">ANALYSIS</h1>
                 <button className="Search-button">
@@ -43,7 +46,7 @@ function Analysis() {
                 </button>
             </header>
 
-            <div className="Content">
+            <div className="Units">
                 <div className="icon-grid">
                     {units.map((unit, index) => (
                     <div className="units" key={index}>

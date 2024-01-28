@@ -4,7 +4,10 @@ import './AtPS.css';
 function AtPS() {
     return (
         <div className="AtPS">
-            <h1>AtPS</h1>
+            <header className="AtPS-header">
+                <h1 className="Title">AtPS</h1>
+            </header>
+            <h1>Hello, World</h1>
         </div>
     );
 }
