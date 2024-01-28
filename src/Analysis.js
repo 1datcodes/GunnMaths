@@ -1,3 +1,4 @@
+import React from 'react';
 //import logo from './images/logo.svg';
 import atps from './images/atps.png';
 import probability from './images/probability.jpg';
