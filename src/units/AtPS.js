@@ -4,7 +4,11 @@ import home from '../images/home.png';
 import './AtPS.css';
 
 // documents
-import blankTest1 from '../documents/atps1_blank.pdf';
+import rawTest1 from '../documents/AH1Test1-2013.pdf';
+import blankQuiz1 from '../documents/atps1_blank.pdf';
+import blankQuiz2 from '../documents/atps2_blank.pdf';
+import rawQuiz1 from '../documents/atps1_raw.pdf';
+import rawQuiz2 from '../documents/atps2_raw.pdf';
 
 const baseURL = 'https://gunnmaths.org/analysis/atps/';
 
@@ -21,14 +25,12 @@ const resources = [
                 text: "Blanked",
                 options:
                 [
-                    {
-                        text: "Blank Test 1",
-                        url: blankTest1
-                    },
-                    {
-                        text: "Blank Test 2",
-                        
-                    }
+                    // {
+                    //     text: "Blank Test 1",
+                    // },
+                    // {
+                    //     text: "Blank Test 2",
+                    // }
                 ]
             },
             {
@@ -38,10 +40,8 @@ const resources = [
                 options:
                 [
                     {
-                        text: "Raw Test 1"
-                    },
-                    {
-                        text: "Raw Test 2"
+                        text: "2013 Test 1 (Raw)",
+                        url: rawTest1
                     }
                 ]
             }
@@ -60,10 +60,12 @@ const resources = [
                 options:
                 [
                     {
-                        text: "Blank Quiz 1"
+                        text: "2022 AtPS Quiz 1 (Blanked)",
+                        url: blankQuiz1
                     },
                     {
-                        text: "Blank Quiz 2"
+                        text: "2022 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz2
                     }
                 ]
             },
@@ -74,10 +76,12 @@ const resources = [
                 options:
                 [
                     {
-                        text: "Raw Quiz 1"
+                        text: "2022 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1
                     },
                     {
-                        text: "Raw Quiz 2"
+                        text: "2022 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2
                     }
                 ]
             }
