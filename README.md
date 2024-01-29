@@ -1,13 +1,13 @@
 # Michi Tanaka, Taita Nakayama
-# mt50737@pausd.us, tn31180@pausd.us
-# https://www.gunnmaths.org/
+mt50737@pausd.us, tn31180@pausd.us
+https://www.gunnmaths.org/
 
-# We were only able to upload 1 document during the hackathon period
+We were only able to upload 1 document during the hackathon period
 # IMPLEMENTED
-# Homepage that has a button to direct to the Analysis course
-# Analysis page with buttons corresponding to all units in this year
-# Currently only the AtPS unit has a test document
-# Currently blanked test 1 is the only pdf document uploaded
+- Homepage that has a button to direct to the Analysis course
+- Analysis page with buttons corresponding to all units in this year
+- Currently only the AtPS unit has a test document
+- Currently blanked test 1 is the only pdf document uploaded
 
 
 
