@@ -16,62 +16,6 @@ body, html {
   color: #ffffff;
 }
 
-.Menu-button {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-}
-
-/* .hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-} */
-
-/* .hamburger-menu div {
-  width: 2rem;
-  height: 0.25rem;
-  background: #333;
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
-} */
-
-.Search-button {
-  position: relative;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.magnifying-glass {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  position: relative;
-}
-
-.magnifying-glass::before {
-  content: "";
-  position: absolute;
-  right: -6px;
-  bottom: -4px;
-  width: 12px;
-  height: 2px;
-  background: #ffffff;
-  transform: rotate(50deg);
-}
-
 .icon-grid {
   padding: 50px;
   display: grid;

@@ -1,0 +1,14 @@
+.Home-button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Home-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
