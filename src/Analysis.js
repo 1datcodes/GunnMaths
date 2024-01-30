@@ -10,9 +10,10 @@ import matrices from './images/matrices.png';
 import gatm from './images/gatm.jpg';
 import limit from './images/limit.png';
 import calculus from './images/calculus.jpg';
-import home from './images/home.png';
 
 import './Analysis.css';
+import HomeButton from './HomeButton';
+import SearchButton from './SearchButton';
 
 const baseUrl = "http://www.gunnmaths.org/analysis/";
 
@@ -32,13 +33,9 @@ function Analysis() {
     return (
         <div className="Content">
             <header className="App-header">
-                <button className="Menu-button" onClick={() => window.location.href = "/"} alt="Home">
-                    <img src={home} alt="Home"/>
-                </button>
+                <HomeButton />
                 <h1 className="Title">ANALYSIS</h1>
-                <button className="Search-button">
-                    <div className="magnifying-glass"></div>
-                </button>
+                <SearchButton />
             </header>
 
             <div className="Units">

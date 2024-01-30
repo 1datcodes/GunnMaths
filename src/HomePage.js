@@ -2,7 +2,7 @@ import React from 'react';
 import './HomePage.css';
 
 // Logos
-import home from './images/home.png';
+import HomeButton from './HomeButton';
 import SearchButton from './SearchButton';
 
 const baseURL = 'https://gunnmaths.org/';
@@ -15,9 +15,7 @@ function HomePage() {
     return (
         <div className="Content">
             <header className="Home-header">
-                <button className="Home-button" onClick={() => window.location.href="/"}>
-                        <img src={home} alt="Home"/>
-                    </button>
+                <HomeButton />
                 <h1 className="Title">Gunn Math Courses</h1>
                 <SearchButton />
             </header>
