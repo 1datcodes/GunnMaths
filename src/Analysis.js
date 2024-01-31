@@ -1,4 +1,6 @@
 import React from 'react';
+import './Analysis.css';
+import Header from './Header';
 
 // import all images
 import atps from './images/atps.png';
@@ -10,10 +12,6 @@ import matrices from './images/matrices.png';
 import gatm from './images/gatm.jpg';
 import limit from './images/limit.png';
 import calculus from './images/calculus.jpg';
-
-import './Analysis.css';
-import HomeButton from './HomeButton';
-import SearchButton from './SearchButton';
 
 const baseUrl = "http://www.gunnmaths.org/analysis/";
 
@@ -32,11 +30,7 @@ const units = [
 function Analysis() {
     return (
         <div className="Content">
-            <header className="App-header">
-                <HomeButton />
-                <h1 className="Title">ANALYSIS</h1>
-                <SearchButton />
-            </header>
+            <Header headerTitle="ANALYSIS" description="Analysis Honors"/>
 
             <div className="Units">
                 <div className="icon-grid">

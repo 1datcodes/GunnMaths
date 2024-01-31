@@ -1,10 +1,11 @@
 import React from 'react';
-import Accordion from '../Accordion';
-import home from '../images/home.png';
 import './AtPS.css';
+import Header from '../Header';
+import Accordion from '../Accordion';
 
 // documents
-import rawTest1 from '../documents/AH1Test1-2013.pdf';
+import blankTest1 from '../documents/AtPS_Test1_Blank.pdf';
+import rawTest1 from '../documents/AtPS_Test1_Raw.pdf';
 import blankQuiz1 from '../documents/atps1_blank.pdf';
 import blankQuiz2 from '../documents/atps2_blank.pdf';
 import rawQuiz1 from '../documents/atps1_raw.pdf';
@@ -25,9 +26,10 @@ const resources = [
                 text: "Blanked",
                 options:
                 [
-                    // {
-                    //     text: "Blank Test 1",
-                    // },
+                    {
+                        text: "2013 Test 1 (Blanked)",
+                        url: blankTest1
+                    }
                     // {
                     //     text: "Blank Test 2",
                     // }
@@ -92,16 +94,7 @@ const resources = [
 function AtPS() {
     return (
         <div className="AtPS">
-            <header className="AtPS-header">
-                <button className="Home-button" onClick={() => window.location.href="/"}>
-                    <img src={home} alt="Home"/>
-                </button>
-                <div className="Description">
-                    <h1 className="Title">AtPS</h1>
-                    <p className="Description">Algebra through Problem Solving</p>
-                </div>
-                <button className="Search">Search</button>
-            </header>
+            <Header headerTitle="AtPS" description="Algebra through Problem Solving"/>
 
             <div className="Resources">
                 <Accordion data={resources} />

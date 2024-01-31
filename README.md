@@ -1,5 +1,5 @@
 # Michi Tanaka, Taita Nakayama
-mt50737@pausd.us, tn31180@pausd.us
+mt50737@pausd.us, tn31180@pausd.us,
 https://www.gunnmaths.org/
 
 We were only able to upload 1 document during the hackathon period
