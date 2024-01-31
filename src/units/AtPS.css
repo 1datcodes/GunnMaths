@@ -1,24 +1,3 @@
-.AtPS-header {
-    background-color: #414141;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.Description {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Home-button {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-}
-
 .Resources button {
     background-color: #f9f9f9;
     color: #333;

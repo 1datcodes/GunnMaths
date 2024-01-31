@@ -1,29 +1,15 @@
 .Search-button {
-    position: relative;
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
 }
   
-.magnifying-glass {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #414141;
-    border-radius: 50%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  
-.magnifying-glass::before {
-  content: "";
-  position: absolute;
-  right: -6px;
-  bottom: -4px;
-  width: 7px;
-  height: 2px;
-  background: #414141;
+.Search-button-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

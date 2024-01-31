@@ -2,8 +2,9 @@ import React from 'react';
 import './HomePage.css';
 
 // Logos
-import HomeButton from './HomeButton';
-import SearchButton from './SearchButton';
+// import HomeButton from './HomeButton';
+// import SearchButton from './SearchButton';
+import Header from './Header';
 
 const baseURL = 'https://gunnmaths.org/';
 
@@ -14,11 +15,7 @@ const courses = [
 function HomePage() {
     return (
         <div className="Content">
-            <header className="Home-header">
-                <HomeButton />
-                <h1 className="Title">Gunn Math Courses</h1>
-                <SearchButton />
-            </header>
+            <Header headerTitle="Gunn Math Courses" description="Collection of Gunn Math Resources"/>
 
             <div className="Courses">
                 <div className="icon-grid">
