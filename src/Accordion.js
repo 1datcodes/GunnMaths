@@ -18,7 +18,7 @@ function Accordion({ data }) {
         <div className="Accordion">
             {data.map((item, index) => (
                 <div key={index}>
-                    <button onClick={() => handleClick(index)}>
+                    <button className="Dropdown" onClick={() => handleClick(index)}>
                         {item.text}
                         <span className={`caret ${activeIndexes[index] ? "rotate" : ""}`}>▶</span>
                     </button>
