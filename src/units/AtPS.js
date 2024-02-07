@@ -6,22 +6,24 @@ import Accordion from '../Accordion';
 // documents
 import blankTest1 from '../documents/AtPS_Test1_Blank.pdf';
 import rawTest1 from '../documents/AtPS_Test1_Raw.pdf';
-import blankQuiz1 from '../documents/atps1_blank.pdf';
-import blankQuiz2 from '../documents/atps2_blank.pdf';
-import rawQuiz1 from '../documents/atps1_raw.pdf';
-import rawQuiz2 from '../documents/atps2_raw.pdf';
-
-const baseURL = 'https://gunnmaths.org/analysis/atps/';
+import blankQuiz1 from '../documents/AtPS_Quiz1_Blank.pdf';
+import blankQuiz2 from '../documents/AtPS_Quiz2_Blank.pdf';
+import blankQuiz3 from '../documents/AtPS_Quiz3_Blank.pdf';
+import blankQuiz4 from '../documents/AtPS_Quiz4_Blank.pdf';
+import rawQuiz1 from '../documents/AtPS_Quiz1_Raw.pdf';
+import rawQuiz2 from '../documents/AtPS_Quiz2_Raw.pdf';
+import rawQuiz3 from '../documents/AtPS_Quiz3_Raw.pdf';
+import rawQuiz4 from '../documents/AtPS_Quiz4_Raw.pdf';
 
 const resources = [
     {
-        url: `${baseURL}tests`, 
+        url: "/tests", 
         alt: "Tests", 
         text: "Tests",
         options: 
         [
             {
-                url: `${baseURL}tests/blanked`,
+                url: "/tests/blanked",
                 alt: "Blanked",
                 text: "Blanked",
                 options:
@@ -36,7 +38,7 @@ const resources = [
                 ]
             },
             {
-                url: `${baseURL}tests/raw`,
+                url: "/tests/raw",
                 alt: "Raw",
                 text: "Raw",
                 options:
@@ -50,40 +52,56 @@ const resources = [
         ]
     },
     {
-        url: `${baseURL}quizzes`, 
+        url: "/quizzes", 
         alt: "Quizzes", 
         text: "Quizzes",
         options: 
         [
             {
-                url: `${baseURL}quizzes/blanked`,
+                url: "/quizzes/blanked",
                 alt: "Blanked",
                 text: "Blanked",
                 options:
                 [
                     {
-                        text: "2022 AtPS Quiz 1 (Blanked)",
+                        text: "2013 AtPS Quiz 1 (Blanked)",
                         url: blankQuiz1
                     },
                     {
-                        text: "2022 AtPS Quiz 2 (Blanked)",
+                        text: "2013 AtPS Quiz 2 (Blanked)",
                         url: blankQuiz2
+                    },
+                    {
+                        text: "2022 AtPS Quiz 1 (Blanked)",
+                        url: blankQuiz3
+                    },
+                    {
+                        text: "2022 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz4
                     }
                 ]
             },
             {
-                url: `${baseURL}quizzes/raw`,
+                url: "/quizzes/raw",
                 alt: "Raw",
                 text: "Raw",
                 options:
                 [
                     {
-                        text: "2022 AtPS Quiz 1 (Raw)",
+                        text: "2013 AtPS Quiz 1 (Raw)",
                         url: rawQuiz1
                     },
                     {
-                        text: "2022 AtPS Quiz 2 (Raw)",
+                        text: "2013 AtPS Quiz 2 (Raw)",
                         url: rawQuiz2
+                    },
+                    {
+                        text: "2022 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz3
+                    },
+                    {
+                        text: "2022 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz4
                     }
                 ]
             }

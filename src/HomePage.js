@@ -6,10 +6,8 @@ import './HomePage.css';
 // import SearchButton from './SearchButton';
 import Header from './Header';
 
-const baseURL = 'https://gunnmaths.org/';
-
 const courses = [
-    {url: `${baseURL}analysis`, text: "Analysis"}
+    {url: "analysis", text: "Analysis"}
   ];
 
 function HomePage() {
