@@ -4,10 +4,21 @@ import Accordion from '../Accordion';
 import BackButton from '../BackButton';
 import './GAtM.css';
 
+// Files
+// Tests
+// Quizzes
+
+const resources = [];
+
 function GaTM() {
     return (
         <div className="GAtM">
-            <h1>GAtM</h1>
+            <Header headerTitle="GAtM" description="Geometric Approach to Matrices"/>
+
+            <div className="Resources">
+                <BackButton />
+                <Accordion data={resources} />
+            </div>
         </div>
     );
 }
