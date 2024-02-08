@@ -12,6 +12,10 @@ body, html {
     width: 100%;
 }
 
+.Courses {
+    margin-top: 40px;
+}
+
 .icon-grid .courses {
     display: flex;
     flex-direction: column;
