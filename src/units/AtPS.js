@@ -1,19 +1,20 @@
 import React from 'react';
-import './AtPS.css';
 import Header from '../Header';
 import Accordion from '../Accordion';
+import BackButton from '../BackButton';
+import './AtPS.css';
 
 // documents
-import blankTest1 from '../documents/AtPS_Test1_Blank.pdf';
-import rawTest1 from '../documents/AtPS_Test1_Raw.pdf';
-import blankQuiz1 from '../documents/AtPS_Quiz1_Blank.pdf';
-import blankQuiz2 from '../documents/AtPS_Quiz2_Blank.pdf';
-import blankQuiz3 from '../documents/AtPS_Quiz3_Blank.pdf';
-import blankQuiz4 from '../documents/AtPS_Quiz4_Blank.pdf';
-import rawQuiz1 from '../documents/AtPS_Quiz1_Raw.pdf';
-import rawQuiz2 from '../documents/AtPS_Quiz2_Raw.pdf';
-import rawQuiz3 from '../documents/AtPS_Quiz3_Raw.pdf';
-import rawQuiz4 from '../documents/AtPS_Quiz4_Raw.pdf';
+import blankTest1 from '../documents/AtPS/AtPS_Test1_Blank.pdf';
+import rawTest1 from '../documents/AtPS/AtPS_Test1_Raw.pdf';
+import blankQuiz1 from '../documents/AtPS/AtPS_Quiz1_Blank.pdf';
+import blankQuiz2 from '../documents/AtPS/AtPS_Quiz2_Blank.pdf';
+import blankQuiz3 from '../documents/AtPS/AtPS_Quiz3_Blank.pdf';
+import blankQuiz4 from '../documents/AtPS/AtPS_Quiz4_Blank.pdf';
+import rawQuiz1 from '../documents/AtPS/AtPS_Quiz1_Raw.pdf';
+import rawQuiz2 from '../documents/AtPS/AtPS_Quiz2_Raw.pdf';
+import rawQuiz3 from '../documents/AtPS/AtPS_Quiz3_Raw.pdf';
+import rawQuiz4 from '../documents/AtPS/AtPS_Quiz4_Raw.pdf';
 
 const resources = [
     {
@@ -115,6 +116,7 @@ function AtPS() {
             <Header headerTitle="AtPS" description="Algebra through Problem Solving"/>
 
             <div className="Resources">
+                <BackButton />
                 <Accordion data={resources} />
             </div>
         </div>

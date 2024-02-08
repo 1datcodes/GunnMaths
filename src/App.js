@@ -8,7 +8,7 @@ import Polar from './units/Polar';
 import Vectors from './units/Vectors';
 import Growth from './units/Growth';
 import Matrices from './units/Matrices';
-import GaTM from './units/GaTM';
+import GAtM from './units/GAtM';
 import Limits from './units/Limits';
 import Calculus from './units/Calculus';
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="/analysis/vectors" element={<Vectors />} />
         <Route path="/analysis/growth" element={<Growth />} />
         <Route path="/analysis/matrices" element={<Matrices />} />
-        <Route path="/analysis/gatm" element={<GaTM />} />
+        <Route path="/analysis/gatm" element={<GAtM />} />
         <Route path="/analysis/limits" element={<Limits />} />
         <Route path="/analysis/calculus" element={<Calculus />} />
       </Routes>

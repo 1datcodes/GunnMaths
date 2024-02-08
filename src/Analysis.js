@@ -1,6 +1,7 @@
 import React from 'react';
 import './Analysis.css';
 import Header from './Header';
+import BackButton from './BackButton';
 
 // import all images
 import atps from './images/atps.png';
@@ -20,7 +21,7 @@ const units = [
     {url: "analysis/vectors", img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
     {url: "analysis/growth", img: growth, alt: "Growth", text: "Growth"},
     {url: "analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
-    {url: "analysis/gatm", img: gatm, alt: "GaTM", text: "GaTM"},
+    {url: "analysis/gatm", img: gatm, alt: "GAtM", text: "GAtM"},
     {url: "analysis/limits", img: limit, alt: "Limits", text: "Limits"},
     {url: "analysis/calculus", img: calculus, alt: "Calculus", text: "Calculus"}
   ];
@@ -29,8 +30,9 @@ function Analysis() {
     return (
         <div className="Content">
             <Header headerTitle="ANALYSIS" description="Analysis Honors"/>
-
+            
             <div className="Units">
+                <BackButton />
                 <div className="icon-grid">
                     {units.map((unit, index) => (
                     <div className="units" key={index}>
