@@ -10,7 +10,7 @@ import './GAtM.css';
 
 const resources = [];
 
-function GaTM() {
+function GAtM() {
     return (
         <div className="GAtM">
             <Header headerTitle="GAtM" description="Geometric Approach to Matrices"/>
@@ -23,4 +23,4 @@ function GaTM() {
     );
 }
 
-export default GaTM;
+export default GAtM;
