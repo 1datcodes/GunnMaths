@@ -13,7 +13,7 @@ const resources = [];
 function Matrices() {
     return (
         <div className="Matrices">
-            <Header headerTitle="MATRICES" description="Matrices and Determinants"/>
+            <Header headerTitle="MATRICES" description="Matrices and Markov Chains"/>
 
             <div className="Resources">
                 <BackButton />

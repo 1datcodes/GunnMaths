@@ -6,20 +6,32 @@ import './Probability.css';
 
 // Files
 // Tests
-import blankTest1 from "../documents/Probability/Probability_Test1_Blank.pdf";
-import rawTest1 from "../documents/Probability/Probability_Test1_Raw.pdf";
+import blankTest_2013 from "../documents/Probability/2013_Test1_Blank.pdf";
+import rawTest_2013 from "../documents/Probability/2013_Test1_Raw.pdf";
 // Quizzes
-import blankQuiz1 from "../documents/Probability/Probability_Quiz1_Blank.pdf";
-import blankQuiz2 from "../documents/Probability/Probability_Quiz2_Blank.pdf";
-import blankQuiz3 from "../documents/Probability/Probability_Quiz3_Blank.pdf";
-import rawQuiz1 from "../documents/Probability/Probability_Quiz1_Raw.pdf";
-import rawQuiz2 from "../documents/Probability/Probability_Quiz2_Raw.pdf";
-import rawQuiz3 from "../documents/Probability/Probability_Quiz3_Raw.pdf";
+import blankQuiz1_2013 from "../documents/Probability/2013_Quiz1_Blank.pdf";
+import blankQuiz1_2021 from "../documents/Probability/2021_Quiz1_Blank.pdf";
+import blankQuiz2_2021 from "../documents/Probability/2021_Quiz2_Blank.pdf";
+import blankQuiz1_2022 from "../documents/Probability/2022_Quiz1_Blank.pdf";
+import blankQuiz2_2022 from "../documents/Probability/2022_Quiz2_Blank.pdf";
+
+import rawQuiz1_2013 from "../documents/Probability/2013_Quiz1_Raw.pdf";
+import rawQuiz1_2016 from "../documents/Probability/2016_Quiz1_Raw.pdf";
+import rawQuiz2_2016 from "../documents/Probability/2016_Quiz2_Raw.pdf";
+import rawQuiz1_2018 from "../documents/Probability/2018_Quiz1_Raw.pdf";
+import rawQuiz2_2018 from "../documents/Probability/2018_Quiz2_Raw.pdf";
+import rawQuiz1_2019 from "../documents/Probability/2019_Quiz1_Raw.pdf";
+import rawQuiz2_2019 from "../documents/Probability/2019_Quiz2_Raw.pdf";
+import rawQuiz1_2021 from "../documents/Probability/2021_Quiz1_Raw.pdf";
+import rawQuiz2_2021 from "../documents/Probability/2021_Quiz2_Raw.pdf";
+import rawQuiz1_2022 from "../documents/Probability/2022_Quiz1_Raw.pdf";
+import rawQuiz2_2022 from "../documents/Probability/2022_Quiz2_Raw.pdf";
+import rawQuiz1_2023 from "../documents/Probability/2023_Quiz1_Raw.pdf";
+import rawQuiz2_2023 from "../documents/Probability/2023_Quiz2_Raw.pdf";
 
 const resources = [
     {
         url: "/tests",
-        alt: "Tests",
         text: "Tests",
         options: [
             {
@@ -28,7 +40,7 @@ const resources = [
                 options: [
                     {
                         text: "2013 Test 1 (Blanked)",
-                        url: blankTest1
+                        url: blankTest_2013
                     }
                 ]
             },
@@ -38,7 +50,7 @@ const resources = [
                 options: [
                     {
                         text: "2013 Test 1 (Raw)",
-                        url: rawTest1
+                        url: rawTest_2013
                     }
                 ]
             }
@@ -46,7 +58,6 @@ const resources = [
     },
     {
         url: "/quizzes",
-        alt: "Quizzes",
         text: "Quizzes",
         options: [
             {
@@ -55,15 +66,23 @@ const resources = [
                 options: [
                     {
                         text: "2013 Quiz 1 (Blanked)",
-                        url: blankQuiz1
+                        url: blankQuiz1_2013
+                    },
+                    {
+                        text: "2021 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2021
+                    },
+                    {
+                        text: "2021 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2021
                     },
                     {
                         text: "2022 Quiz 1 (Blanked)",
-                        url: blankQuiz2
+                        url: blankQuiz1_2022
                     },
                     {
                         text: "2022 Quiz 2 (Blanked)",
-                        url: blankQuiz3
+                        url: blankQuiz2_2022
                     }
                 ]
             },
@@ -73,15 +92,55 @@ const resources = [
                 options: [
                     {
                         text: "2013 Quiz 1 (Raw)",
-                        url: rawQuiz1
+                        url: rawQuiz1_2013
+                    },
+                    {
+                        text: "2016 Quiz 1 (Raw)",
+                        url: rawQuiz1_2016
+                    },
+                    {
+                        text: "2016 Quiz 2 (Raw)",
+                        url: rawQuiz2_2016
+                    },
+                    {
+                        text: "2018 Quiz 1 (Raw)",
+                        url: rawQuiz1_2018
+                    },
+                    {
+                        text: "2018 Quiz 2 (Raw)",
+                        url: rawQuiz2_2018
+                    },
+                    {
+                        text: "2019 Quiz 1 (Raw)",
+                        url: rawQuiz1_2019
+                    },
+                    {
+                        text: "2019 Quiz 2 (Raw)",
+                        url: rawQuiz2_2019
+                    },
+                    {
+                        text: "2021 Quiz 1 (Raw)",
+                        url: rawQuiz1_2021
+                    },
+                    {
+                        text: "2021 Quiz 2 (Raw)",
+                        url: rawQuiz2_2021
                     },
                     {
                         text: "2022 Quiz 1 (Raw)",
-                        url: rawQuiz2
+                        url: rawQuiz1_2022
                     },
                     {
                         text: "2022 Quiz 2 (Raw)",
-                        url: rawQuiz3
+                        url: rawQuiz2_2022
+                    },
+                    {
+                        text: "2023 Quiz 1 (Raw)",
+                        url: rawQuiz1_2023
+                    },
+                    {
+                        text: "2023 Quiz 2 (Raw)",
+                        url: rawQuiz2_2023
                     }
                 ]
             }
