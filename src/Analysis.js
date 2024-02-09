@@ -4,6 +4,7 @@ import Header from './Header';
 import BackButton from './BackButton';
 
 // import all images
+// import atps from './images/atps.png';
 import atps from './images/atps.png';
 import probability from './images/probability.jpg';
 import polar3d from './images/polar-3d.png';
