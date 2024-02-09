@@ -3,20 +3,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
-  border: 1px, #000000;
 }
 
 .icon-grid .unitLink {
-  padding: 50px;
+  width: 240px;
+  height: 240px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid #000000;
+  transition: transform 0.3s ease;
 }
 
-.icon-grid .unitLink :hover {
+.icon-grid .unitLink:hover {
+  cursor: pointer;
+  transform: scale(1.02);
   background-color: #dddddd;
+}
+
+.icon-grid .unitLink img {
+  width: 240px;
+  height: 240px;
 }
 
 .units {
@@ -27,12 +36,13 @@
 }
 
 .units button {
+  border: 1px solid #000000;
   border-radius: 4px;
-  border-color: #000000;
   padding: 5px 20px;
+  transition: transform 0.3s ease;
 }
 
 .units button:hover {
-  background-color: #6e6e6e;
-  border-radius: 4px;
+  transform: scale(1.05);
+  background-color: #d5d5d5;
 }
