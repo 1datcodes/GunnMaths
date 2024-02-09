@@ -8,7 +8,7 @@ import Polar from './units/Polar';
 import Vectors from './units/Vectors';
 import Growth from './units/Growth';
 import Matrices from './units/Matrices';
-import GAtM from './units/gatm';
+import GAtM from './units/GAtM';
 import Limits from './units/Limits';
 import Calculus from './units/Calculus';
 
