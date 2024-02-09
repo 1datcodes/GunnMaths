@@ -1,3 +1,7 @@
+.Content {
+  margin: 0px 0px 50px 0px;
+}
+
 .icon-grid {
   padding: 10px 50px;
   display: grid;
@@ -39,10 +43,9 @@
   border: 1px solid #000000;
   border-radius: 4px;
   padding: 5px 20px;
-  transition: transform 0.3s ease;
 }
 
 .units button:hover {
-  transform: scale(1.05);
+  cursor: pointer;
   background-color: #d5d5d5;
 }

@@ -6,52 +6,57 @@ import './AtPS.css';
 
 // Files
 // Tests
-import blankTest1 from '../documents/AtPS/AtPS_Test1_Blank.pdf';
-import rawTest1 from '../documents/AtPS/AtPS_Test1_Raw.pdf';
+import blankTest_2013 from '../documents/AtPS/2013_Test1_Blank.pdf';
+import rawTest_2013 from '../documents/AtPS/2013_Test1_Raw.pdf';
 // Quizzes
-import blankQuiz1 from '../documents/AtPS/AtPS_Quiz1_Blank.pdf';
-import blankQuiz2 from '../documents/AtPS/AtPS_Quiz2_Blank.pdf';
-import blankQuiz3 from '../documents/AtPS/AtPS_Quiz3_Blank.pdf';
-import blankQuiz4 from '../documents/AtPS/AtPS_Quiz4_Blank.pdf';
-import blankQuiz5 from '../documents/AtPS/AtPS_Quiz5_Blank.pdf';
-import blankQuiz6 from '../documents/AtPS/AtPS_Quiz6_Blank.pdf';
-import blankQuiz7 from '../documents/AtPS/AtPS_Quiz7_Blank.pdf';
-import rawQuiz1 from '../documents/AtPS/AtPS_Quiz1_Raw.pdf';
-import rawQuiz2 from '../documents/AtPS/AtPS_Quiz2_Raw.pdf';
-import rawQuiz3 from '../documents/AtPS/AtPS_Quiz3_Raw.pdf';
-import rawQuiz4 from '../documents/AtPS/AtPS_Quiz4_Raw.pdf';
+import blankQuiz1_2013 from '../documents/AtPS/2013_Quiz1_Blank.pdf';
+import blankQuiz2_2013 from '../documents/AtPS/2013_Quiz2_Blank.pdf';
+import blankQuiz1_2019 from '../documents/AtPS/2019_Quiz1_Blank.pdf';
+import blankQuiz1_2021 from '../documents/AtPS/2021_Quiz1_Blank.pdf';
+import blankQuiz2_2021 from '../documents/AtPS/2021_Quiz2_Blank.pdf';
+import blankQuiz1_2022 from '../documents/AtPS/2022_Quiz1_Blank.pdf';
+import blankQuiz2_2022 from '../documents/AtPS/2022_Quiz2_Blank.pdf';
+
+import rawQuiz1_2013 from '../documents/AtPS/2013_Quiz1_Raw.pdf';
+import rawQuiz2_2013 from '../documents/AtPS/2013_Quiz2_Raw.pdf';
+import rawQuiz1_2016 from '../documents/AtPS/2016_Quiz1_Raw.pdf';
+import rawQuiz2_2016 from '../documents/AtPS/2016_Quiz2_Raw.pdf';
+import rawQuiz1_2018 from '../documents/AtPS/2018_Quiz1_Raw.pdf';
+import rawQuiz2_2018 from '../documents/AtPS/2018_Quiz2_Raw.pdf';
+import rawQuiz1_2019 from '../documents/AtPS/2019_Quiz1_Raw.pdf';
+import rawQuiz2_2019 from '../documents/AtPS/2019_Quiz2_Raw.pdf';
+import rawQuiz1_2021 from '../documents/AtPS/2021_Quiz1_Raw.pdf';
+import rawQuiz2_2021 from '../documents/AtPS/2021_Quiz2_Raw.pdf';
+import rawQuiz1_2022 from '../documents/AtPS/2022_Quiz1_Raw.pdf';
+import rawQuiz2_2022 from '../documents/AtPS/2022_Quiz2_Raw.pdf';
+import rawQuiz1_2023 from '../documents/AtPS/2023_Quiz1_Raw.pdf';
+import rawQuiz2_2023 from '../documents/AtPS/2023_Quiz2_Raw.pdf';
 
 const resources = [
     {
         url: "/tests", 
-        alt: "Tests", 
         text: "Tests",
         options: 
         [
             {
                 url: "/tests/blanked",
-                alt: "Blanked",
                 text: "Blanked",
                 options:
                 [
                     {
                         text: "2013 Test 1 (Blanked)",
-                        url: blankTest1
+                        url: blankTest_2013
                     }
-                    // {
-                    //     text: "Blank Test 2",
-                    // }
                 ]
             },
             {
                 url: "/tests/raw",
-                alt: "Raw",
                 text: "Raw",
                 options:
                 [
                     {
                         text: "2013 Test 1 (Raw)",
-                        url: rawTest1
+                        url: rawTest_2013
                     }
                 ]
             }
@@ -59,67 +64,104 @@ const resources = [
     },
     {
         url: "/quizzes", 
-        alt: "Quizzes", 
         text: "Quizzes",
         options: 
         [
             {
                 url: "/quizzes/blanked",
-                alt: "Blanked",
                 text: "Blanked",
                 options:
                 [
                     {
                         text: "2013 AtPS Quiz 1 (Blanked)",
-                        url: blankQuiz1
+                        url: blankQuiz1_2013
                     },
                     {
                         text: "2013 AtPS Quiz 2 (Blanked)",
-                        url: blankQuiz2
+                        url: blankQuiz2_2013
                     },
                     {
                         text: "2019 AtPS Quiz (Blanked)",
-                        url: blankQuiz5
+                        url: blankQuiz1_2019
                     },
                     {
                         text: "2021 AtPS Quiz 1 (Blanked)",
-                        url: blankQuiz6
+                        url: blankQuiz1_2021
                     },
                     {
                         text: "2021 AtPS Quiz 2 (Blanked)",
-                        url: blankQuiz7
+                        url: blankQuiz2_2021
                     },
                     {
                         text: "2022 AtPS Quiz 1 (Blanked)",
-                        url: blankQuiz3
+                        url: blankQuiz1_2022
                     },
                     {
                         text: "2022 AtPS Quiz 2 (Blanked)",
-                        url: blankQuiz4
+                        url: blankQuiz2_2022
                     }
                 ]
             },
             {
                 url: "/quizzes/raw",
-                alt: "Raw",
                 text: "Raw",
                 options:
                 [
                     {
                         text: "2013 AtPS Quiz 1 (Raw)",
-                        url: rawQuiz1
+                        url: rawQuiz1_2013
                     },
                     {
                         text: "2013 AtPS Quiz 2 (Raw)",
-                        url: rawQuiz2
+                        url: rawQuiz2_2013
+                    },
+                    {
+                        text: "2016 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1_2016
+                    },
+                    {
+                        text: "2016 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2_2016
+                    },
+                    {
+                        text: "2018 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1_2018
+                    },
+                    {
+                        text: "2018 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2_2018
+                    },
+                    {
+                        text: "2019 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1_2019
+                    },
+                    {
+                        text: "2019 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2_2019
+                    },
+                    {
+                        text: "2021 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1_2021
+                    },
+                    {
+                        text: "2021 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2_2021
                     },
                     {
                         text: "2022 AtPS Quiz 1 (Raw)",
-                        url: rawQuiz3
+                        url: rawQuiz1_2022
                     },
                     {
                         text: "2022 AtPS Quiz 2 (Raw)",
-                        url: rawQuiz4
+                        url: rawQuiz2_2022
+                    },
+                    {
+                        text: "2023 AtPS Quiz 1 (Raw)",
+                        url: rawQuiz1_2023
+                    },
+                    {
+                        text: "2023 AtPS Quiz 2 (Raw)",
+                        url: rawQuiz2_2023
                     }
                 ]
             }
