@@ -11,11 +11,18 @@ import rawTest_2013 from '../documents/AtPS/2013_Test1_Raw.pdf';
 // Quizzes
 import blankQuiz1_2013 from '../documents/AtPS/2013_Quiz1_Blank.pdf';
 import blankQuiz2_2013 from '../documents/AtPS/2013_Quiz2_Blank.pdf';
+import blankQuiz1_2016 from '../documents/AtPS/2016_Quiz1_Blank.pdf';
+import blankQuiz2_2016 from '../documents/AtPS/2016_Quiz2_Blank.pdf';
+import blankQuiz1_2018 from '../documents/AtPS/2018_Quiz1_Blank.pdf';
+import blankQuiz2_2018 from '../documents/AtPS/2018_Quiz2_Blank.pdf';
 import blankQuiz1_2019 from '../documents/AtPS/2019_Quiz1_Blank.pdf';
+import blankQuiz2_2019 from '../documents/AtPS/2019_Quiz2_Blank.pdf';
 import blankQuiz1_2021 from '../documents/AtPS/2021_Quiz1_Blank.pdf';
 import blankQuiz2_2021 from '../documents/AtPS/2021_Quiz2_Blank.pdf';
 import blankQuiz1_2022 from '../documents/AtPS/2022_Quiz1_Blank.pdf';
 import blankQuiz2_2022 from '../documents/AtPS/2022_Quiz2_Blank.pdf';
+import blankQuiz1_2023 from '../documents/AtPS/2023_Quiz1_Blank.pdf';
+import blankQuiz2_2023 from '../documents/AtPS/2023_Quiz2_Blank.pdf';
 
 import rawQuiz1_2013 from '../documents/AtPS/2013_Quiz1_Raw.pdf';
 import rawQuiz2_2013 from '../documents/AtPS/2013_Quiz2_Raw.pdf';
@@ -81,8 +88,28 @@ const resources = [
                         url: blankQuiz2_2013
                     },
                     {
+                        text: "2016 AtPS Quiz 1 (Blanked)",
+                        url: blankQuiz1_2016
+                    },
+                    {
+                        text: "2016 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz2_2016
+                    },
+                    {
+                        text: "2018 AtPS Quiz 1 (Blanked)",
+                        url: blankQuiz1_2018
+                    },
+                    {
+                        text: "2018 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz2_2018
+                    },
+                    {
                         text: "2019 AtPS Quiz (Blanked)",
                         url: blankQuiz1_2019
+                    },
+                    {
+                        text: "2019 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz2_2019
                     },
                     {
                         text: "2021 AtPS Quiz 1 (Blanked)",
@@ -99,6 +126,14 @@ const resources = [
                     {
                         text: "2022 AtPS Quiz 2 (Blanked)",
                         url: blankQuiz2_2022
+                    },
+                    {
+                        text: "2023 AtPS Quiz 1 (Blanked)",
+                        url: blankQuiz1_2023
+                    },
+                    {
+                        text: "2023 AtPS Quiz 2 (Blanked)",
+                        url: blankQuiz2_2023
                     }
                 ]
             },

@@ -10,6 +10,7 @@ import blankTest_2013 from "../documents/Probability/2013_Test1_Blank.pdf";
 import rawTest_2013 from "../documents/Probability/2013_Test1_Raw.pdf";
 // Quizzes
 import blankQuiz1_2013 from "../documents/Probability/2013_Quiz1_Blank.pdf";
+import blankQuiz1_2016 from "../documents/Probability/2016_Quiz1_Blank.pdf";
 import blankQuiz1_2021 from "../documents/Probability/2021_Quiz1_Blank.pdf";
 import blankQuiz2_2021 from "../documents/Probability/2021_Quiz2_Blank.pdf";
 import blankQuiz1_2022 from "../documents/Probability/2022_Quiz1_Blank.pdf";
@@ -67,6 +68,10 @@ const resources = [
                     {
                         text: "2013 Quiz 1 (Blanked)",
                         url: blankQuiz1_2013
+                    },
+                    {
+                        text: "2016 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2016
                     },
                     {
                         text: "2021 Quiz 1 (Blanked)",
