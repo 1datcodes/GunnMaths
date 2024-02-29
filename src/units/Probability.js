@@ -11,10 +11,17 @@ import rawTest_2013 from "../documents/Probability/2013_Test1_Raw.pdf";
 // Quizzes
 import blankQuiz1_2013 from "../documents/Probability/2013_Quiz1_Blank.pdf";
 import blankQuiz1_2016 from "../documents/Probability/2016_Quiz1_Blank.pdf";
+import blankQuiz2_2016 from "../documents/Probability/2016_Quiz2_Blank.pdf";
+import blankQuiz1_2018 from "../documents/Probability/2018_Quiz1_Blank.pdf";
+import blankQuiz2_2018 from "../documents/Probability/2018_Quiz2_Blank.pdf";
+import blankQuiz1_2019 from "../documents/Probability/2019_Quiz1_Blank.pdf";
+import blankQuiz2_2019 from "../documents/Probability/2019_Quiz2_Blank.pdf";
 import blankQuiz1_2021 from "../documents/Probability/2021_Quiz1_Blank.pdf";
 import blankQuiz2_2021 from "../documents/Probability/2021_Quiz2_Blank.pdf";
 import blankQuiz1_2022 from "../documents/Probability/2022_Quiz1_Blank.pdf";
 import blankQuiz2_2022 from "../documents/Probability/2022_Quiz2_Blank.pdf";
+import blankQuiz1_2023 from "../documents/Probability/2023_Quiz1_Blank.pdf";
+import blankQuiz2_2023 from "../documents/Probability/2023_Quiz2_Blank.pdf";
 
 import rawQuiz1_2013 from "../documents/Probability/2013_Quiz1_Raw.pdf";
 import rawQuiz1_2016 from "../documents/Probability/2016_Quiz1_Raw.pdf";
@@ -74,6 +81,26 @@ const resources = [
                         url: blankQuiz1_2016
                     },
                     {
+                        text: "2016 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2016
+                    },
+                    {
+                        text: "2018 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2018
+                    },
+                    {
+                        text: "2018 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2018
+                    },
+                    {
+                        text: "2019 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2019
+                    },
+                    {
+                        text: "2019 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2019
+                    },
+                    {
                         text: "2021 Quiz 1 (Blanked)",
                         url: blankQuiz1_2021
                     },
@@ -88,6 +115,14 @@ const resources = [
                     {
                         text: "2022 Quiz 2 (Blanked)",
                         url: blankQuiz2_2022
+                    },
+                    {
+                        text: "2023 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2023
+                    },
+                    {
+                        text: "2023 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2023
                     }
                 ]
             },
