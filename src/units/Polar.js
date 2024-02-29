@@ -137,6 +137,17 @@ const resources = [
                 ]
             }
         ]
+    },
+    {
+        url: "/resources",
+        text: "Additional Resources",
+        options: [
+            {
+                url: "https://sheeptester.github.io/hello-world/drills.html",
+                text: "Drill Quiz Practice",
+                alt: "Drill"
+            }
+        ]
     }
 ];
 
