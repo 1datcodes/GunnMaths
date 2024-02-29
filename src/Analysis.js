@@ -18,8 +18,8 @@ import calculus from './images/calculus.jpg';
 const units = [
     {url: "analysis/atps", img: atps, alt: "AtPS", text: "AtPS"},
     {url: "analysis/probability", img: probability, alt: "Probability", text: "Probability"},
-    {url: "analysis/polar", img: polar3d, alt: "Polar", text: "Polar"},
-    {url: "analysis/vectors", img: vector, alt: "Vectors", text: "Vectors"},
+    {url: "analysis/polar", img: polar3d, alt: "Polar and 3D", text: "Polar and 3D"},
+    {url: "analysis/vectors", img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
     {url: "analysis/growth", img: growth, alt: "Growth", text: "Growth"},
     {url: "analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
     {url: "analysis/gatm", img: gatm, alt: "GAtM", text: "GAtM"},
