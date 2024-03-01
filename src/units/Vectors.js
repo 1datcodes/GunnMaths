@@ -6,9 +6,118 @@ import './Vectors.css';
 
 // Files
 // Tests
-// Quizzes
+import rawTest_2013 from "../documents/Vectors/2013_Test_Raw.pdf";
 
-const resources = [];
+// Quizzes
+import blankQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Blank.pdf";
+import blankQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Blank.pdf";
+
+import rawQuiz1_2013 from "../documents/Vectors/2013_Quiz1_Raw.pdf";
+import rawQuiz2_2013 from "../documents/Vectors/2013_Quiz2_Raw.pdf";
+import rawQuiz1_2016 from "../documents/Vectors/2016_Quiz1_Raw.pdf";
+import rawQuiz2_2016 from "../documents/Vectors/2016_Quiz2_Raw.pdf";
+import rawQuiz1_2018 from "../documents/Vectors/2018_Quiz1_Raw.pdf";
+import rawQuiz2_2018 from "../documents/Vectors/2018_Quiz2_Raw.pdf";
+import rawQuiz_2019 from "../documents/Vectors/2019_Quiz_Raw.pdf";
+import rawQuiz1_2021 from "../documents/Vectors/2021_Quiz1_Raw.pdf";
+import rawQuiz2_2021 from "../documents/Vectors/2021_Quiz2_Raw.pdf";
+import rawQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Raw.pdf";
+import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
+
+const resources = [
+    {
+        url: "/tests",
+        text: "Tests",
+        options: [
+            {
+                url: "/tests/blanked",
+                text: "Blanked",
+                options: [],
+            },
+            {
+                url: "/tests/raw",
+                text: "Raw",
+                options: [
+                    {
+                        text: "2013 Test (Raw)",
+                        url: rawTest_2013
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        url: "/quizzes",
+        text: "Quizzes",
+        options: [
+            {
+                url: "/quizzes/blanked",
+                text: "Blanked",
+                options: [
+                    {
+                        text: "2022 Quiz 1 (Blanked)",
+                        url: blankQuiz1_2022
+                    },
+                    {
+                        text: "2022 Quiz 2 (Blanked)",
+                        url: blankQuiz2_2022
+                    }
+                ]
+            },
+            {
+                url: "/quizzes/raw",
+                text: "Raw",
+                options: [
+                    {
+                        text: "2013 Quiz 1 (Raw)",
+                        url: rawQuiz1_2013
+                    },
+                    {
+                        text: "2013 Quiz 2 (Raw)",
+                        url: rawQuiz2_2013
+                    },
+                    {
+                        text: "2016 Quiz 1 (Raw)",
+                        url: rawQuiz1_2016
+                    },
+                    {
+                        text: "2016 Quiz 2 (Raw)",
+                        url: rawQuiz2_2016
+                    },
+                    {
+                        text: "2018 Quiz 1 (Raw)",
+                        url: rawQuiz1_2018
+                    },
+                    {
+                        text: "2018 Quiz 2 (Raw)",
+                        url: rawQuiz2_2018
+                    },
+                    {
+                        text: "2019 Quiz (Raw)",
+                        url: rawQuiz_2019
+                    },
+                    {
+                        text: "2021 Quiz 1 (Raw)",
+                        url: rawQuiz1_2021
+                    },
+                    {
+                        text: "2021 Quiz 2 (Raw)",
+                        url: rawQuiz2_2021
+                    },
+                    {
+                        text: "2022 Quiz 1 (Raw)",
+                        url: rawQuiz1_2022
+                    },
+                    {
+                        text: "2022 Quiz 2 (Raw)",
+                        url: rawQuiz2_2022
+                    }
+                ]
+            }
+        ]
+    
+    }
+];
 
 function Vectors() {
     return (
