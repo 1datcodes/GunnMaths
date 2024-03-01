@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchButton.css';
-import magnifyingGlass from './images/SearchButton.png';
+import magnifyingGlass from './header-images/SearchButton.png';
 
 function SearchButton() {
     return (

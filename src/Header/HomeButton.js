@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeButton.css";
 
-import home from "./images/home.png";
+import home from "./header-images/home.png";
 
 function HomeButton() {
     return (

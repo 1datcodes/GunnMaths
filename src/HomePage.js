@@ -4,7 +4,7 @@ import './HomePage.css';
 // Logos
 // import HomeButton from './HomeButton';
 // import SearchButton from './SearchButton';
-import Header from './Header';
+import Header from './Header/Header';
 
 const courses = [
     {url: "analysis", text: "Analysis"}

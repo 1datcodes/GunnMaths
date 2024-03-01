@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
-import Analysis from './Analysis';
-import AtPS from './units/AtPS';
-import Probability from './units/Probability';
-import Polar from './units/Polar';
-import Vectors from './units/Vectors';
-import Growth from './units/Growth';
-import Matrices from './units/Matrices';
-import GAtM from './units/GAtM';
-import Limits from './units/Limits';
-import Calculus from './units/Calculus';
+import Analysis from './Analysis/Analysis';
+import AtPS from './Analysis/analysis-units/AtPS';
+import Probability from './Analysis/analysis-units/Probability';
+import Polar from './Analysis/analysis-units/Polar';
+import Vectors from './Analysis/analysis-units/Vectors';
+import Growth from './Analysis/analysis-units/Growth';
+import Matrices from './Analysis/analysis-units/Matrices';
+import GAtM from './Analysis/analysis-units/GAtM';
+import Limits from './Analysis/analysis-units/Limits';
+import Calculus from './Analysis/analysis-units/Calculus';
 
 function App() {
   return (

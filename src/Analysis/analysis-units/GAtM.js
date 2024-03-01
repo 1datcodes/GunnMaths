@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header';
-import Accordion from '../Accordion';
-import BackButton from '../BackButton';
+import Header from '../../Header/Header';
+import Accordion from '../../Accordion';
+import BackButton from '../../BackButton';
 import './GAtM.css';
 
 // Files
