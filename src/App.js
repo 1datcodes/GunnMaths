@@ -25,7 +25,7 @@ function App() {
         <Route path="/analysis/growth" element={<Growth />} />
         <Route path="/analysis/matrices" element={<Matrices />} />
         <Route path="/analysis/gatm" element={<GAtM />} />
-        <Route path="/analysis/limits" element={<Limits />} />
+        <Route path="/analysis/limit" element={<Limits />} />
         <Route path="/analysis/calculus" element={<Calculus />} />
       </Routes>
     </Router>
