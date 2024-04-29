@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import HomePage from './HomePage';
 import Analysis from './Analysis/Analysis';
 import AtPS from './Analysis/analysis-units/AtPS';
@@ -9,7 +10,6 @@ import Vectors from './Analysis/analysis-units/Vectors';
 import Growth from './Analysis/analysis-units/Growth';
 import Matrices from './Analysis/analysis-units/Matrices';
 import GAtM from './Analysis/analysis-units/GAtM';
-import Limits from './Analysis/analysis-units/Limits';
 import Calculus from './Analysis/analysis-units/Calculus';
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
         <Route path="/analysis/growth" element={<Growth />} />
         <Route path="/analysis/matrices" element={<Matrices />} />
         <Route path="/analysis/gatm" element={<GAtM />} />
-        <Route path="/analysis/limits" element={<Limits />} />
         <Route path="/analysis/calculus" element={<Calculus />} />
       </Routes>
     </Router>
