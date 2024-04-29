@@ -39,6 +39,7 @@ import blankQuiz3_2018 from '../documents/GAtM/2018_Quiz3_Blank.pdf';
 import blankQuiz1_2022 from '../documents/GAtM/2022_Quiz1_Blank.pdf';
 import blankQuiz2_2022 from '../documents/GAtM/2022_Quiz2_Blank.pdf';
 
+const gatmTextBook = "https://gunn-gatm.github.io/";
 const resources = [
     {
         url: "/tests",
@@ -185,6 +186,16 @@ const resources = [
                         url: rawQuiz_2023
                     }
                 ]
+            }
+        ]
+    },
+    {
+        url: "/textbook",
+        text: "Textbook",
+        options: [
+            {
+                text: "GAtM Textbook",
+                url: gatmTextBook
             }
         ]
     }
