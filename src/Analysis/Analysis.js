@@ -21,7 +21,8 @@ const units = [
     {url: "analysis/growth", img: growth, alt: "Growth", text: "Growth"},
     {url: "analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
     {url: "analysis/gatm", img: gatm, alt: "GAtM", text: "GAtM"},
-    {url: "analysis/calculus", img: calculus, alt: "Limits + Calculus", text: "Limits + Calculus"}
+    {url: "analysis/calculus", img: calculus, alt: "Limits + Calculus", text: "Limits + Calculus"},
+    {url: "analysis/midterms", img: "", alt: "Midterms", text: "Midterms"}
   ];
 
 function Analysis() {
