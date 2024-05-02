@@ -12,7 +12,7 @@ import Matrices from './Analysis/analysis-units/Matrices';
 import GAtM from './Analysis/analysis-units/GAtM';
 import Calculus from './Analysis/analysis-units/Calculus';
 import Midterms from './Analysis/analysis-units/Midterms';
-import About from './Analysis/analysis-units/About';
+import About from './Header/About';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
         <Route path="/analysis/gatm" element={<GAtM />} />
         <Route path="/analysis/calculus" element={<Calculus />} />
         <Route path="/analysis/midterms" element={<Midterms />} />
-        <Route path="/analysis/about" element={<About />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
