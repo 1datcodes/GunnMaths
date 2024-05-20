@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from './Header';
+import BackButton from '../BackButton';
 import './About.css';
 
 const About = () => {
@@ -18,6 +19,7 @@ const About = () => {
         <about>
             <Header headerTitle="About Us" description="About us and Contacts"/>
             <div className="About-Content">
+                <BackButton />
                 <div id="about" className="About">
                     <h1>About Us</h1>
                     <div className="Text">
