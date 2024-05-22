@@ -29,6 +29,8 @@ MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 - Inspired by Katie and Zara's efforts from 2021-22 (https://analysistests21-22.weebly.com)
 - Originally created at Gunn Hacks 10
-- Credits:
+
+## Credits:
+
 - Logo taken from Vecteezy.com
 - Everyone who has uploaded their tests
