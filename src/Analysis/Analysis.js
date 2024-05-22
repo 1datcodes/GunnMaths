@@ -12,6 +12,7 @@ import growth from './analysis-images/growth.png';
 import matrices from './analysis-images/matrices.png';
 import gatm from './analysis-images/gatm.jpg';
 import calculus from './analysis-images/calculus.jpg';
+import midterm from './analysis-images/midterm.jpg';
 
 const units = [
     {url: "analysis/atps", img: atps, alt: "AtPS", text: "AtPS"},
@@ -22,7 +23,7 @@ const units = [
     {url: "analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
     {url: "analysis/gatm", img: gatm, alt: "GAtM", text: "GAtM"},
     {url: "analysis/calculus", img: calculus, alt: "Limits + Calculus", text: "Limits + Calculus"},
-    {url: "analysis/midterms", img: "", alt: "Midterms", text: "Midterms"}
+    {url: "analysis/midterms", img: midterm, alt: "Midterms + Finals", text: "Midterms + Finals"}
   ];
 
 function Analysis() {
