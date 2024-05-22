@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../Header/Header';
 import Accordion from '../../Accordion';
 import BackButton from '../../BackButton';
-import './AtPS.css';
+import './Units.css';
 
 // Files
 // Tests
@@ -208,7 +208,6 @@ function AtPS() {
     return (
         <div className="AtPS">
             <Header headerTitle="AtPS" description="Algebra through Problem Solving"/>
-
             <div className="Resources">
                 <BackButton />
                 <Accordion data={resources} />

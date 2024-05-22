@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
-import './Polar.css';
+import './Units.css';
 
 // Files
 // Tests
