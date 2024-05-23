@@ -1,7 +1,7 @@
 import React from 'react';
 import './Analysis.css';
 import Header from '../Header/Header';
-import BackButton from '../BackButton';
+// import BackButton from '../BackButton';
 
 // import all images
 import atps from './analysis-images/atps.png';
