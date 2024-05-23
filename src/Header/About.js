@@ -45,7 +45,7 @@ const About = () => {
                     <h1>Special Thanks</h1>
                     <div className="Text">
                         <p>- Big thanks to my predecessors Jason Huang (2013-14), Hannah Kim (2016-17), Timothy Herchen (2018-19), Alan Lee (2019-20)</p>
-                        <p>Chris Lee and Michelle Koo (2021-2022), and Jason Oh (2022-2023)</p>
+                        <p>Chris Lee and Michelle Koo (2021-2022), and Jason Oh (2022-2023), Andersen Tanriveroi (2023-2024)</p>
                         <p>- Thanks to my teacher Mrs. M. Hlasek for helping me out with blank files</p>
                     </div>
                 </div>
