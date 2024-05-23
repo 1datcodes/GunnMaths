@@ -11,19 +11,19 @@ import vector from './analysis-images/vector.png';
 import growth from './analysis-images/growth.png';
 import matrices from './analysis-images/matrices.png';
 import gatm from './analysis-images/gatm.jpg';
-import limit from './analysis-images/limit.png';
 import calculus from './analysis-images/calculus.jpg';
+import midterm from './analysis-images/midterm.jpg';
 
 const units = [
     {url: "analysis/atps", img: atps, alt: "AtPS", text: "AtPS"},
     {url: "analysis/probability", img: probability, alt: "Probability", text: "Probability"},
-    {url: "analysis/polar", img: polar3d, alt: "Polar and 3D", text: "Polar and 3D"},
-    {url: "analysis/vectors", img: vector, alt: "Vectors and Parametrics", text: "Vectors and Parametrics"},
+    {url: "analysis/polar", img: polar3d, alt: "Polar + 3D", text: "Polar + 3D"},
+    {url: "analysis/vectors", img: vector, alt: "Vectors + Parametrics", text: "Vectors + Parametrics"},
     {url: "analysis/growth", img: growth, alt: "Growth", text: "Growth"},
     {url: "analysis/matrices", img: matrices, alt: "Matrices", text: "Matrices"},
     {url: "analysis/gatm", img: gatm, alt: "GAtM", text: "GAtM"},
-    {url: "analysis/limits", img: limit, alt: "Limits", text: "Limits"},
-    {url: "analysis/calculus", img: calculus, alt: "Calculus", text: "Calculus"}
+    {url: "analysis/calculus", img: calculus, alt: "Limits + Calculus", text: "Limits + Calculus"},
+    {url: "analysis/midterms", img: midterm, alt: "Midterms + Finals", text: "Midterms + Finals"}
   ];
 
 function Analysis() {
@@ -32,7 +32,7 @@ function Analysis() {
             <Header headerTitle="ANALYSIS" description="Analysis Honors"/>
             
             <div className="Units">
-                <BackButton />
+                {/* <BackButton /> */}
                 <div className="icon-grid">
                     {units.map((unit, index) => (
                     <div className="units" key={index}>

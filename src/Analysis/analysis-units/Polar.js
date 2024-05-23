@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
-import './Polar.css';
+import './Units.css';
 
 // Files
 // Tests
@@ -214,7 +214,7 @@ const resources = [
 function Polar() {
     return (
         <div className="polar-and-3d">
-            <Header headerTitle="POLAR AND 3D" description="Polar and 3D Graphing"/>
+            <Header headerTitle="POLAR + 3D" description="Polar + 3D Graphing"/>
             <div className="Resources">
                 <BackButton />
                 <Accordion data={resources} />
