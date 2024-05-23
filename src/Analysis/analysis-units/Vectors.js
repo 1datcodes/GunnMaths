@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../..//Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
-import './Vectors.css';
+import './Units.css';
 
 // Files
 // Tests
@@ -23,6 +23,7 @@ import rawQuiz1_2021 from "../documents/Vectors/2021_Quiz1_Raw.pdf";
 import rawQuiz2_2021 from "../documents/Vectors/2021_Quiz2_Raw.pdf";
 import rawQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
+import rawQuiz_2023 from "../documents/Vectors/2023_Quiz_Raw.pdf";
 
 const resources = [
     {
@@ -111,6 +112,10 @@ const resources = [
                     {
                         text: "2022 Quiz 2 (Raw)",
                         url: rawQuiz2_2022
+                    },
+                    {
+                        text: "2023 Quiz (Raw)",
+                        url: rawQuiz_2023
                     }
                 ]
             }
@@ -122,7 +127,7 @@ const resources = [
 function Vectors() {
     return (
         <div className="Vectors">
-            <Header headerTitle="VECTORS" description="Vectors and Parametrics"/>
+            <Header headerTitle="VECTORS + PARAMETRICS" description="Vectors + Parametrics"/>
             <div className="Resources">
                 <BackButton />
                 <Accordion data={resources} />
