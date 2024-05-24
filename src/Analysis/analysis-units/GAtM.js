@@ -40,6 +40,8 @@ import blankQuiz1_2022 from '../documents/GAtM/2022_Quiz1_Blank.pdf';
 import blankQuiz2_2022 from '../documents/GAtM/2022_Quiz2_Blank.pdf';
 
 const gatmTextBook = "https://gunn-gatm.github.io/";
+const snapTool = "https://gunn-gatm.github.io/interactives/snaps";
+
 const resources = [
     {
         url: "/tests",
@@ -190,13 +192,29 @@ const resources = [
         ]
     },
     {
-        url: "/textbook",
-        text: "Textbook",
+        url: "/other",
+        text: "Other",
         options: [
-            {
-                text: "GAtM Textbook",
-                url: gatmTextBook
-            }
+        {
+            url: "/textbook",
+            text: "Textbook",
+            options: [
+                {
+                    text: "GAtM Textbook",
+                    url: gatmTextBook
+                }
+            ]
+        },
+        {
+            url: "/snap",
+            text: "It's a Snap! tool",
+            options: [
+                {
+                    text: "Snap tool",
+                    url: snapTool
+                }
+            ]
+        }
         ]
     }
 ];
