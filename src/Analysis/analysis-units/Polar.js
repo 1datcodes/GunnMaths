@@ -13,32 +13,33 @@ import blankTest_2023 from "../documents/Polar/2023_Test_Blank.pdf";
 import rawTest_2013 from "../documents/Polar/2013_Test_Raw.pdf";
 import rawTest_2022 from "../documents/Polar/2022_Test_Raw.pdf";
 import rawTest_2023 from "../documents/Polar/2023_Test_Raw.pdf";
-// Quizzes
-import blankQuiz_polar_2013 from "../documents/Polar/2013_Quiz_polar_Blank.pdf";
-import blankQuiz_polar_2016 from "../documents/Polar/2016_Quiz_polar_Blank.pdf";
-import blankQuiz_3d1_2016 from "../documents/Polar/2016_Quiz_3d1_Blank.pdf";
-import blankQuiz_3d2_2016 from "../documents/Polar/2016_Quiz_3d2_Blank.pdf";
-import blankQuiz_polar_2018 from "../documents/Polar/2018_Quiz_polar_Blank.pdf";
-import blankQuiz_3d_2018 from "../documents/Polar/2018_Quiz_3d_Blank.pdf";
-import blankQuiz_polar_2019 from "../documents/Polar/2019_Quiz_polar_Blank.pdf";
-import blankQuiz_3d_2019 from "../documents/Polar/2019_Quiz_3d_Blank.pdf";
-import blankQuiz1_2021 from "../documents/Polar/2021_Quiz1_Blank.pdf";
-import blankQuiz2_2021 from "../documents/Polar/2021_Quiz2_Blank.pdf";
-import blankQuiz_polar_2022 from "../documents/Polar/2022_Quiz_polar_Blank.pdf";
-import blankQuiz_2023 from "../documents/Polar/2023_Quiz_Blank.pdf";
 
-import rawQuiz_polar_2013 from "../documents/Polar/2013_Quiz_polar_Raw.pdf";
-import rawQuiz_polar_2016 from "../documents/Polar/2016_Quiz_polar_Raw.pdf";
-import rawQuiz_3d1_2016 from "../documents/Polar/2016_Quiz_3d1_Raw.pdf";
-import rawQuiz_3d2_2016 from "../documents/Polar/2016_Quiz_3d2_Raw.pdf";
-import rawQuiz_polar_2018 from "../documents/Polar/2018_Quiz_polar_Raw.pdf";
-import rawQuiz_3d_2018 from "../documents/Polar/2018_Quiz_3d_Raw.pdf";
-import rawQuiz_polar_2019 from "../documents/Polar/2019_Quiz_polar_Raw.pdf";
-import rawQuiz_3d_2019 from "../documents/Polar/2019_Quiz_3d_Raw.pdf";
-import rawQuiz1_2021 from "../documents/Polar/2021_Quiz1_Raw.pdf";
-import rawQuiz2_2021 from "../documents/Polar/2021_Quiz2_Raw.pdf";
-import rawQuiz_polar_2022 from "../documents/Polar/2022_Quiz_polar_Raw.pdf";
-import rawQuiz_2023 from "../documents/Polar/2023_Quiz_Raw.pdf";
+// Quizzes
+import blankQuiz_polar_2013 from "../documents/Polar/Polar/2013_Quiz_Blank.pdf";
+import blankQuiz_polar_2016 from "../documents/Polar/Polar/2016_Quiz_Blank.pdf";
+import blankQuiz_3d1_2016 from "../documents/Polar/3D/2016_Quiz1_Blank.pdf";
+import blankQuiz_3d2_2016 from "../documents/Polar/3D/2016_Quiz2_Blank.pdf";
+import blankQuiz_polar_2018 from "../documents/Polar/Polar/2018_Quiz_Blank.pdf";
+import blankQuiz_3d_2018 from "../documents/Polar/3D/2018_Quiz_Blank.pdf";
+import blankQuiz_polar_2019 from "../documents/Polar/Polar/2019_Quiz_Blank.pdf";
+import blankQuiz_3d_2019 from "../documents/Polar/3D/2019_Quiz_Blank.pdf";
+import blankQuiz_polar_2021 from "../documents/Polar/Polar/2021_Quiz_Blank.pdf";
+import blankQuiz_3d_2021 from "../documents/Polar/3D/2021_Quiz_Blank.pdf";
+import blankQuiz_polar_2022 from "../documents/Polar/Polar/2022_Quiz_Blank.pdf";
+import blankQuiz_polar_2023 from "../documents/Polar/Polar/2023_Quiz_Blank.pdf";
+
+import rawQuiz_polar_2013 from "../documents/Polar/Polar/2013_Quiz_Raw.pdf";
+import rawQuiz_polar_2016 from "../documents/Polar/Polar/2016_Quiz_Raw.pdf";
+import rawQuiz_3d1_2016 from "../documents/Polar/3D/2016_Quiz1_Raw.pdf";
+import rawQuiz_3d2_2016 from "../documents/Polar/3D/2016_Quiz2_Raw.pdf";
+import rawQuiz_polar_2018 from "../documents/Polar/Polar/2018_Quiz_Raw.pdf";
+import rawQuiz_3d_2018 from "../documents/Polar/3D/2018_Quiz_Raw.pdf";
+import rawQuiz_polar_2019 from "../documents/Polar/Polar/2019_Quiz_Raw.pdf";
+import rawQuiz_3d_2019 from "../documents/Polar/3D/2019_Quiz_Raw.pdf";
+import rawQuiz_polar_2021 from "../documents/Polar/Polar/2021_Quiz_Raw.pdf";
+import rawQuiz_3d_2021 from "../documents/Polar/3D/2021_Quiz_Raw.pdf";
+import rawQuiz_polar_2022 from "../documents/Polar/Polar/2022_Quiz_Raw.pdf";
+import rawQuiz_2023 from "../documents/Polar/Polar/2023_Quiz_Raw.pdf";
 
 
 const resources = [
@@ -125,20 +126,20 @@ const resources = [
                         url: blankQuiz_3d_2019
                     },
                     {
-                        text: "2021 Polar Quiz 1 (Blanked)",
-                        url: blankQuiz1_2021
+                        text: "2021 Polar Quiz (Blanked)",
+                        url: blankQuiz_polar_2021
                     },
                     {
-                        text: "2021 Polar Quiz 2 (Blanked)",
-                        url: blankQuiz2_2021
+                        text: "2021 3D Quiz (Blanked)",
+                        url: blankQuiz_3d_2021
                     },
                     {
                         text: "2022 Polar Quiz (Blanked)",
                         url: blankQuiz_polar_2022
                     },
                     {
-                        text: "2023 Quiz (Blanked)",
-                        url: blankQuiz_2023
+                        text: "2023 Polar Quiz (Blanked)",
+                        url: blankQuiz_polar_2023
                     }
                 ]
             },
@@ -179,12 +180,12 @@ const resources = [
                         url: rawQuiz_3d_2019
                     },
                     {
-                        text: "2021 Polar Quiz 1 (Raw)",
-                        url: rawQuiz1_2021
+                        text: "2021 Polar Quiz (Raw)",
+                        url: rawQuiz_polar_2021
                     },
                     {
-                        text: "2021 Polar Quiz 2 (Raw)",
-                        url: rawQuiz2_2021
+                        text: "2021 3D Quiz (Raw)",
+                        url: rawQuiz_3d_2021
                     },
                     {
                         text: "2022 Polar Quiz (Raw)",
