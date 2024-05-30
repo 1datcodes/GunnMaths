@@ -4,7 +4,7 @@ import './HeaderButtons.css';
 function Upload() {
     return (
         <div className="uploadButton">
-            <button onClick={() => console.log("Clicked")}>
+            <button onClick={() => window.location.href="/upload"}>
                 <p>Text</p>
             </button>
         </div>
