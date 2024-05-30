@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import HomeButton from "./HomeButton";
-import SearchButton from "./SearchButton";
+import Upload from "./UploadButton";
 
 function Header({ headerTitle, description }) {
   return (
@@ -13,7 +13,8 @@ function Header({ headerTitle, description }) {
             <h1 className="Title">{headerTitle}</h1>
             <p className="Description">{description}</p>
         </div>
-        <SearchButton />
+        {/* Add an upload button */}
+        <Upload />
       </div>
       <div className="Sub-Header">
         <div className="About-Page">
