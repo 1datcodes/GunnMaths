@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Header from './Header/Header';
 import BackButton from './BackButton';
 import './UploadFile.css';
@@ -15,13 +15,30 @@ function FileSharePage() {
     }
 
     const [showOther, setShowOther] = useState(false);
-    
+    const [droppedFiles, setDroppedFiles] = useState([]);
+    const fileInputRef = useRef();
+
+    const handleDrop = (event) => {
+        event.preventDefault();
+        const files = [];
+        if(event.dataTransfer.items) {
+            for (let i = 0; i < event.dataTransfer.items.length; i++) {
+                if (event.dataTransfer.items[i].kind === 'file') {
+                    const file = event.dataTransfer.items[i].getAsFile();
+                    files.push(file);
+                    console.log("File: ", file.name);
+                }
+                setDroppedFiles(prevFiles => [...prevFiles, ...files]);
+            }
+        }
+    }
+
     return (
         <div className="File-share">
             <Header headerTitle="Upload Files" description="Complete the form below to upload your files"/>
             <div className="Upload-form">
                 <BackButton />
-                <form className="Form" onSubmit={(event) => {
+                <form className="Form" method="POST" encType="multipart/form-data" onSubmit={(event) => {
                     const yearInput = document.getElementById('year');
                     const yearValue = parseInt(yearInput.value, 10);
                     if (yearValue > currentYear || yearValue < currentYear - 50) {
@@ -30,7 +47,19 @@ function FileSharePage() {
                     }
                 }}>
                     <label htmlFor="unitName">Unit Name:</label>
-                    <input type="text" id="unitName" name="unitName" /><br /><br />
+                    {/* <input type="text" id="unitName" name="unitName" /><br /><br /> */}
+                    <select id="unitName" name="unitName">
+                        <option value="AtPS">AtPS</option>
+                        <option value="Probability">Probability</option>
+                        <option value="Polar">Polar and 3D</option>
+                        <option value="Vector">Vectors and Parametrics</option>
+                        <option value="Growth">Growth</option>
+                        <option value="Matrices">Matrices</option>
+                        <option value="GAtM">GAtM</option>
+                        <option value="Limits">Limits</option>
+                        <option value="Calculus">Calculus</option>
+                        <option value="Midterm">Midterms and Final Reviews</option>
+                    </select>
                     
                     <label htmlFor="quizType">Type:</label>
                     <select id="quizType" name="quizType" onChange={(event) => {
@@ -67,12 +96,21 @@ function FileSharePage() {
                         }
                     }/><br /><br />
                     
-                    <div id="fileDropArea" style={{ border: '1px dashed black', padding: '20px', marginBottom: '20px' }}>
+                    <div id="fileDropArea" style={{ border: '1px dashed black', padding: '20px', marginBottom: '20px' }}
+                        onDragOver={(event) => event.preventDefault()}
+                        onDrop={handleDrop}>
                         <p>Drag and drop files here</p>
                     </div>
-                    
-                    <input type="file" id="fileInput" name="fileInput" multiple /><br /><br />
+
+                    <input type="file" id="fileInput" name="fileInput" multiple ref={fileInputRef} onChange={(event) => {
+                        const newFiles = Array.from(event.target.files);
+                        setDroppedFiles(prevFiles => [...prevFiles, ...newFiles]);
+                    }}/><br /><br />
                 
+                    {droppedFiles.map((file, index) => (
+                        <div key={index} name="fileNames">{file.name}</div>
+                    ))}
+
                     <input type="submit" value="Submit" />
                 </form>
             </div>
