@@ -6,6 +6,15 @@ import './UploadFile.css';
 
 // Export the file share page
 function FileSharePage() {
+    const [year, setYear] = useState('');
+    const [unitName, setUnitName] = useState('');
+    const [quizType, setQuizType] = useState('');
+    const [quizNumber, setQuizNumber] = useState('');
+    const [showOther, setShowOther] = useState(false);
+    const [otherType, setOtherType] = useState('');
+    const [droppedFiles, setDroppedFiles] = useState([]);
+    const fileInputRef = useRef();
+
     const date = new Date();
     let currentYear = date.getFullYear();
 
@@ -14,22 +23,38 @@ function FileSharePage() {
         currentYear -= 1;
     }
 
-    const [showOther, setShowOther] = useState(false);
-    const [droppedFiles, setDroppedFiles] = useState([]);
-    const fileInputRef = useRef();
-
     const handleDrop = (event) => {
         event.preventDefault();
-        const files = [];
-        if(event.dataTransfer.items) {
-            for (let i = 0; i < event.dataTransfer.items.length; i++) {
-                if (event.dataTransfer.items[i].kind === 'file') {
-                    const file = event.dataTransfer.items[i].getAsFile();
-                    files.push(file);
-                    console.log("File: ", file.name);
-                }
-                setDroppedFiles(prevFiles => [...prevFiles, ...files]);
-            }
+        const newFiles = Array.from(event.dataTransfer.files);
+        setDroppedFiles(prevFiles => [...prevFiles, ...newFiles]);
+    }
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData();
+        formData.append('year', year);
+        formData.append('unitName', unitName);
+        formData.append('quizType', quizType);
+        formData.append('quizNumber', quizNumber);
+        if (showOther) {
+            formData.append('otherType', otherType);
+        }
+        droppedFiles.forEach(file => {
+            formData.append('fileInput', file);
+        });
+
+        try {
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData,
+            });
+            const result = await response.json();
+            console.log(result.message);
+            alert('Files uploaded successfully.');
+        } catch (error) {
+            console.error('Error uploading files:', error);
+            alert('Error uploading files. Please try again later.');
         }
     }
 
@@ -38,14 +63,7 @@ function FileSharePage() {
             <Header headerTitle="Upload Files" description="Complete the form below to upload your files"/>
             <div className="Upload-form">
                 <BackButton />
-                <form className="Form" method="POST" encType="multipart/form-data" onSubmit={(event) => {
-                    const yearInput = document.getElementById('year');
-                    const yearValue = parseInt(yearInput.value, 10);
-                    if (yearValue > currentYear || yearValue < currentYear - 50) {
-                        event.preventDefault();
-                        alert('Year must be within the last 50 years.');
-                    }
-                }}>
+                <form className="Form" onSubmit={handleSubmit}>
                     <label htmlFor="unitName">Unit Name:</label>
                     {/* <input type="text" id="unitName" name="unitName" /><br /><br /> */}
                     <select id="unitName" name="unitName">
@@ -91,7 +109,7 @@ function FileSharePage() {
                                 event.key !== 'ArrowLeft' && 
                                 event.key !== 'ArrowRight' && 
                                 event.key !== 'Tab') {
-                                    event.preventDefault(); // Disallow non-numeric characters
+                                event.preventDefault(); // Disallow non-numeric characters
                             }
                         }
                     }/><br /><br />
