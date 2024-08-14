@@ -3,7 +3,6 @@ import Header from './Header/Header';
 import BackButton from './BackButton';
 import './UploadFile.css';
 
-
 // Export the file share page
 function FileSharePage() {
     const [year, setYear] = useState('');
@@ -48,10 +47,20 @@ function FileSharePage() {
             const response = await fetch('/upload', {
                 method: 'POST',
                 body: formData,
+                headers: {
+                    'Accept': 'application/json',
+                }
             });
-            const result = await response.json();
-            console.log(result.message);
-            alert('Files uploaded successfully.');
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.indexOf('application/json') !== -1) {
+                const result = await response.json();
+                console.log(result.message);
+                alert('Files uploaded successfully.');
+            } else {
+                const textResult = await response.text();
+                console.log(textResult);
+                alert('Files uploaded. The server did not respond with JSON data.');
+            }
         } catch (error) {
             console.error('Error uploading files:', error);
             alert('Error uploading files. Please try again later.');
