@@ -8,6 +8,7 @@ import './Units.css';
 // Tests
 // Quizzes
 import blankQuiz_2018 from '../documents/Growth/2018_Quiz_Blank.pdf';
+import blankQuiz_2023 from '../documents/Growth/2023_Quiz_Blank.pdf';
 
 import rawQuiz_2013 from '../documents/Growth/2013_Quiz_Raw.pdf';
 import rawQuiz_2016 from '../documents/Growth/2016_Quiz_Raw.pdf';
@@ -27,6 +28,10 @@ const resources = [
                     {
                         text: "2018 Quiz (Blanked)",
                         url: blankQuiz_2018
+                    },
+                    {
+                        text: "2023 Quiz (Blanked)",
+                        url: blankQuiz_2023
                     }
                 ]
             },

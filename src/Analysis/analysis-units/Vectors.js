@@ -11,6 +11,7 @@ import rawTest_2013 from "../documents/Vectors/2013_Test_Raw.pdf";
 // Quizzes
 import blankQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Blank.pdf";
 import blankQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Blank.pdf";
+import blankQuiz_2023 from "../documents/Vectors/2023_Quiz_Blank.pdf";
 
 import rawQuiz1_2013 from "../documents/Vectors/2013_Quiz1_Raw.pdf";
 import rawQuiz2_2013 from "../documents/Vectors/2013_Quiz2_Raw.pdf";
@@ -62,6 +63,10 @@ const resources = [
                     {
                         text: "2022 Quiz 2 (Blanked)",
                         url: blankQuiz2_2022
+                    },
+                    {
+                        text: "2023 Quiz (Blanked)",
+                        url: blankQuiz_2023
                     }
                 ]
             },
