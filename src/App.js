@@ -13,7 +13,6 @@ import GAtM from './Analysis/analysis-units/GAtM';
 import Calculus from './Analysis/analysis-units/Calculus';
 import Midterms from './Analysis/analysis-units/Midterms';
 import About from './Header/About';
-import Upload from './UploadFile';
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
         <Route path="/analysis/calculus" element={<Calculus />} />
         <Route path="/analysis/midterms" element={<Midterms />} />
         <Route path="/about" element={<About />} />
-        <Route path="/upload" element={<Upload />} />
       </Routes>
     </Router>
   );
