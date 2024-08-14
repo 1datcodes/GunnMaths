@@ -1,0 +1,39 @@
+.homeButton button{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.uploadButton {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.uploadButton:hover {
+    cursor: pointer;
+}
+
+.homeButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.uploadButtonImg {
+    width: 100%;
+    height: 100%;
+}
