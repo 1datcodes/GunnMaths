@@ -16,6 +16,8 @@ import rawTest_2023 from '../documents/Matrices/2023_Test_Raw.pdf';
 
 import blankTest_2018 from '../documents/Matrices/2018_Test_Blank.pdf';
 import blankTest_2022 from '../documents/Matrices/2022_Test_Blank.pdf';
+import blankTest_2023 from '../documents/Matrices/2023_Test_Blank.pdf';
+
 // Quizzes
 import rawQuiz_2013 from '../documents/Matrices/2013_Quiz_Raw.pdf';
 import rawQuiz_2016 from '../documents/Matrices/2016_Quiz_Raw.pdf';
@@ -27,6 +29,7 @@ import rawQuiz_2023 from '../documents/Matrices/2023_Quiz_Raw.pdf';
 
 import blankQuiz_2018 from '../documents/Matrices/2018_Quiz_Blank.pdf';
 import blankQuiz_2022 from '../documents/Matrices/2022_Quiz_Blank.pdf';
+import blankQuiz_2023 from '../documents/Matrices/2023_Quiz_Blank.pdf';
 
 const resources = [
     {
@@ -44,6 +47,10 @@ const resources = [
                     {
                         text: "2022 Test (Blank)",
                         url: blankTest_2022
+                    },
+                    {
+                        text: "2023 Test (Blank)",
+                        url: blankTest_2023
                     }
                 ]
             },
@@ -98,6 +105,10 @@ const resources = [
                     {
                         text: "2022 Quiz (Blank)",
                         url: blankQuiz_2022
+                    },
+                    {
+                        text: "2023 Quiz (Blank)",
+                        url: blankQuiz_2023
                     }
                 ]
             },

@@ -16,6 +16,7 @@ import rawTest_2023 from '../documents/GAtM/2023_Test_Raw.pdf';
 
 import blankTest_2018 from '../documents/GAtM/2018_Test_Blank.pdf';
 import blankTest_2022 from '../documents/GAtM/2022_Test_Blank.pdf';
+import blankTest_2023 from '../documents/GAtM/2023_Test_Blank.pdf';
 
 // Quizzes
 import rawQuiz1_2013 from '../documents/GAtM/2013_Quiz1_Raw.pdf';
@@ -38,6 +39,7 @@ import blankQuiz2_2018 from '../documents/GAtM/2018_Quiz2_Blank.pdf';
 import blankQuiz3_2018 from '../documents/GAtM/2018_Quiz3_Blank.pdf';
 import blankQuiz1_2022 from '../documents/GAtM/2022_Quiz1_Blank.pdf';
 import blankQuiz2_2022 from '../documents/GAtM/2022_Quiz2_Blank.pdf';
+import blankQuiz_2023 from '../documents/GAtM/2023_Quiz_Blank.pdf';
 
 const gatmTextBook = "https://gunn-gatm.github.io/";
 const snapTool = "https://gunn-gatm.github.io/interactives/snaps";
@@ -58,6 +60,10 @@ const resources = [
                     {
                         text: "2022 Test (Blank)",
                         url: blankTest_2022
+                    },
+                    {
+                        text: "2023 Test (Blank)",
+                        url: blankTest_2023
                     }
                 ]
             },
@@ -124,6 +130,10 @@ const resources = [
                     {
                         text: "2022 Quiz 2 (Blank)",
                         url: blankQuiz2_2022
+                    },
+                    {
+                        text: "2023 Quiz (Blank)",
+                        url: blankQuiz_2023
                     }
                 ]
             },

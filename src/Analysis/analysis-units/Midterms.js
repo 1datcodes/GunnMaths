@@ -9,6 +9,8 @@ import './Units.css';
 import MT1_2019_Blank from '../documents/Midterms/Semester1/2019_MT1_Blank.pdf';
 import MT1_2022_Blank from '../documents/Midterms/Semester1/2022_MT1_Blank.pdf';
 import MT2_2022_Blank from '../documents/Midterms/Semester1/2022_MT2_Blank.pdf';
+import MT1_2023_Blank from '../documents/Midterms/Semester1/2023_MT1_Blank.pdf';
+import MT2_2023_Blank from '../documents/Midterms/Semester1/2023_MT2_Blank.pdf';
 
 import MT1_2016_Raw from '../documents/Midterms/Semester1/2016_MT1_Raw.pdf';
 import MT2_2016_Raw from '../documents/Midterms/Semester1/2016_MT2_Raw.pdf';
@@ -87,6 +89,14 @@ const resources = [
                             {
                                 text: "2022 Midterm 2 (Blank)",
                                 url: MT2_2022_Blank
+                            },
+                            {
+                                text: "2023 Midterm 1 (Blank)",
+                                url: MT1_2023_Blank
+                            },
+                            {
+                                text: "2023 Midterm 2 (Blank)",
+                                url: MT2_2023_Blank
                             }
                         ]
                     },
