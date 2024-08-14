@@ -33,6 +33,9 @@ import blankQuiz4_2018 from '../documents/Calculus/Calc/2018_Quiz4_Blank.pdf';
 import blankQuiz1_2022 from '../documents/Calculus/Limits/2022_Quiz1_Blank.pdf';
 import blankQuiz2_2022 from '../documents/Calculus/Limits/2022_Quiz2_Blank.pdf';
 import blankQuiz3_2022 from '../documents/Calculus/Calc/2022_Quiz3_Blank.pdf';
+import blankQuiz1_2023 from '../documents/Calculus/Limits/2023_Quiz1_Blank.pdf';
+import blankQuiz2_2023 from '../documents/Calculus/Limits/2023_Quiz2_Blank.pdf';
+import blankQuiz3_2023 from '../documents/Calculus/Calc/2023_Quiz_Blank.pdf';
 
 const resources = [
     {
@@ -95,6 +98,18 @@ const resources = [
                     {
                         text: "2022 Calc Quiz 1 (Blank)",
                         url: blankQuiz3_2022
+                    },
+                    {
+                        text: "2023 Limits Quiz 1 (Blank)",
+                        url: blankQuiz1_2023
+                    },
+                    {
+                        text: "2023 Limits Quiz 2 (Blank)",
+                        url: blankQuiz2_2023
+                    },
+                    {
+                        text: "2023 Calc Quiz 1 (Blank)",
+                        url: blankQuiz3_2023
                     }
                 ]
             },
