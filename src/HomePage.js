@@ -7,7 +7,8 @@ import './HomePage.css';
 import Header from './Header/Header';
 
 const courses = [
-    {url: "analysis", text: "Analysis"}
+    {url: "analysis", text: "Analysis"},
+    {url: "calc", text: "Calc BC"}
   ];
 
 function HomePage() {
