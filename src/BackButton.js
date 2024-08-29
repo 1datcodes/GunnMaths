@@ -1,18 +1,20 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import RouteConfig from "./RouteConfig";
 import "./BackButton.css";
-
-const back = "< Back";
 
 function BackButton() {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleClick = () => {
-        navigate(-1);
+        const currentPath = location.pathname;
+        const parrentPath = RouteConfig[currentPath] || "/home";
+        navigate(parrentPath);
     };
     
     return (
-        <button className="back-button" onClick={handleClick}>{back}</button>
+        <button className="back-button" onClick={handleClick}>{"< Back"}</button>
     );
 }
 
