@@ -2,7 +2,11 @@
   margin: 0px 0px 50px 0px;
 }
 
-.icon-grid {
+.Units {
+  padding: 20px 60px;
+}
+
+.Units .icon-grid {
   padding: 10px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -18,7 +22,9 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #000000;
+  border-radius: 12px;
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .icon-grid .unitLink:hover {
@@ -30,6 +36,7 @@
 .icon-grid .unitLink img {
   width: 240px;
   height: 240px;
+  object-fit: contain;
 }
 
 .units {
