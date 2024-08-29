@@ -13,6 +13,7 @@ import GAtM from './Analysis/analysis-units/GAtM';
 import Calculus from './Analysis/analysis-units/Calculus';
 import Midterms from './Analysis/analysis-units/Midterms';
 import About from './Header/About';
+import CalcBC from './CalcBC/CalcBC';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<Analysis />} />
+        <Route path="/calc-bc" element={<CalcBC />} />
         <Route path="/analysis" element={<Analysis />} />
         <Route path="/analysis/atps" element={<AtPS />} />
         <Route path="/analysis/probability" element={<Probability />} />
