@@ -1,73 +1,75 @@
 .Accordion {
-    width: 100%;
-    background: #363636;
+  width: 100%;
+  background: #363636;
 }
 
 .Dropdown {
-    background: #ffffff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0;
-    padding: 18px;
-    cursor: pointer;
-    text-align: left;
-    border: 1px solid #ddd;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
+  background: #ffffff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 18px;
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
 }
 
 .Dropdown:hover {
-    background: #ddd;
+  background: #ddd;
 }
 
 .Accordion div {
-    padding-left: 18px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    max-height: 100%;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
-    background-color: #ffffff;
+  padding-left: 18px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  max-height: 100%;
+  overflow: hidden;
+  transition:
+    max-height 0.2s ease-out,
+    padding 0.2s ease-out;
+  background-color: #ffffff;
 }
 
 .Accordion div a {
-    display: block;
-    color: #333;
-    padding: 8px 16px;
-    text-decoration: none;
+  display: block;
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .caret {
-    display: inline-block;
-    margin-left: 5px;
-    transition: transform 0.3s;
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s;
 }
 
 .rotate {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .File {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin: 2px 0;
-    margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 2px 0;
+  margin-left: 18px;
 }
 
 .Accordion .File a {
-    padding: 5px 0;
-    text-decoration: none;
-    color: black;
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
 }
 
 .Accordion .File a:hover {
-    cursor: pointer;
-    background-color: #f1f1f1;
-    text-decoration: underline;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  text-decoration: underline;
 }
