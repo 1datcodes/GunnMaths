@@ -1,51 +1,51 @@
 .Content {
-    margin: 0px 0px 50px 0px;
-  }
-  
-  .icon-grid {
-    padding: 10px 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-  }
-  
-  .icon-grid .unitLink {
-    width: 240px;
-    height: 240px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000000;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon-grid .unitLink:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-    background-color: #dddddd;
-  }
-  
-  .icon-grid .unitLink img {
-    width: 240px;
-    height: 240px;
-  }
-  
-  .units {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .units button {
-    border: 1px solid #000000;
-    border-radius: 4px;
-    padding: 5px 20px;
-  }
-  
-  .units button:hover {
-    cursor: pointer;
-    background-color: #d5d5d5;
-  }
+  margin: 0px 0px 50px 0px;
+}
+
+.icon-grid {
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.icon-grid .unitLink {
+  width: 240px;
+  height: 240px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  transition: transform 0.3s ease;
+}
+
+.icon-grid .unitLink:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: #dddddd;
+}
+
+.icon-grid .unitLink img {
+  width: 240px;
+  height: 240px;
+}
+
+.units {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.units button {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+
+.units button:hover {
+  cursor: pointer;
+  background-color: #d5d5d5;
+}
