@@ -7,14 +7,20 @@ import { generateQuestions } from "./analysis-probability-ai";
 import "./Generator.css";
 
 const Generator = ({ course, unit }) => {
-  const [questions, setQuestions] = useState([]);
+  const [questionData, setQuestionData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [showAnswer, setShowAnswer] = useState(false);
 
   const handleGenerateQuestion = async () => {
     setLoading(true);
-    const question = await generateQuestions(course, unit);
-    setQuestions([question]);
+    const data = await generateQuestions(course, unit);
+    setQuestionData(data);
+    setShowAnswer(false);
     setLoading(false);
+  };
+
+  const handleShowAnswer = () => {
+    setShowAnswer(true);
   };
 
   return (
@@ -27,15 +33,29 @@ const Generator = ({ course, unit }) => {
         {loading ? "Generating..." : "Generate Question"}
       </button>
       <div className="Questions">
-        {questions &&
-          questions.map((question, index) => (
+        {questionData && (
+          <div className="Question">
             <ReactMarkdown
-              key={index}
-              children={question}
+              children={questionData.question}
               remarkPlugins={[remarkMath]}
               rehypePlugins={[rehypeKatex]}
             />
-          ))}
+            {!showAnswer && (
+              <button className="answer-button" onClick={handleShowAnswer}>
+                Show Answer
+              </button>
+            )}
+            {showAnswer && (
+              <div className="Answer">
+                <ReactMarkdown
+                  children={questionData.answer}
+                  remarkPlugins={[remarkMath]}
+                  rehypePlugins={[rehypeKatex]}
+                />
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
