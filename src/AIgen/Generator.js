@@ -13,7 +13,7 @@ const Generator = ({ course, unit }) => {
   const handleGenerateQuestion = async () => {
     setLoading(true);
     const question = await generateQuestions(course, unit);
-    setQuestions([...questions, question]);
+    setQuestions([question]);
     setLoading(false);
   };
 
