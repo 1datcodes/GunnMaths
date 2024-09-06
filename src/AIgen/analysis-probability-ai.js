@@ -15,10 +15,15 @@ export const generateQuestions = async (course, unit) => {
     " unit in " +
     course +
     " course." +
-    "\nProvide answers using full LaTeX syntax";
+    "\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax";
 
   const result = await model.generateContent(prompt);
-  // console.log(result.response.text());
+  const text = result.response.text();
 
-  return result.response.text();
+  const answerStart = text.indexOf("## Answer:");
+
+  const question = text.substring(0, answerStart).trim();
+  const answer = text.substring(answerStart).trim();
+
+  return { question, answer };
 };
