@@ -37,6 +37,9 @@ import rawQuiz2_2022 from "../documents/Probability/2022_Quiz2_Raw.pdf";
 import rawQuiz1_2023 from "../documents/Probability/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/Probability/2023_Quiz2_Raw.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -198,6 +201,7 @@ function Probability() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Probability" />
       </div>
     </div>
   );
