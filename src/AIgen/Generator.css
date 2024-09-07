@@ -6,7 +6,8 @@
   padding: 20px;
 }
 
-.generator-button, .answer-button {
+.generator-button,
+.answer-button {
   max-width: 200px;
   background-color: #f1f1f1;
   border: none;
@@ -21,7 +22,8 @@
   border-radius: 12px;
 }
 
-.generator-button:hover, .answer-button:hover {
+.generator-button:hover,
+.answer-button:hover {
   background-color: #ddd;
   color: black;
 }

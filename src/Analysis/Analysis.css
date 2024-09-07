@@ -30,13 +30,13 @@
 .icon-grid .unitLink:hover {
   cursor: pointer;
   transform: scale(1.02);
-  background-color: #dddddd;
 }
 
 .icon-grid .unitLink img {
   width: 240px;
   height: 240px;
   object-fit: contain;
+  background-color: white;
 }
 
 .units {
