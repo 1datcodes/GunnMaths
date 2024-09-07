@@ -1,5 +1,5 @@
 import axios from "axios";
-import API_KEY from "../api";
+import API_KEY from "../api.js";
 // import prompt from './prompt.txt'
 // IMPORT THIS SHIT PLZZXCSA
 
