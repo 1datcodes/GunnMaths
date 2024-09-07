@@ -20,7 +20,9 @@ export const generateQuestions = async (course, unit) => {
 
   const result = await model.generateContent(prompt);
   const text = result.response.text();
-  console.log(result.response.text())
+
+  // TODO: Delete when publishing
+  console.log(result.response.text());
 
   const answerStart = text.indexOf("## Answer:");
 
