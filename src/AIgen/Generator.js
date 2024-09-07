@@ -24,7 +24,7 @@ const Generator = ({ course, unit }) => {
   };
 
   return (
-    <div>
+    <div className="generated-content">
       <button
         className="generator-button"
         onClick={handleGenerateQuestion}
@@ -34,7 +34,7 @@ const Generator = ({ course, unit }) => {
       </button>
       <div className="Questions">
         {questionData && (
-          <div className="Question">
+          <div className="question-content">
             <ReactMarkdown
               children={questionData.question}
               remarkPlugins={[remarkMath]}
@@ -46,7 +46,7 @@ const Generator = ({ course, unit }) => {
               </button>
             )}
             {showAnswer && (
-              <div className="Answer">
+              <div className="answer-content">
                 <ReactMarkdown
                   children={questionData.answer}
                   remarkPlugins={[remarkMath]}
