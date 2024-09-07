@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import API_KEY from "../api.js";
 // import prompt from './prompt.txt'
 // IMPORT THIS SHIT PLZZXCSA
@@ -15,10 +15,12 @@ export const generateQuestions = async (course, unit) => {
     " unit in " +
     course +
     " course." +
-    "\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax";
+    "\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax." +
+    "\nIf any dollar sign ($) is in the question, append a backslash () before it to bypass latex";
 
   const result = await model.generateContent(prompt);
   const text = result.response.text();
+  console.log(result.response.text())
 
   const answerStart = text.indexOf("## Answer:");
 
