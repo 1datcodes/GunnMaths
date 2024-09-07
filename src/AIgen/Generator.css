@@ -38,3 +38,28 @@
 .Question p {
   margin: 0;
 }
+
+.answer-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.answer-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+.Answer {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
