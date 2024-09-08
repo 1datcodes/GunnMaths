@@ -1,18 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import HomePage from './HomePage';
-import Analysis from './Analysis/Analysis';
-import AtPS from './Analysis/analysis-units/AtPS';
-import Probability from './Analysis/analysis-units/Probability';
-import Polar from './Analysis/analysis-units/Polar';
-import Vectors from './Analysis/analysis-units/Vectors';
-import Growth from './Analysis/analysis-units/Growth';
-import Matrices from './Analysis/analysis-units/Matrices';
-import GAtM from './Analysis/analysis-units/GAtM';
-import Calculus from './Analysis/analysis-units/Calculus';
-import Midterms from './Analysis/analysis-units/Midterms';
-import About from './Header/About';
+import HomePage from "./HomePage";
+import Analysis from "./Analysis/Analysis";
+import AtPS from "./Analysis/analysis-units/AtPS";
+import Probability from "./Analysis/analysis-units/Probability";
+import Polar from "./Analysis/analysis-units/Polar";
+import Vectors from "./Analysis/analysis-units/Vectors";
+import Growth from "./Analysis/analysis-units/Growth";
+import Matrices from "./Analysis/analysis-units/Matrices";
+import GAtM from "./Analysis/analysis-units/GAtM";
+import Calculus from "./Analysis/analysis-units/Calculus";
+import Midterms from "./Analysis/analysis-units/Midterms";
+import About from "./Header/About";
 
 function App() {
   return (

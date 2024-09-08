@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
-import './Units.css';
+import "./Units.css";
 
 // Files
 // Tests
@@ -38,166 +38,169 @@ import rawQuiz1_2023 from "../documents/Probability/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/Probability/2023_Quiz2_Raw.pdf";
 
 const resources = [
-    {
-        url: "/tests",
-        text: "Tests",
+  {
+    url: "/tests",
+    text: "Tests",
+    options: [
+      {
+        url: "/tests/blanked",
+        text: "Blanked",
         options: [
-            {
-                url: "/tests/blanked",
-                text: "Blanked",
-                options: [
-                    {
-                        text: "2013 Test 1 (Blanked)",
-                        url: blankTest_2013
-                    }
-                ]
-            },
-            {
-                url: "/tests/raw",
-                text: "Raw",
-                options: [
-                    {
-                        text: "2013 Test 1 (Raw)",
-                        url: rawTest_2013
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        url: "/quizzes",
-        text: "Quizzes",
+          {
+            text: "2013 Test 1 (Blanked)",
+            url: blankTest_2013,
+          },
+        ],
+      },
+      {
+        url: "/tests/raw",
+        text: "Raw",
         options: [
-            {
-                url: "/quizzes/blanked",
-                text: "Blanked",
-                options: [
-                    {
-                        text: "2013 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2013
-                    },
-                    {
-                        text: "2016 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2016
-                    },
-                    {
-                        text: "2016 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2016
-                    },
-                    {
-                        text: "2018 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2018
-                    },
-                    {
-                        text: "2018 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2018
-                    },
-                    {
-                        text: "2019 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2019
-                    },
-                    {
-                        text: "2019 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2019
-                    },
-                    {
-                        text: "2021 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2021
-                    },
-                    {
-                        text: "2021 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2021
-                    },
-                    {
-                        text: "2022 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2022
-                    },
-                    {
-                        text: "2022 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2022
-                    },
-                    {
-                        text: "2023 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2023
-                    },
-                    {
-                        text: "2023 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2023
-                    }
-                ]
-            },
-            {
-                url: "/quizzes/raw",
-                text: "Raw",
-                options: [
-                    {
-                        text: "2013 Quiz 1 (Raw)",
-                        url: rawQuiz1_2013
-                    },
-                    {
-                        text: "2016 Quiz 1 (Raw)",
-                        url: rawQuiz1_2016
-                    },
-                    {
-                        text: "2016 Quiz 2 (Raw)",
-                        url: rawQuiz2_2016
-                    },
-                    {
-                        text: "2018 Quiz 1 (Raw)",
-                        url: rawQuiz1_2018
-                    },
-                    {
-                        text: "2018 Quiz 2 (Raw)",
-                        url: rawQuiz2_2018
-                    },
-                    {
-                        text: "2019 Quiz 1 (Raw)",
-                        url: rawQuiz1_2019
-                    },
-                    {
-                        text: "2019 Quiz 2 (Raw)",
-                        url: rawQuiz2_2019
-                    },
-                    {
-                        text: "2021 Quiz 1 (Raw)",
-                        url: rawQuiz1_2021
-                    },
-                    {
-                        text: "2021 Quiz 2 (Raw)",
-                        url: rawQuiz2_2021
-                    },
-                    {
-                        text: "2022 Quiz 1 (Raw)",
-                        url: rawQuiz1_2022
-                    },
-                    {
-                        text: "2022 Quiz 2 (Raw)",
-                        url: rawQuiz2_2022
-                    },
-                    {
-                        text: "2023 Quiz 1 (Raw)",
-                        url: rawQuiz1_2023
-                    },
-                    {
-                        text: "2023 Quiz 2 (Raw)",
-                        url: rawQuiz2_2023
-                    }
-                ]
-            }
-        ]
-    }
+          {
+            text: "2013 Test 1 (Raw)",
+            url: rawTest_2013,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    url: "/quizzes",
+    text: "Quizzes",
+    options: [
+      {
+        url: "/quizzes/blanked",
+        text: "Blanked",
+        options: [
+          {
+            text: "2013 Quiz 1 (Blanked)",
+            url: blankQuiz1_2013,
+          },
+          {
+            text: "2016 Quiz 1 (Blanked)",
+            url: blankQuiz1_2016,
+          },
+          {
+            text: "2016 Quiz 2 (Blanked)",
+            url: blankQuiz2_2016,
+          },
+          {
+            text: "2018 Quiz 1 (Blanked)",
+            url: blankQuiz1_2018,
+          },
+          {
+            text: "2018 Quiz 2 (Blanked)",
+            url: blankQuiz2_2018,
+          },
+          {
+            text: "2019 Quiz 1 (Blanked)",
+            url: blankQuiz1_2019,
+          },
+          {
+            text: "2019 Quiz 2 (Blanked)",
+            url: blankQuiz2_2019,
+          },
+          {
+            text: "2021 Quiz 1 (Blanked)",
+            url: blankQuiz1_2021,
+          },
+          {
+            text: "2021 Quiz 2 (Blanked)",
+            url: blankQuiz2_2021,
+          },
+          {
+            text: "2022 Quiz 1 (Blanked)",
+            url: blankQuiz1_2022,
+          },
+          {
+            text: "2022 Quiz 2 (Blanked)",
+            url: blankQuiz2_2022,
+          },
+          {
+            text: "2023 Quiz 1 (Blanked)",
+            url: blankQuiz1_2023,
+          },
+          {
+            text: "2023 Quiz 2 (Blanked)",
+            url: blankQuiz2_2023,
+          },
+        ],
+      },
+      {
+        url: "/quizzes/raw",
+        text: "Raw",
+        options: [
+          {
+            text: "2013 Quiz 1 (Raw)",
+            url: rawQuiz1_2013,
+          },
+          {
+            text: "2016 Quiz 1 (Raw)",
+            url: rawQuiz1_2016,
+          },
+          {
+            text: "2016 Quiz 2 (Raw)",
+            url: rawQuiz2_2016,
+          },
+          {
+            text: "2018 Quiz 1 (Raw)",
+            url: rawQuiz1_2018,
+          },
+          {
+            text: "2018 Quiz 2 (Raw)",
+            url: rawQuiz2_2018,
+          },
+          {
+            text: "2019 Quiz 1 (Raw)",
+            url: rawQuiz1_2019,
+          },
+          {
+            text: "2019 Quiz 2 (Raw)",
+            url: rawQuiz2_2019,
+          },
+          {
+            text: "2021 Quiz 1 (Raw)",
+            url: rawQuiz1_2021,
+          },
+          {
+            text: "2021 Quiz 2 (Raw)",
+            url: rawQuiz2_2021,
+          },
+          {
+            text: "2022 Quiz 1 (Raw)",
+            url: rawQuiz1_2022,
+          },
+          {
+            text: "2022 Quiz 2 (Raw)",
+            url: rawQuiz2_2022,
+          },
+          {
+            text: "2023 Quiz 1 (Raw)",
+            url: rawQuiz1_2023,
+          },
+          {
+            text: "2023 Quiz 2 (Raw)",
+            url: rawQuiz2_2023,
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 function Probability() {
-    return (
-        <div className="Probability">
-            <Header headerTitle="PROBABILITY" description="Permutations and Combinations"/>
-            <div className="Resources">
-                <BackButton />
-                <Accordion data={resources} />
-            </div>
-        </div>
-    );
+  return (
+    <div className="Probability">
+      <Header
+        headerTitle="PROBABILITY"
+        description="Permutations and Combinations"
+      />
+      <div className="Resources">
+        <BackButton />
+        <Accordion data={resources} />
+      </div>
+    </div>
+  );
 }
 
 export default Probability;
