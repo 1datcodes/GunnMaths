@@ -82,7 +82,7 @@ const About = () => {
             </p>
             <p>
               Chris Lee and Michelle Koo (2021-2022), and Jason Oh (2022-2023),
-              Andersen Tanriveroi (2023-2024)
+              Andersen Tanriverdi (2023-2024)
             </p>
             <p>
               - Thanks to my teacher Mrs. M. Hlasek for helping me out with

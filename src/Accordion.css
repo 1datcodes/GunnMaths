@@ -4,7 +4,11 @@
 }
 
 .Dropdown {
+<<<<<<< HEAD
   background: #ffffff;
+=======
+  background: #f1f1f1;
+>>>>>>> local
   color: #333;
   display: flex;
   align-items: center;
@@ -33,7 +37,11 @@
   transition:
     max-height 0.2s ease-out,
     padding 0.2s ease-out;
+<<<<<<< HEAD
   background-color: #ffffff;
+=======
+  background-color: #f1f1f1;
+>>>>>>> local
 }
 
 .Accordion div a {

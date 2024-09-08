@@ -1,7 +1,11 @@
 import React from "react";
 import "./Analysis.css";
 import Header from "../Header/Header";
+<<<<<<< HEAD
 import BackButton from "../BackButton";
+=======
+// import BackButton from '../BackButton';
+>>>>>>> local
 
 // import all images
 import atps from "./analysis-images/atps.png";
@@ -62,7 +66,11 @@ function Analysis() {
       <Header headerTitle="ANALYSIS" description="Analysis Honors" />
 
       <div className="Units">
+<<<<<<< HEAD
         <BackButton />
+=======
+        {/* <BackButton /> */}
+>>>>>>> local
         <div className="icon-grid">
           {units.map((unit, index) => (
             <div className="units" key={index}>
