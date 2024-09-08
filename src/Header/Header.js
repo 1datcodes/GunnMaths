@@ -10,8 +10,8 @@ function Header({ headerTitle, description }) {
       <div className="Main-Header">
         <HomeButton />
         <div className="Texts">
-            <h1 className="Title">{headerTitle}</h1>
-            <p className="Description">{description}</p>
+          <h1 className="Title">{headerTitle}</h1>
+          <p className="Description">{description}</p>
         </div>
         {/* Add an upload button */}
         <Upload />
