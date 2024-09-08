@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../..//Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
-import './Units.css';
+import "./Units.css";
 
 // Files
 // Tests
@@ -27,118 +27,120 @@ import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
 import rawQuiz_2023 from "../documents/Vectors/2023_Quiz_Raw.pdf";
 
 const resources = [
-    {
-        url: "/tests",
-        text: "Tests",
+  {
+    url: "/tests",
+    text: "Tests",
+    options: [
+      {
+        url: "/tests/blanked",
+        text: "Blanked",
+        options: [],
+      },
+      {
+        url: "/tests/raw",
+        text: "Raw",
         options: [
-            {
-                url: "/tests/blanked",
-                text: "Blanked",
-                options: [],
-            },
-            {
-                url: "/tests/raw",
-                text: "Raw",
-                options: [
-                    {
-                        text: "2013 Test (Raw)",
-                        url: rawTest_2013
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        url: "/quizzes",
-        text: "Quizzes",
+          {
+            text: "2013 Test (Raw)",
+            url: rawTest_2013,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    url: "/quizzes",
+    text: "Quizzes",
+    options: [
+      {
+        url: "/quizzes/blanked",
+        text: "Blanked",
         options: [
-            {
-                url: "/quizzes/blanked",
-                text: "Blanked",
-                options: [
-                    {
-                        text: "2022 Quiz 1 (Blanked)",
-                        url: blankQuiz1_2022
-                    },
-                    {
-                        text: "2022 Quiz 2 (Blanked)",
-                        url: blankQuiz2_2022
-                    },
-                    {
-                        text: "2023 Quiz (Blanked)",
-                        url: blankQuiz_2023
-                    }
-                ]
-            },
-            {
-                url: "/quizzes/raw",
-                text: "Raw",
-                options: [
-                    {
-                        text: "2013 Quiz 1 (Raw)",
-                        url: rawQuiz1_2013
-                    },
-                    {
-                        text: "2013 Quiz 2 (Raw)",
-                        url: rawQuiz2_2013
-                    },
-                    {
-                        text: "2016 Quiz 1 (Raw)",
-                        url: rawQuiz1_2016
-                    },
-                    {
-                        text: "2016 Quiz 2 (Raw)",
-                        url: rawQuiz2_2016
-                    },
-                    {
-                        text: "2018 Quiz 1 (Raw)",
-                        url: rawQuiz1_2018
-                    },
-                    {
-                        text: "2018 Quiz 2 (Raw)",
-                        url: rawQuiz2_2018
-                    },
-                    {
-                        text: "2019 Quiz (Raw)",
-                        url: rawQuiz_2019
-                    },
-                    {
-                        text: "2021 Quiz 1 (Raw)",
-                        url: rawQuiz1_2021
-                    },
-                    {
-                        text: "2021 Quiz 2 (Raw)",
-                        url: rawQuiz2_2021
-                    },
-                    {
-                        text: "2022 Quiz 1 (Raw)",
-                        url: rawQuiz1_2022
-                    },
-                    {
-                        text: "2022 Quiz 2 (Raw)",
-                        url: rawQuiz2_2022
-                    },
-                    {
-                        text: "2023 Quiz (Raw)",
-                        url: rawQuiz_2023
-                    }
-                ]
-            }
-        ]
-    
-    }
+          {
+            text: "2022 Quiz 1 (Blanked)",
+            url: blankQuiz1_2022,
+          },
+          {
+            text: "2022 Quiz 2 (Blanked)",
+            url: blankQuiz2_2022,
+          },
+          {
+            text: "2023 Quiz (Blanked)",
+            url: blankQuiz_2023,
+          },
+        ],
+      },
+      {
+        url: "/quizzes/raw",
+        text: "Raw",
+        options: [
+          {
+            text: "2013 Quiz 1 (Raw)",
+            url: rawQuiz1_2013,
+          },
+          {
+            text: "2013 Quiz 2 (Raw)",
+            url: rawQuiz2_2013,
+          },
+          {
+            text: "2016 Quiz 1 (Raw)",
+            url: rawQuiz1_2016,
+          },
+          {
+            text: "2016 Quiz 2 (Raw)",
+            url: rawQuiz2_2016,
+          },
+          {
+            text: "2018 Quiz 1 (Raw)",
+            url: rawQuiz1_2018,
+          },
+          {
+            text: "2018 Quiz 2 (Raw)",
+            url: rawQuiz2_2018,
+          },
+          {
+            text: "2019 Quiz (Raw)",
+            url: rawQuiz_2019,
+          },
+          {
+            text: "2021 Quiz 1 (Raw)",
+            url: rawQuiz1_2021,
+          },
+          {
+            text: "2021 Quiz 2 (Raw)",
+            url: rawQuiz2_2021,
+          },
+          {
+            text: "2022 Quiz 1 (Raw)",
+            url: rawQuiz1_2022,
+          },
+          {
+            text: "2022 Quiz 2 (Raw)",
+            url: rawQuiz2_2022,
+          },
+          {
+            text: "2023 Quiz (Raw)",
+            url: rawQuiz_2023,
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 function Vectors() {
-    return (
-        <div className="Vectors">
-            <Header headerTitle="VECTORS + PARAMETRICS" description="Vectors + Parametrics"/>
-            <div className="Resources">
-                <BackButton />
-                <Accordion data={resources} />
-            </div>
-        </div>
-    );
+  return (
+    <div className="Vectors">
+      <Header
+        headerTitle="VECTORS + PARAMETRICS"
+        description="Vectors + Parametrics"
+      />
+      <div className="Resources">
+        <BackButton />
+        <Accordion data={resources} />
+      </div>
+    </div>
+  );
 }
 
 export default Vectors;
