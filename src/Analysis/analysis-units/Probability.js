@@ -201,7 +201,7 @@ function Probability() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Probability" />
+        <Generator course="analysis" unit="probability" />
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ const Generator = ({ course, unit }) => {
 
   return (
     <div className="generated-content">
+      <h2>Want more practice?</h2>
       <button
         className="generator-button"
         onClick={handleGenerateQuestion}
