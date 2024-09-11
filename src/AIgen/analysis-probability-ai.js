@@ -7,16 +7,21 @@ export const generateQuestions = async (course, unit) => {
 
   try {
     const response = await fetch("/AI/prompt.json");
-    // console.log(response);
-
-    // const rawText = await response.text();
-    // console.log(rawText);
 
     if (!response.ok) {
       throw new Error("Failed to fetch prompts");
     }
-    const prompts = await response.json();
-    const unitContent = prompts[course.toLowerCase()][unit.toLowerCase()];
+
+    const rawPrompts = await response.text();
+    console.log("raw\n" + rawPrompts);
+
+    const prompts = JSON.parse(rawPrompts);
+    console.log("prompts\n" + JSON.stringify(prompts));
+
+    const courseLower = course.toLowerCase();
+    const unitLower = unit.toLowerCase();
+    const unitContent = prompts[courseLower][unitLower]["prompt"];
+    console.log("unitContent\n" + JSON.stringify(unitContent));
 
     const prompt =
       "Based on the following content, generate a realistic and unique question for the " +
@@ -27,7 +32,8 @@ export const generateQuestions = async (course, unit) => {
       "\n\nContent: " + unitContent +
       "\n\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax." +
       "\nIf any dollar sign ($) is in the question, append a backslash () before it to bypass latex";
-
+    console.log("prompt: ", prompt);
+    
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 
