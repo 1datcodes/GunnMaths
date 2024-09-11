@@ -26,6 +26,9 @@ import rawQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
 import rawQuiz_2023 from "../documents/Vectors/2023_Quiz_Raw.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -138,6 +141,7 @@ function Vectors() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="vector" />
       </div>
     </div>
   );
