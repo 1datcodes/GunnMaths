@@ -39,6 +39,9 @@ import rawQuiz2_2022 from "../documents/AtPS/2022_Quiz2_Raw.pdf";
 import rawQuiz1_2023 from "../documents/AtPS/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/AtPS/2023_Quiz2_Raw.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -208,6 +211,7 @@ function AtPS() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="atps" />
       </div>
     </div>
   );

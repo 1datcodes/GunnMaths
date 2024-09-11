@@ -38,6 +38,9 @@ import blankQuiz1_2023 from "../documents/Calculus/Limits/2023_Quiz1_Blank.pdf";
 import blankQuiz2_2023 from "../documents/Calculus/Limits/2023_Quiz2_Blank.pdf";
 import blankQuiz3_2023 from "../documents/Calculus/Calc/2023_Quiz_Blank.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -199,6 +202,7 @@ function Calculus() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="calculus" />
       </div>
     </div>
   );

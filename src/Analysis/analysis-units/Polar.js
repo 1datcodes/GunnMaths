@@ -41,6 +41,9 @@ import rawQuiz_3d_2021 from "../documents/Polar/3D/2021_Quiz_Raw.pdf";
 import rawQuiz_polar_2022 from "../documents/Polar/Polar/2022_Quiz_Raw.pdf";
 import rawQuiz_2023 from "../documents/Polar/Polar/2023_Quiz_Raw.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -218,6 +221,8 @@ function Polar() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="polar" />
+        {/* For some reason AI generates calculus problems (integrals) */}
       </div>
     </div>
   );

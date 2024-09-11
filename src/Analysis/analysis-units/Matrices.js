@@ -31,6 +31,9 @@ import blankQuiz_2018 from "../documents/Matrices/2018_Quiz_Blank.pdf";
 import blankQuiz_2022 from "../documents/Matrices/2022_Quiz_Blank.pdf";
 import blankQuiz_2023 from "../documents/Matrices/2023_Quiz_Blank.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/tests",
@@ -158,6 +161,7 @@ function Matrices() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="matrices" />
       </div>
     </div>
   );

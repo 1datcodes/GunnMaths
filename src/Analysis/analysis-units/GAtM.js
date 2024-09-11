@@ -41,6 +41,9 @@ import blankQuiz1_2022 from "../documents/GAtM/2022_Quiz1_Blank.pdf";
 import blankQuiz2_2022 from "../documents/GAtM/2022_Quiz2_Blank.pdf";
 import blankQuiz_2023 from "../documents/GAtM/2023_Quiz_Blank.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const gatmTextBook = "https://gunn-gatm.github.io/";
 const snapTool = "https://gunn-gatm.github.io/interactives/snaps";
 
@@ -237,6 +240,7 @@ function GAtM() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="gatm" />
       </div>
     </div>
   );

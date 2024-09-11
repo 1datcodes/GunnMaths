@@ -13,15 +13,16 @@ export const generateQuestions = async (course, unit) => {
     }
 
     const rawPrompts = await response.text();
-    console.log("raw\n" + rawPrompts);
+    // console.log("raw\n" + rawPrompts);
 
     const prompts = JSON.parse(rawPrompts);
-    console.log("prompts\n" + JSON.stringify(prompts));
+    // console.log("prompts\n" + JSON.stringify(prompts));
 
     const courseLower = course.toLowerCase();
     const unitLower = unit.toLowerCase();
     const unitContent = prompts[courseLower][unitLower]["prompt"];
-    console.log("unitContent\n" + JSON.stringify(unitContent));
+    // console.log("course: " + courseLower + "\nunit: " + unitLower);
+    // console.log("unitContent\n" + JSON.stringify(unitContent));
 
     const prompt =
       "Based on the following content, generate a realistic and unique question for the " +
@@ -29,11 +30,13 @@ export const generateQuestions = async (course, unit) => {
       " unit in " +
       course +
       " course." +
-      "\n\nContent: " + unitContent +
+      "\n\nContent: " +
+      unitContent +
       "\n\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax." +
-      "\nIf any dollar sign ($) is in the question, append a backslash () before it to bypass latex";
-    console.log("prompt: ", prompt);
-    
+      "\nIf any dollar sign ($) is in the question, append a backslash before it to bypass latex." +
+      "\n We use React Markdown and RehypeKatex to render the question and answer.";
+    // console.log("prompt: ", prompt);
+
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 

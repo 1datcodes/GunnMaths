@@ -16,6 +16,9 @@ import rawQuiz_2018 from "../documents/Growth/2018_Quiz_Raw.pdf";
 import rawQuiz_2019 from "../documents/Growth/2019_Quiz_Raw.pdf";
 import rawQuiz_2023 from "../documents/Growth/2023_Quiz_Raw.pdf";
 
+// AI generated questions
+import Generator from "../../AIgen/Generator";
+
 const resources = [
   {
     url: "/quizzes",
@@ -73,6 +76,7 @@ function Growth() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="analysis" unit="growth" />
       </div>
     </div>
   );

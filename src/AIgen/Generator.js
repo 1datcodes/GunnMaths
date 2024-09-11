@@ -12,11 +12,15 @@ const Generator = ({ course, unit }) => {
   const [showAnswer, setShowAnswer] = useState(false);
 
   const handleGenerateQuestion = async () => {
-    setLoading(true);
-    const data = await generateQuestions(course, unit);
-    setQuestionData(data);
-    setShowAnswer(false);
-    setLoading(false);
+    try {
+      setLoading(true);
+      const data = await generateQuestions(course, unit);
+      setQuestionData(data);
+      setShowAnswer(false);
+      setLoading(false);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const handleShowAnswer = () => {
