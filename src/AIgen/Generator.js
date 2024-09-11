@@ -30,6 +30,7 @@ const Generator = ({ course, unit }) => {
   return (
     <div className="generated-content">
       <h2>Want more practice?</h2>
+      <p>Disclaimer: visualizations are not supported yet, ignore all calculus related stuffs.</p>
       <button
         className="generator-button"
         onClick={handleGenerateQuestion}
