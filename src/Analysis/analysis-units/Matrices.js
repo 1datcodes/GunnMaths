@@ -161,7 +161,7 @@ function Matrices() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="matrices" />
+        <Generator course="analysis" unit="matrix" />
       </div>
     </div>
   );
