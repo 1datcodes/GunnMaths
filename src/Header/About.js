@@ -81,7 +81,7 @@ const About = () => {
               (2016-17), Timothy Herchen (2018-19), Alan Lee (2019-20)
             </p>
             <p>
-              Chris Lee and Michelle Koo (2021-2022), and Jason Oh (2022-2023),
+              Chris Lee and Michelle Koo (2021-2022), and Justin Oh (2022-2023),
               Andersen Tanriverdi (2023-2024)
             </p>
             <p>
