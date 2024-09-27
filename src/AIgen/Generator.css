@@ -28,6 +28,11 @@
   color: black;
 }
 
+.Disclaimer {
+  text-align: center;
+  line-height: 1px;
+}
+
 .Questions {
   display: flex;
   flex-direction: column;

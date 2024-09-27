@@ -10,13 +10,18 @@ export const generateQuestions = async (course, unit) => {
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const prompt =
-    "Generate a realistic and unique question for " +
-    unit +
-    " unit in " +
-    course +
-    " course." +
-    "\nClearly indicates where the answer starts with title 2 size (##) of 'Answer:', and provide answers using full LaTeX syntax." +
-    "\nIf any dollar sign ($) is in the question, append a backslash () before it to bypass latex";
+    `
+    Generate a realistic and UNIQUE question for ${unit} unit in ${course} course.
+    Clearly indicate where the question and answer starts with title 2 size (##)
+    example:
+    ## Question:
+    [question]
+    ## Answer:
+    [answer]
+
+    Use full LaTeX syntax in the response.
+    For currency, spell out the word (dollars, euros, yen, etc.)
+    `;
 
   const result = await model.generateContent(prompt);
   const text = result.response.text();
