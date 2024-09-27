@@ -19,6 +19,7 @@ import Calculus from "./Analysis/analysis-units/Calculus";
 import Midterms from "./Analysis/analysis-units/Midterms";
 import About from "./Header/About";
 import CalcBC from "./CalcBC/CalcBC";
+import UpdateLog from "./Header/UpdateLog";
 
 // IMPORTANT: Update RouteConfig.js when creating new routes
 //            or changing existing routes
@@ -31,6 +32,7 @@ const routeMap = {
   "/analysis": "Analysis",
   "/calc-bc": "CalcBC",
   "/about": "About",
+  "/update": "UpdateLog",
 
   // Second child path
   "/analysis/atps": "AtPS",
@@ -58,6 +60,7 @@ const componentMap = {
   Midterms,
   About,
   CalcBC,
+  UpdateLog,
 };
 
 function App() {
