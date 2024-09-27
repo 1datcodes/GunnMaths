@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -208,6 +209,7 @@ function AtPS() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Algebra Through Problem Solving: Pascal's triangle, binomial theorem, fibonacci numbers, etc." />
       </div>
     </div>
   );

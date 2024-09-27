@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -158,6 +159,7 @@ function Matrices() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Matrices: addition, multiplication, identity, gauss-jordan, markov chain, determinant, very light application." />
       </div>
     </div>
   );
