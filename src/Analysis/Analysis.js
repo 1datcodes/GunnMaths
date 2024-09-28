@@ -1,7 +1,7 @@
 import React from "react";
 import "./Analysis.css";
 import Header from "../Header/Header";
-// import BackButton from '../BackButton';
+import BackButton from "../BackButton";
 
 // import all images
 import atps from "./analysis-images/atps.png";
@@ -62,7 +62,7 @@ function Analysis() {
       <Header headerTitle="ANALYSIS" description="Analysis Honors" />
 
       <div className="Units">
-        {/* <BackButton /> */}
+        <BackButton />
         <div className="icon-grid">
           {units.map((unit, index) => (
             <div className="units" key={index}>

@@ -1,0 +1,33 @@
+{
+  "analysis": {
+    "atps": {
+      "prompt": "Pascal's triangle, Fibonacci and Lucas numbers (less focus on lucas number), factorials, arithmetic and geometric sequences and series, mathematical induction, binomial theorem."
+    },
+    "probability": {
+      "prompt": "deck of cards, poker hands, gambling, powerball, dice, coin, conditional probability, binomial probability, independent events, expected value, other standard probability problems."
+    },
+    "polar": {
+      "prompt": "NO CALCULUS. This unit is a 2 part unit where the first half was all about polar coordinates and graphs, and the second half was about 3D coordinates and graphs. Unit circle, polar coordinates, curves in polar coordinates, polar graphs, intersections of polar. 3D graphing, quadric surfaces, 3D graph equations, 3D graph vocabulary. NO DERIVATIVES OR INTEGRALS."
+    },
+    "vector": {
+      "prompt": "This unit is a 2 part unit where the first half was all about parametric equations and the second half was about vectors. projectiles, dot product, projections, vector eqations, 3D vectors, cross product, determinant, normals, planes, distance."
+    },
+    "growth": {
+      "prompt": "exponent and logartihms, power, logistic, power function, compound interest, half life, russian log."
+    },
+    "matrix": {
+      "prompt": "matrices, inverse of 2x2 and 3x3, gauss jordan elimination, markov chain, equilibrium, eigenvectors."
+    },
+    "gatm": {
+      "prompt": "The GAtM (Geometric Approach to Matrices) unit is specific to our school, and one of our teachers wrote the textbook. isomorphic, group theory, infinite groups, geometry of complex numbers, matrix multiplication, mapping planes with matrices, rotations of planes, matrix groups, inverses, eigenvectors and eigenvalues, composition of functions. For group theory, don't use any professional mathematical notations, we're still highschoolers."
+    },
+    "calculus": {
+      "prompt": "There are 2 parts to this unit: limits and calculus (or AP Calculus A). neighborhood proofs, convergences, divergences, comparison principle, boundedness, n^p and p^n, sequences and series, ratio test."
+    }
+  },
+  "ap calculus bc": {
+    "unit1": {
+      "prompt": ""
+    }
+  }
+}

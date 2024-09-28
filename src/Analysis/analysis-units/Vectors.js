@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../..//Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -138,6 +139,7 @@ function Vectors() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Vectors and Parametrics: unit vectors, normal vectors, planes, dot/cross product, 3D vectors, 2D conics, etc." />
       </div>
     </div>
   );

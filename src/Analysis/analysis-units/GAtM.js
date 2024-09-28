@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -237,6 +238,7 @@ function GAtM() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Geometric Approach to Matrices: eigenvectors, eigenvalues, 2D rotation matrices, mapping planes to matrices. DON'T COME UP WITH ANYTHING NEW FOR THIS UNIT." />
       </div>
     </div>
   );
