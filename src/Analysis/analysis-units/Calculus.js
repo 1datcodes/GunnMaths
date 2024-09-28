@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -199,6 +200,7 @@ function Calculus() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="calculus" unit="AP Calculus A: easy limits, derivatives up to chain rule, very light anti-derivatives" />
       </div>
     </div>
   );
