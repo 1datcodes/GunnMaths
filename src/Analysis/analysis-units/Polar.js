@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -218,6 +219,7 @@ function Polar() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator course="pre-calculus" unit="Polar and 3D Graphing: polar coordinates, polar shapes (lemniscate, polar rose, etc.), polar to rectangular, 3D graphics, 3D conics (hyperbolic parabola, sphere, etc.), etc. EVERYTHING ALGEBRA BASED. NO AREAS." />
       </div>
     </div>
   );

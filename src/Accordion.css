@@ -4,7 +4,7 @@
 }
 
 .Dropdown {
-  background: #f1f1f1;
+  background: #ffffff;
   color: #333;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   transition:
     max-height 0.2s ease-out,
     padding 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 .Accordion div a {
@@ -70,6 +70,6 @@
 
 .Accordion .File a:hover {
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   text-decoration: underline;
 }
