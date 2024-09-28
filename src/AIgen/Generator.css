@@ -30,10 +30,11 @@
 
 .Disclaimer {
   text-align: center;
-  line-height: 1px;
+  line-height: 2px;
 }
 
 .Questions {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -43,7 +44,7 @@
   line-height: 1.5;
 }
 
-.question-title {
+.question-content {
   background-color: #ffffff;
   border: 1px solid #ddd;
   padding: 15px;
@@ -51,7 +52,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.question-title p {
+.question-content p {
   margin: 0;
 }
 
