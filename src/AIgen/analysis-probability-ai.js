@@ -1,7 +1,9 @@
-import API_KEY from "../api.js";
+// import API_KEY from "../api.js";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export const generateQuestions = async (course, unit) => {
+  const API_KEY = process.env.REACT_APP_GEMINI_KEY;
+  console.log(API_KEY ? "API key found" : "API key not found");
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
