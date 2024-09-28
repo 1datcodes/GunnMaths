@@ -30,7 +30,6 @@ const Generator = ({ course, unit }) => {
   return (
     <div className="generated-content">
       <h2>Want more practice?</h2>
-      <p>Disclaimer: visualizations are not supported yet, ignore all calculus related stuffs.</p>
       <button
         className="generator-button"
         onClick={handleGenerateQuestion}
@@ -38,6 +37,10 @@ const Generator = ({ course, unit }) => {
       >
         {loading ? "Generating..." : "Generate Question"}
       </button>
+      <div className="Disclaimer">
+        <p>Disclaimer: Still in alpha development.</p>
+        <p><small>(It's never gonna go beta lol)</small></p>
+      </div>
       <div className="Questions">
         {questionData && (
           <div className="question-content">

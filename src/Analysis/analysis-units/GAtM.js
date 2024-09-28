@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -40,9 +41,6 @@ import blankQuiz3_2018 from "../documents/GAtM/2018_Quiz3_Blank.pdf";
 import blankQuiz1_2022 from "../documents/GAtM/2022_Quiz1_Blank.pdf";
 import blankQuiz2_2022 from "../documents/GAtM/2022_Quiz2_Blank.pdf";
 import blankQuiz_2023 from "../documents/GAtM/2023_Quiz_Blank.pdf";
-
-// AI generated questions
-import Generator from "../../AIgen/Generator";
 
 const gatmTextBook = "https://gunn-gatm.github.io/";
 const snapTool = "https://gunn-gatm.github.io/interactives/snaps";
@@ -240,7 +238,7 @@ function GAtM() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="gatm" />
+        <Generator course="pre-calculus" unit="Geometric Approach to Matrices: eigenvectors, eigenvalues, 2D rotation matrices, mapping planes to matrices. DON'T COME UP WITH ANYTHING NEW FOR THIS UNIT." />
       </div>
     </div>
   );
