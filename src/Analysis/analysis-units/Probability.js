@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -36,9 +37,6 @@ import rawQuiz1_2022 from "../documents/Probability/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Probability/2022_Quiz2_Raw.pdf";
 import rawQuiz1_2023 from "../documents/Probability/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/Probability/2023_Quiz2_Raw.pdf";
-
-// AI generated questions
-import Generator from "../../AIgen/Generator";
 
 const resources = [
   {
@@ -201,7 +199,7 @@ function Probability() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="probability" />
+        <Generator course="pre-calculus" unit="Probability: dice, cards, gambling, lottery, population, choices, etc." />
       </div>
     </div>
   );

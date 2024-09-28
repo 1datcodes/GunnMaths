@@ -354,6 +354,7 @@ function Midterms() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <h1>Good Luck =)</h1>
       </div>
     </div>
   );

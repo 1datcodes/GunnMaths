@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -37,9 +38,6 @@ import blankQuiz3_2022 from "../documents/Calculus/Calc/2022_Quiz3_Blank.pdf";
 import blankQuiz1_2023 from "../documents/Calculus/Limits/2023_Quiz1_Blank.pdf";
 import blankQuiz2_2023 from "../documents/Calculus/Limits/2023_Quiz2_Blank.pdf";
 import blankQuiz3_2023 from "../documents/Calculus/Calc/2023_Quiz_Blank.pdf";
-
-// AI generated questions
-import Generator from "../../AIgen/Generator";
 
 const resources = [
   {
@@ -202,7 +200,7 @@ function Calculus() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="calculus" />
+        <Generator course="calculus" unit="AP Calculus A: easy limits, derivatives up to chain rule, very light anti-derivatives" />
       </div>
     </div>
   );

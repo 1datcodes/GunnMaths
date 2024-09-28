@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../..//Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -25,9 +26,6 @@ import rawQuiz2_2021 from "../documents/Vectors/2021_Quiz2_Raw.pdf";
 import rawQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
 import rawQuiz_2023 from "../documents/Vectors/2023_Quiz_Raw.pdf";
-
-// AI generated questions
-import Generator from "../../AIgen/Generator";
 
 const resources = [
   {
@@ -141,7 +139,7 @@ function Vectors() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="vector" />
+        <Generator course="pre-calculus" unit="Vectors and Parametrics: unit vectors, normal vectors, planes, dot/cross product, 3D vectors, 2D conics, etc." />
       </div>
     </div>
   );

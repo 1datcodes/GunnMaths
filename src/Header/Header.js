@@ -27,6 +27,11 @@ function Header({ headerTitle, description }) {
             Contact Us
           </Link>
         </div>
+        <div className="Contact-Page">
+          <Link to="/update" className="Update-Log">
+            Update Log
+          </Link>
+        </div>
       </div>
     </header>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import Accordion from "../../Accordion";
 import BackButton from "../../BackButton";
+import Generator from "../../AIgen/Generator";
 import "./Units.css";
 
 // Files
@@ -15,9 +16,6 @@ import rawQuiz_2016 from "../documents/Growth/2016_Quiz_Raw.pdf";
 import rawQuiz_2018 from "../documents/Growth/2018_Quiz_Raw.pdf";
 import rawQuiz_2019 from "../documents/Growth/2019_Quiz_Raw.pdf";
 import rawQuiz_2023 from "../documents/Growth/2023_Quiz_Raw.pdf";
-
-// AI generated questions
-import Generator from "../../AIgen/Generator";
 
 const resources = [
   {
@@ -76,7 +74,7 @@ function Growth() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="analysis" unit="growth" />
+        <Generator course="pre-calculus" unit="Growth: Finance, population, etc." />
       </div>
     </div>
   );
