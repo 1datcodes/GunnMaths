@@ -1,7 +1,10 @@
 .Header {
   width: 100%;
   background-color: #414141;
+  position: relative;
+  z-index: 1;
 }
+
 .Main-Header {
   width: 100%;
   padding-top: 15px;
@@ -44,4 +47,70 @@
 .Description {
   margin: 10px;
   color: #ffffff;
+}
+
+.Menu-Button {
+  display: none;
+}
+
+.Mobile-Menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Menu-Button {
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 32px;
+    z-index: 1000;
+  }
+
+  .homeButton, .uploadButton {
+    display: none !important;
+  }
+
+  .Main-Header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .Sub-Header {
+    display: none !important;
+  }
+
+  .Mobile-Menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .Mobile-Menu.Open {
+    display: flex;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Mobile-Menu.Close {
+    display: none;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Mobile-Menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
 }
