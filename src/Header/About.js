@@ -111,21 +111,21 @@ const About = () => {
             <p>
               -{" "}
               <a href="https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link">
-                https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link
+                Google Drive (2023-2024)
               </a>
             </p>
             <h4>2023-2024 Calendar</h4>
             <p>
               -{" "}
               <a href="https://docs.google.com/spreadsheets/d/1sH6J7tkWx5mKWlGE2LJB93MIX8ODSkp3ibttnPnbONk/edit?usp=sharing">
-                https://docs.google.com/spreadsheets/d/1sH6J7tkWx5mKWlGE2LJB93MIX8ODSkp3ibttnPnbONk/edit?usp=sharing
+                Class Schedule
               </a>
             </p>
             <h4>GitHub Repository</h4>
             <p>
               -{" "}
               <a href="https://github.com/1datcodes/GunnMaths">
-                https://github.com/1datcodes/GunnMaths
+                GitHub Repository
               </a>
             </p>
           </div>
