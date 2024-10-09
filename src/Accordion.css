@@ -17,7 +17,6 @@
   border: 1px solid #ddd;
   outline: none;
   font-size: 16px;
-  transition: 0.4s;
 }
 
 .Dropdown:hover {
@@ -29,11 +28,13 @@
   padding-top: 1px;
   padding-bottom: 1px;
   max-height: 100%;
+  width: revert;
   overflow: hidden;
-  transition:
-    max-height 0.2s ease-out,
-    padding 0.2s ease-out;
   background-color: #ffffff;
+}
+
+.active {
+  max-height: 100%;
 }
 
 .Accordion div a {
@@ -46,7 +47,7 @@
 .caret {
   display: inline-block;
   margin-left: 5px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .rotate {
@@ -72,4 +73,10 @@
   cursor: pointer;
   background-color: #ffffff;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .Accordion div {
+    padding-left: 4px;
+  }
 }
