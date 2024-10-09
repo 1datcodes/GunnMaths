@@ -35,7 +35,7 @@ function Header({ headerTitle, description }) {
         <Link to="/" className="Mobile-Menu-Item">
           Home
         </Link>
-        <Link to="" className="Mobile-Menu-Item">
+        <Link to="https://forms.gle/VdKwSKc2ugAiC13V7" target="_blank" rel="noopener noreferrer" className="Mobile-Menu-Item">
           Upload Test
         </Link>
         <Link to="/about#top" className="Mobile-Menu-Item">
