@@ -25,8 +25,8 @@ const About = () => {
           <div className="Text">
             <h4>Who are we?</h4>
             <p>
-              - My name is Michi Tanaka and I am a student at Gunn (class of
-              2025) and took Analysis in 2023-24 school year
+              - We are a group of students from Gunn High School who has taken Analysis H in the past.
+              - Our goal is to provide a platform for students to access past tests and quizzes to study for the class.
             </p>
             <h4>What is this website?</h4>
             <p>
@@ -76,17 +76,18 @@ const About = () => {
         <div id="thanks" className="Thanks">
           <h1>Special Thanks</h1>
           <div className="Text">
+            <p>- Big thanks to my predecessors:</p>
+            <ul>
+              <li>Jason Huang (2013-14)</li>
+              <li>Hannah Kim(2016-17) </li>
+              <li>Timothy Herchen (2018-19)</li>
+              <li>Alan Lee (2019-20) </li>
+              <li>Chris Lee and Michelle Koo (2021-2022) </li>
+              <li>Justin Oh (2022-2023) </li>
+              <li>Andersen Tanriverdi (2023-2024)</li>
+            </ul>
             <p>
-              - Big thanks to my predecessors Jason Huang (2013-14), Hannah Kim
-              (2016-17), Timothy Herchen (2018-19), Alan Lee (2019-20)
-            </p>
-            <p>
-              Chris Lee and Michelle Koo (2021-2022), and Justin Oh (2022-2023),
-              Andersen Tanriverdi (2023-2024)
-            </p>
-            <p>
-              - Thanks to my teacher Mrs. M. Hlasek for helping me out with
-              blank files
+              - Thanks to my teacher Mrs. Hlasek for helping me out with blank files
             </p>
           </div>
         </div>
@@ -95,12 +96,9 @@ const About = () => {
           <div className="Text">
             <h4>Our team</h4>
             <p>
-              - Michi Tanaka (
-              <a href="mailto: mt50737@pausd.us">mt50737@pausd.us</a>,{" "}
-              <a href="mailto: tanakamichi7@gmail.com">
-                tanakamichi7@gmail.com
-              </a>
-              )
+              - Michi Tanaka (Class of 2025)
+              <br />
+              - Kaicheng Luo (Class of 2025)
             </p>
             <h4>Our location</h4>
             <p>- Palo Alto, California</p>
