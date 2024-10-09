@@ -60,7 +60,7 @@
 @media only screen and (max-width: 768px) {
   .Menu-Button {
     display: block;
-    position: fixed;
+    position: absolute;
     left: 5%;
     border: none;
     background: none;
