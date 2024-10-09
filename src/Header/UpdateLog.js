@@ -22,6 +22,10 @@ const UpdateLog = () => {
                 <ul>
                     <li>Added mobile support</li>
                 </ul>
+                <p>Version 2.0.3alpha</p>
+                <ul>
+                    <li>Updated About Us page</li>
+                </ul>
             </div>
         </div>
     )
