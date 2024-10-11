@@ -10,21 +10,24 @@ const UpdateLog = () => {
             <div className="Update">
                 <BackButton />
                 <h1>Update Log</h1>
-                <p>Version 1.0.1alpha</p>
+                <h4>Version 1.0.1alpha</h4>
                 <ul>
                     <li>Initial release</li>
+                    <li>All Analysis tests and quizzes added</li>
                 </ul>
-                <p>Version 2.0.1alpha</p>
+                <h4>Version 2.0.1alpha</h4>
                 <ul>
+                    <li>Added Calc BC folder (to be completed later)</li>
                     <li>AI available for Analysis Units</li>
                 </ul>
-                <p>Version 2.0.2alpha</p>
+                <h4>Version 2.0.2alpha</h4>
                 <ul>
                     <li>Added mobile support</li>
                 </ul>
-                <p>Version 2.0.3alpha</p>
+                <h4>Version 2.0.3alpha</h4>
                 <ul>
                     <li>Updated About Us page</li>
+                    <li>Probably the last major change before Calc BC</li>
                 </ul>
             </div>
         </div>
