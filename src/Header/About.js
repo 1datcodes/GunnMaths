@@ -26,6 +26,8 @@ const About = () => {
             <h4>Who are we?</h4>
             <p>
               - We are a group of students from Gunn High School who has taken Analysis H in the past.
+            </p>
+            <p>
               - Our goal is to provide a platform for students to access past tests and quizzes to study for the class.
             </p>
             <h4>What is this website?</h4>
