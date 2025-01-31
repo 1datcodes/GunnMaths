@@ -8,13 +8,14 @@ export const generateQuestions = async (course, unit) => {
     messages: [
       { 
         role: "system", 
-        content: `You are a high school math teacher creating questions.
-                  Format questions with LaTeX for equations and Markdown for structure.`
+        content: `You are a college math teacher creating unique challenge questions for extra credit.
+                  Format questions with LaTeX for equations and Markdown for structure.
+                  Make sure to sandwich LaTeX code with $$ so that remark-math can render it.`
       },
       {
         role: "user",
         content: `
-                  Generate a realistic and unique high school question for ${unit} unit in ${course} course.
+                  Generate an unrealistic and difficult college level question for ${unit} unit in ${course} course.
                   Clearly indicate where the question and answer starts with title 2 size (##)
                   example:
                   ## Question:
