@@ -1,6 +1,6 @@
 .Header {
   width: 100%;
-  background-color: #414141;
+  background-color: #bc6c25;
 }
 .Main-Header {
   width: 100%;
@@ -29,7 +29,7 @@
 .About-Page,
 .Contact-Page,
 .Update-Log {
-  color: white;
+  color: #fefae0;
   text-decoration: none;
 }
 
@@ -43,5 +43,5 @@
 .Title,
 .Description {
   margin: 10px;
-  color: #ffffff;
+  color: #fefae0;
 }

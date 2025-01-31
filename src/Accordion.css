@@ -1,10 +1,10 @@
 .Accordion {
+  padding-top: 15px;
   width: 100%;
-  background: #363636;
 }
 
 .Dropdown {
-  background: #ffffff;
+  background: #fefae0;
   color: #333;
   display: flex;
   align-items: center;
@@ -33,7 +33,6 @@
   transition:
     max-height 0.2s ease-out,
     padding 0.2s ease-out;
-  background-color: #ffffff;
 }
 
 .Accordion div a {
