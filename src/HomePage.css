@@ -1,6 +1,5 @@
 .Content {
   margin: 0px 0px 50px 0px;
-  background-color: #fefae0;
 }
 
 .Courses {
@@ -29,8 +28,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000000;
+  border: 1px solid #03045e;
   border-radius: 12px;
+  box-shadow: 1px 1px 4px 1px #ade8f4;
   transition: transform 0.3s ease;
   overflow: hidden;
 }
@@ -43,8 +43,15 @@
 
 .courses button {
   border-radius: 4px;
-  border: 1px solid #000000;
+  border: 1px solid #03045e;
   padding: 5px 20px;
+  background-color: #ade8f4;
+  transition: all 0.3s ease-in-out;
+}
+
+.courses button:hover {
+  cursor: pointer;
+  background-color: #90e0ef;
 }
 
 .coverimage {

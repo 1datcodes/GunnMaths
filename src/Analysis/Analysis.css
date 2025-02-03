@@ -21,8 +21,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000000;
+  border: 1px solid #023e8a;
   border-radius: 12px;
+  box-shadow: 1px 1px 4px 1px #ade8f4;
   transition: transform 0.3s ease;
   overflow: hidden;
 }
@@ -47,12 +48,14 @@
 }
 
 .units button {
-  border: 1px solid #000000;
+  background-color: #ade8f4;
+  border: 1px solid #03045e;
   border-radius: 4px;
   padding: 5px 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .units button:hover {
   cursor: pointer;
-  background-color: #d5d5d5;
+  background-color: #90e0ef;
 }

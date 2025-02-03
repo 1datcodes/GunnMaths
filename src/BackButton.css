@@ -1,6 +1,6 @@
 .back-button {
-  background-color: #e9edc9;
-  border: none;
+  background-color: #90e0ef;
+  border: 1px solid #03045e;
   color: #606c38;
   padding: 10px 20px;
   text-align: center;
@@ -14,6 +14,6 @@
 }
 
 .back-button:hover {
-  background-color: #ccd5ae;
+  background-color: #48cae4;
   color: #283618;
 }
