@@ -1,6 +1,6 @@
 // import API_KEY from "../api.js";
-const API_KEY = process.env.OPEN_AI_KEY;
 import OpenAI from "openai/index.mjs";
+const API_KEY = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: API_KEY, dangerouslyAllowBrowser: true });
 
 export const generateQuestions = async (course, unit) => {
