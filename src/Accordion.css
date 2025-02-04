@@ -83,5 +83,6 @@
 @media only screen and (max-width: 768px) {
   .Accordion div {
     padding-left: 4px;
+    width: calc(100% - 4px);
   }
 }

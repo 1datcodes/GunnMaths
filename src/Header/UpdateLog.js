@@ -29,6 +29,11 @@ const UpdateLog = () => {
                     <li>Updated About Us page</li>
                     <li>Probably the last major change before Calc BC</li>
                 </ul>
+                <h4>Version 3.0.1</h4>
+                <ul>
+                    <li>Changed color scheme</li>
+                    <li>Switched from Google Gemini 1.5 flash to GPT-4o from OpenAI</li>
+                </ul>
             </div>
         </div>
     )

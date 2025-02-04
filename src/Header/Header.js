@@ -50,7 +50,7 @@ function Header({ headerTitle, description }) {
       </div>
       
       <div className="Main-Header">
-        <button ref={buttonRef} className="Menu-Button" onClick={toggleMenu}>
+        <button ref={buttonRef} className={`Menu-Button${menuOpen ? " Open" : ""}`} onClick={toggleMenu}>
           ☰
         </button>
         <HomeButton />
