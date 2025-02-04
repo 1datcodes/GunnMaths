@@ -30,7 +30,7 @@ export const generateQuestions = async (course, unit) => {
   });
 
   const text = completion.choices[0].message.content;
-  console.log(text);
+  // console.log(text);
 
   const answerStart = text.indexOf("## Answer:");
   const question = text.substring(0, answerStart).trim();

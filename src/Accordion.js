@@ -27,30 +27,32 @@ function Accordion({ data }) {
               ▶
             </span>
           </button>
-          {activeIndexes[index] &&
-            item.options &&
-            item.options.some((option) => option.options) && (
-              <div>
-                <Accordion data={item.options} />
-              </div>
-            )}
-          {activeIndexes[index] &&
-            item.options &&
-            !item.options.some((option) => option.options) && (
-              <div className="File">
-                {item.options.map((option, i) => (
-                  <a
-                    key={i}
-                    href={option.url}
-                    alt={option.alt}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {option.text}
-                  </a>
-                ))}
-              </div>
-            )}
+          <div className={activeIndexes[index] ? "active" : "inactive"}>
+            {activeIndexes[index] &&
+              item.options &&
+              item.options.some((option) => option.options) && (
+                <div>
+                  <Accordion data={item.options} />
+                </div>
+              )}
+            {activeIndexes[index] &&
+              item.options &&
+              !item.options.some((option) => option.options) && (
+                <div className="File">
+                  {item.options.map((option, i) => (
+                    <a
+                      key={i}
+                      href={option.url}
+                      alt={option.alt}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {option.text}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
         </div>
       ))}
     </div>

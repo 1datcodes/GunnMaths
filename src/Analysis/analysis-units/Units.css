@@ -1,4 +1,10 @@
 .Resources {
   padding: 15px 20px;
-  /* background-color: #fefae0; */
+}
+
+@media only screen and (max-width: 768px) {
+  .Resources {
+    padding: 15px 15px;
+    margin-bottom: 50px;
+  }
 }

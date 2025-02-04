@@ -59,3 +59,12 @@
   cursor: pointer;
   background-color: #90e0ef;
 }
+
+@media only screen and (max-width: 768px) {
+  .Units .icon-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 5px;
   width: 100%;
   margin: 0;
   padding: 18px;
@@ -18,7 +19,7 @@
   border-radius: 4px;
   outline: none;
   font-size: 16px;
-  transition: 0.4s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Dropdown:hover {
@@ -35,7 +36,11 @@
     max-height 0.2s ease-out,
     padding 0.2s ease-out;
 }
-/* 
+
+.active {
+  max-height: 100%;
+}
+
 .Accordion div a {
   display: block;
   color: #03045e;
@@ -46,7 +51,7 @@
 .caret {
   display: inline-block;
   margin-left: 5px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .rotate {
@@ -73,4 +78,10 @@
   cursor: pointer;
   background-color: #ade8f4;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .Accordion div {
+    padding-left: 4px;
+  }
 }

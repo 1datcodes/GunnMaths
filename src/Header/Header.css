@@ -3,6 +3,7 @@
   background-color: #00b4d8;
   box-shadow: 1px 1px 5px #0077b6;
 }
+
 .Main-Header {
   width: 100%;
   padding-top: 15px;
@@ -45,4 +46,79 @@
 .Description {
   margin: 10px;
   color: #03045e;
+}
+
+.Menu-Button {
+  display: none;
+}
+
+.Mobile-Menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Menu-Button {
+    display: block;
+    position: absolute;
+    left: 5%;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 32px;
+    z-index: 1000;
+  }
+
+  .Texts h1 {
+    font-size: 20px;
+  }
+
+  .Texts p {
+    font-size: 14px;
+  }
+
+  .homeButton, .uploadButton {
+    display: none !important;
+  }
+
+  .Main-Header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .Sub-Header {
+    display: none !important;
+  }
+
+  .Mobile-Menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0 0 0;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .Mobile-Menu.Open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .Mobile-Menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
 }
