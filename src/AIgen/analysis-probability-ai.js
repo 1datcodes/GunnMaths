@@ -1,4 +1,5 @@
-import API_KEY from "../api.js";
+// import API_KEY from "../api.js";
+const API_KEY = process.env.OPEN_AI_KEY;
 import OpenAI from "openai/index.mjs";
 const openai = new OpenAI({ apiKey: API_KEY, dangerouslyAllowBrowser: true });
 
