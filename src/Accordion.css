@@ -1,36 +1,40 @@
 .Accordion {
+  padding-top: 15px;
   width: 100%;
-  background: #363636;
 }
 
 .Dropdown {
-  background: #ffffff;
+  background: #ade8f4;
   color: #333;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 5px;
   width: 100%;
   margin: 0;
   padding: 18px;
   cursor: pointer;
   text-align: left;
-  border: 1px solid #ddd;
+  border: 1px solid #00b4d8;
+  border-radius: 4px;
   outline: none;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .Dropdown:hover {
-  background: #ddd;
+  background: #90e0ef;
 }
 
 .Accordion div {
   padding-left: 18px;
+  width: calc(100% - 18px);
   padding-top: 1px;
   padding-bottom: 1px;
   max-height: 100%;
-  width: revert;
-  overflow: hidden;
-  background-color: #ffffff;
+  transition:
+    max-height 0.2s ease-out,
+    padding 0.2s ease-out;
 }
 
 .active {
@@ -39,11 +43,10 @@
 
 .Accordion div a {
   display: block;
-  color: #333;
+  color: #03045e;
   padding: 8px 16px;
   text-decoration: none;
 }
-
 .caret {
   display: inline-block;
   margin-left: 5px;
@@ -57,26 +60,28 @@
 .File {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin: 2px 0;
-  margin-left: 18px;
+  border: 1px solid #00b4d8;
+  border-radius: 4px;
+  margin: 2px 0 2px 18px;
+  padding: 0 0 0 4px !important;
+  width: calc(100% - 23px) !important;
 }
 
 .Accordion .File a {
-  padding: 5px 0;
+  padding: 6px 0;
   text-decoration: none;
-  color: black;
+  color: #03045e;
 }
 
 .Accordion .File a:hover {
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #ade8f4;
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
   .Accordion div {
     padding-left: 4px;
+    width: calc(100% - 4px);
   }
 }

@@ -12,6 +12,7 @@
     "fs": "^0.0.1-security",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.14",
+    "openai": "^4.81.0",
     "prettier": "^3.3.3",
     "promises": "^0.2.5",
     "react": "^18.2.0",

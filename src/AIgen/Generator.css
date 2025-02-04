@@ -9,7 +9,7 @@
 .generator-button,
 .answer-button {
   max-width: 200px;
-  background-color: #f1f1f1;
+  background-color: #90e0ef;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -20,11 +20,12 @@
   margin: 2px 1px;
   cursor: pointer;
   border-radius: 12px;
+  transition: all 0.3s ease-in-out;
 }
 
 .generator-button:hover,
 .answer-button:hover {
-  background-color: #ddd;
+  background-color: #48cae4;
   color: black;
 }
 
@@ -44,9 +45,10 @@
   line-height: 1.5;
 }
 
-.question-content {
+/* necessary? */
+.question-title {
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #03045e;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,8 +60,8 @@
 
 .answer-content {
   margin-top: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #ade8f4;
+  border: 1px solid #00b4d8;
   padding: 15px;
   border-radius: 8px;
 }

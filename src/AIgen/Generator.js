@@ -38,8 +38,7 @@ const Generator = ({ course, unit }) => {
         {loading ? "Generating..." : "Generate Question"}
       </button>
       <div className="Disclaimer">
-        <p>Disclaimer: Still in alpha development.</p>
-        <p><small>(It's never gonna go beta lol)</small></p>
+        <p>Powered by GPT-4o-mini</p>
       </div>
       <div className="Questions">
         {questionData && (
