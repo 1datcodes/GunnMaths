@@ -47,7 +47,7 @@
   padding: 8px 16px;
   text-decoration: none;
 }
-*/ .caret {
+.caret {
   display: inline-block;
   margin-left: 5px;
   transition: transform 0.3s ease-in-out;
