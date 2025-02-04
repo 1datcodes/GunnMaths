@@ -34,4 +34,5 @@ MIT License - see the [LICENSE.md](LICENSE.md) file for details
 ## Credits:
 
 - Logo taken from Vecteezy.com
+- Kaicheng
 - Everyone who has uploaded their tests

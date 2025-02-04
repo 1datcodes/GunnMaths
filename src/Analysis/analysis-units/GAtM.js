@@ -238,7 +238,10 @@ function GAtM() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Geometric Approach to Matrices: eigenvectors, eigenvalues, 2D rotation matrices, mapping planes to matrices. DON'T COME UP WITH ANYTHING NEW FOR THIS UNIT." />
+        <Generator
+          course="pre-calculus"
+          unit="Geometric Approach to Matrices: eigenvectors, eigenvalues, 2D rotation matrices, mapping planes to matrices. DON'T COME UP WITH ANYTHING NEW FOR THIS UNIT."
+        />
       </div>
     </div>
   );

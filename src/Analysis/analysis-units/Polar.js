@@ -219,7 +219,10 @@ function Polar() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Polar and 3D Graphing: polar coordinates, polar shapes (lemniscate, polar rose, etc.), polar to rectangular, 3D graphics, 3D conics (hyperbolic parabola, sphere, etc.), etc. EVERYTHING ALGEBRA BASED. NO AREAS." />
+        <Generator
+          course="pre-calculus"
+          unit="Polar and 3D Graphing: polar coordinates, polar shapes (lemniscate, polar rose, etc.), polar to rectangular, 3D graphics, 3D conics (hyperbolic parabola, sphere, etc.), etc. EVERYTHING ALGEBRA BASED. NO AREAS."
+        />
       </div>
     </div>
   );

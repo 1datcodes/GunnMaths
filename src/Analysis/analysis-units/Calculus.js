@@ -200,7 +200,10 @@ function Calculus() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="calculus" unit="AP Calculus A: easy limits, derivatives up to chain rule, very light anti-derivatives" />
+        <Generator
+          course="calculus"
+          unit="AP Calculus A: easy limits, derivatives up to chain rule, very light anti-derivatives"
+        />
       </div>
     </div>
   );

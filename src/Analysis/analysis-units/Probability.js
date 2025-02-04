@@ -199,7 +199,10 @@ function Probability() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Probability: dice, cards, gambling, lottery, population, choices, etc." />
+        <Generator
+          course="pre-calculus"
+          unit="Probability: dice, cards, gambling, lottery, population, choices, etc."
+        />
       </div>
     </div>
   );

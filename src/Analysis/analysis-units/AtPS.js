@@ -209,7 +209,10 @@ function AtPS() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Algebra Through Problem Solving: Pascal's triangle, binomial theorem, fibonacci numbers, etc." />
+        <Generator
+          course="pre-calculus"
+          unit="Algebra Through Problem Solving: Pascal's triangle, binomial theorem, fibonacci numbers, etc."
+        />
       </div>
     </div>
   );
