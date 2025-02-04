@@ -159,7 +159,10 @@ function Matrices() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Matrices: addition, multiplication, identity, gauss-jordan, markov chain, determinant, very light application." />
+        <Generator
+          course="pre-calculus"
+          unit="Matrices: addition, multiplication, identity, gauss-jordan, markov chain, determinant, very light application."
+        />
       </div>
     </div>
   );

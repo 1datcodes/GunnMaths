@@ -13,7 +13,9 @@ function CalcBC() {
       <div className="Units">
         <BackButton />
         <h2>Coming soon...</h2>
-        <p><small>(It's never coming...)</small></p>
+        <p>
+          <small>(It's never coming...)</small>
+        </p>
         <div className="icon-grid">
           {units.map((unit, index) => (
             <div className="units" key={index}>

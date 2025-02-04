@@ -39,7 +39,9 @@ const Generator = ({ course, unit }) => {
       </button>
       <div className="Disclaimer">
         <p>Disclaimer: Still in alpha development.</p>
-        <p><small>(It's never gonna go beta lol)</small></p>
+        <p>
+          <small>(It's never gonna go beta lol)</small>
+        </p>
       </div>
       <div className="Questions">
         {questionData && (

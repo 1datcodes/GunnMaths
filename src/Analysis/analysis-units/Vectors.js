@@ -139,7 +139,10 @@ function Vectors() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Vectors and Parametrics: unit vectors, normal vectors, planes, dot/cross product, 3D vectors, 2D conics, etc." />
+        <Generator
+          course="pre-calculus"
+          unit="Vectors and Parametrics: unit vectors, normal vectors, planes, dot/cross product, 3D vectors, 2D conics, etc."
+        />
       </div>
     </div>
   );

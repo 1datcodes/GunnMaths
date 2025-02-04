@@ -74,7 +74,10 @@ function Growth() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator course="pre-calculus" unit="Growth: Finance, population, etc." />
+        <Generator
+          course="pre-calculus"
+          unit="Growth: Finance, population, etc."
+        />
       </div>
     </div>
   );
