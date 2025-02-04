@@ -15,6 +15,7 @@ import rawTest_2021 from "../documents/Matrices/2021_Test_Raw.pdf";
 import rawTest_2022 from "../documents/Matrices/2022_Test_Raw.pdf";
 import rawTest_2023 from "../documents/Matrices/2023_Test_Raw.pdf";
 
+import blankTest_2016 from "../documents/Matrices/2016_Test_Blank.pdf";
 import blankTest_2018 from "../documents/Matrices/2018_Test_Blank.pdf";
 import blankTest_2022 from "../documents/Matrices/2022_Test_Blank.pdf";
 import blankTest_2023 from "../documents/Matrices/2023_Test_Blank.pdf";
@@ -27,6 +28,7 @@ import rawQuiz_2019 from "../documents/Matrices/2019_Quiz_Raw.pdf";
 import rawQuiz_2021 from "../documents/Matrices/2021_Quiz_Raw.pdf";
 import rawQuiz_2022 from "../documents/Matrices/2022_Quiz_Raw.pdf";
 import rawQuiz_2023 from "../documents/Matrices/2023_Quiz_Raw.pdf";
+import rawQuiz_2024 from "../documents/Matrices/2024_Quiz_Raw.pdf";
 
 import blankQuiz_2018 from "../documents/Matrices/2018_Quiz_Blank.pdf";
 import blankQuiz_2022 from "../documents/Matrices/2022_Quiz_Blank.pdf";
@@ -41,6 +43,10 @@ const resources = [
         url: "/tests/blanked",
         text: "Blanked",
         options: [
+          {
+            text: "2016 Test (Blank)",
+            url: blankTest_2016,
+          },
           {
             text: "2018 Test (Blank)",
             url: blankTest_2018,
@@ -144,6 +150,10 @@ const resources = [
           {
             text: "2023 Quiz (Raw)",
             url: rawQuiz_2023,
+          },
+          {
+            text: "2024 Quiz (Raw)",
+            url: rawQuiz_2024,
           },
         ],
       },

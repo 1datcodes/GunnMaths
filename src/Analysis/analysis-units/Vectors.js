@@ -26,6 +26,7 @@ import rawQuiz2_2021 from "../documents/Vectors/2021_Quiz2_Raw.pdf";
 import rawQuiz1_2022 from "../documents/Vectors/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Vectors/2022_Quiz2_Raw.pdf";
 import rawQuiz_2023 from "../documents/Vectors/2023_Quiz_Raw.pdf";
+import rawQuiz_2024 from "../documents/Vectors/2024_Quiz_Raw.pdf";
 
 const resources = [
   {
@@ -122,6 +123,10 @@ const resources = [
           {
             text: "2023 Quiz (Raw)",
             url: rawQuiz_2023,
+          },
+          {
+            text: "2024 Quiz (Raw)",
+            url: rawQuiz_2024,
           },
         ],
       },

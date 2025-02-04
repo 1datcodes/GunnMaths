@@ -41,6 +41,7 @@ import rawQuiz_polar_2021 from "../documents/Polar/Polar/2021_Quiz_Raw.pdf";
 import rawQuiz_3d_2021 from "../documents/Polar/3D/2021_Quiz_Raw.pdf";
 import rawQuiz_polar_2022 from "../documents/Polar/Polar/2022_Quiz_Raw.pdf";
 import rawQuiz_2023 from "../documents/Polar/Polar/2023_Quiz_Raw.pdf";
+import rawQuiz_polar_2024 from "../documents/Polar/Polar/2024_Quiz_Raw.pdf";
 
 const resources = [
   {
@@ -194,6 +195,10 @@ const resources = [
           {
             text: "2023 Quiz (Raw)",
             url: rawQuiz_2023,
+          },
+          {
+            text: "2024 Polar Quiz (Raw)",
+            url: rawQuiz_polar_2024,
           },
         ],
       },

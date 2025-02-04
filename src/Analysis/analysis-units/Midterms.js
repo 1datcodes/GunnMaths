@@ -21,6 +21,8 @@ import MT1_2021_Raw from "../documents/Midterms/Semester1/2021_MT1_Raw.pdf";
 import MT2_2021_Raw from "../documents/Midterms/Semester1/2021_MT2_Raw.pdf";
 import MT1_2022_Raw from "../documents/Midterms/Semester1/2022_MT1_Raw.pdf";
 import MT2_2022_Raw from "../documents/Midterms/Semester1/2022_MT2_Raw.pdf";
+import MT1_2024_Raw from "../documents/Midterms/Semester1/2024_MT1_Raw.pdf";
+import MT2_2024_Raw from "../documents/Midterms/Semester1/2024_MT2_Raw.pdf";
 
 import FR1_2021_Blank from "../documents/Midterms/Semester1/2021_Final1_Blank.pdf";
 import FR2_2021_Blank from "../documents/Midterms/Semester1/2021_Final2_Blank.pdf";
@@ -33,6 +35,7 @@ import FR4_2021_Key from "../documents/Midterms/Semester1/2021_Final4_Key.pdf";
 import GAtM_2018_Blank from "../documents/GAtM/2018_Test_Blank.pdf";
 import GAtM_2022_Blank from "../documents/GAtM/2022_Test_Blank.pdf";
 
+import Matrix_2016_Blank from "../documents/Matrices/2016_Test_Blank.pdf";
 import Matrix_2018_Blank from "../documents/Matrices/2018_Test_Blank.pdf";
 import Matrix_2022_Blank from "../documents/Matrices/2022_Test_Blank.pdf";
 
@@ -140,6 +143,14 @@ const resources = [
                 text: "2022 Midterm 2 (Raw)",
                 url: MT2_2022_Raw,
               },
+              {
+                text: "2024 Midterm 1 (Raw)",
+                url: MT1_2024_Raw,
+              },
+              {
+                text: "2024 Midterm 2 (Raw)",
+                url: MT2_2024_Raw,
+              },
             ],
           },
         ],
@@ -196,6 +207,10 @@ const resources = [
             url: "/semester2/midterms/blank",
             text: "Blank",
             options: [
+              {
+                text: "2016 Matrices Exam (Blank)",
+                url: Matrix_2016_Blank,
+              },
               {
                 text: "2018 Matrices Exam (Blank)",
                 url: Matrix_2018_Blank,

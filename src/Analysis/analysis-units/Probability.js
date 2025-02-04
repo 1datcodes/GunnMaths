@@ -37,6 +37,8 @@ import rawQuiz1_2022 from "../documents/Probability/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Probability/2022_Quiz2_Raw.pdf";
 import rawQuiz1_2023 from "../documents/Probability/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/Probability/2023_Quiz2_Raw.pdf";
+import rawQuiz1_2024 from "../documents/Probability/2024_Quiz1_Raw.pdf";
+import rawQuiz2_2024 from "../documents/Probability/2024_Quiz2_Raw.pdf";
 
 const resources = [
   {
@@ -182,6 +184,14 @@ const resources = [
           {
             text: "2023 Quiz 2 (Raw)",
             url: rawQuiz2_2023,
+          },
+          {
+            text: "2024 Quiz 1 (Raw)",
+            url: rawQuiz1_2024,
+          },
+          {
+            text: "2024 Quiz 2 (Raw)",
+            url: rawQuiz2_2024,
           },
         ],
       },
