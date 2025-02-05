@@ -1,5 +1,7 @@
+const server = process.env.REACT_APP_SERVER || 'http://localhost:5000';
+
 export const generateQuestions= async (course, unit) => {
-    const response = await fetch('http://localhost:5000/generate-questions', {
+    const response = await fetch(`${server}/generate-questions`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
