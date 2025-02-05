@@ -5,18 +5,13 @@ const cors = require('cors');
 
 require('dotenv').config();
 
-const app = express();
-const port = process.env.REACT_APP_PORT || 5000;
+const port = process.env.REACT_APP_PORT || 5050;
 const API_KEY = process.env.REACT_APP_OPEN_AI_KEY;
 
 const openai = new OpenAI({ apiKey: API_KEY });
 
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://www.gunnmaths.org', '*'],
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type'],
-    credentials: true,
-}));
+const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/generate-questions', async (req, res) => {
