@@ -1,4 +1,5 @@
 import React from "react";
+import { updates } from "./Header/UpdateLog";
 import "./HomePage.css";
 
 // Images
@@ -41,6 +42,8 @@ function HomePage() {
           ))}
         </div>
       </div>
+
+      {updates()}
     </div>
   );
 }

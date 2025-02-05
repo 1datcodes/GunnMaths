@@ -9,6 +9,7 @@ import "./Generator.css";
 const Generator = ({ course, unit }) => {
   const [questionData, setQuestionData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
 
   const handleGenerateQuestion = async () => {
@@ -18,9 +19,12 @@ const Generator = ({ course, unit }) => {
       setQuestionData(data);
       setShowAnswer(false);
       setLoading(false);
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      setLoading(false);
+      setError("An error occurred while generating the question.");
+      console.error(err);
     }
+
   };
 
   const handleShowAnswer = () => {
@@ -35,22 +39,33 @@ const Generator = ({ course, unit }) => {
         onClick={handleGenerateQuestion}
         disabled={loading}
       >
-        {loading ? "Generating..." : "Generate Question"}
+        {loading ? "Generating" : "Generate Question"}
+        {loading && (
+          <div className="spinner"></div>
+        )}
       </button>
       <div className="Disclaimer">
         <p>Powered by GPT-4o-mini</p>
       </div>
       <div className="Questions">
-        {questionData && (
+        {error && <div className="error">{error}</div>}
+        {error === null && questionData && (
           <div className="question-content">
             <ReactMarkdown
               children={questionData.question}
               remarkPlugins={[remarkMath]}
               rehypePlugins={[rehypeKatex]}
             />
-            {!showAnswer && (
+            {!showAnswer ? (
               <button className="answer-button" onClick={handleShowAnswer}>
                 Show Answer
+              </button>
+            ) : (
+              <button
+                className="answer-button"
+                onClick={() => setShowAnswer(false)}
+              >
+                Hide Answer
               </button>
             )}
             {showAnswer && (
