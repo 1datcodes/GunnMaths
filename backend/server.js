@@ -13,6 +13,9 @@ const openai = new OpenAI({ apiKey: API_KEY });
 
 app.use(cors({
     origin: ['http://localhost:3000', 'https://www.gunnmaths.org'],
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+    credentials: true,
 }));
 app.use(bodyParser.json());
 
