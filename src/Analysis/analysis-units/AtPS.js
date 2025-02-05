@@ -39,6 +39,7 @@ import rawQuiz1_2022 from "../documents/AtPS/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/AtPS/2022_Quiz2_Raw.pdf";
 import rawQuiz1_2023 from "../documents/AtPS/2023_Quiz1_Raw.pdf";
 import rawQuiz2_2023 from "../documents/AtPS/2023_Quiz2_Raw.pdf";
+import rawQuiz_2024 from "../documents/AtPS/2024_Quiz_Raw.pdf";
 
 const resources = [
   {
@@ -192,6 +193,10 @@ const resources = [
           {
             text: "2023 AtPS Quiz 2 (Raw)",
             url: rawQuiz2_2023,
+          },
+          {
+            text: "2024 AtPS Quiz (Raw)",
+            url: rawQuiz_2024,
           },
         ],
       },
