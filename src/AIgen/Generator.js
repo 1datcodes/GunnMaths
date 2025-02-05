@@ -39,7 +39,7 @@ const Generator = ({ course, unit }) => {
         onClick={handleGenerateQuestion}
         disabled={loading}
       >
-        {loading ? "Generating..." : "Generate Question"}
+        {loading ? "Generating" : "Generate Question"}
         {loading && (
           <div className="spinner"></div>
         )}

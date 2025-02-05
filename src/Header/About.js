@@ -80,7 +80,7 @@ const About = () => {
         <div id="thanks" className="Thanks">
           <h1>Special Thanks</h1>
           <div className="Text">
-            <p>- Big thanks to my predecessors:</p>
+            <p>- Big thanks to my predecessors and test providers:</p>
             <ul>
               <li>Jason Huang (2013-14)</li>
               <li>Hannah Kim(2016-17) </li>
@@ -89,6 +89,7 @@ const About = () => {
               <li>Chris Lee and Michelle Koo (2021-2022) </li>
               <li>Justin Oh (2022-2023) </li>
               <li>Andersen Tanriverdi (2023-2024)</li>
+              <li>Neeraj Gummalam (2024-2025)</li>
             </ul>
             <p>
               - Thanks to my teacher Mrs. Hlasek for helping me out with blank
