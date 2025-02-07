@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const OpenAI = require("openai");
 const cors = require("cors");
+const SSE = require("express-sse");
 
 require("dotenv").config();
 
@@ -9,16 +10,21 @@ const port = process.env.REACT_APP_PORT || 5050;
 const API_KEY = process.env.REACT_APP_OPEN_AI_KEY;
 
 const openai = new OpenAI({ apiKey: API_KEY });
+const sse = new SSE();
 
 const app = express();
 app.use(cors());
 app.options("*", cors());
 app.use(bodyParser.json());
 
+app.get("/status", sse.init);
+
 app.post("/generate-questions", async (req, res) => {
   const { course, unit } = req.body;
 
   try {
+    sse.send("Request received", "status");
+
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
@@ -45,6 +51,8 @@ app.post("/generate-questions", async (req, res) => {
       ],
     });
 
+    sse.send("AI generation completed", "status");
+
     const text = completion.choices[0].message.content;
     const answerStart = text.indexOf("## Answer:");
     const question = text.substring(0, answerStart).trim();
@@ -52,6 +60,7 @@ app.post("/generate-questions", async (req, res) => {
 
     res.json({ question, answer });
   } catch (error) {
+    sse.send("Error during AI generation", "status");
     res.status(500).send({ error: error.message });
   }
 });
