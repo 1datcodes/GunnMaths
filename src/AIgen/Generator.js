@@ -11,7 +11,7 @@ const Generator = ({ course, unit }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
-  const eventSource = new EventSource(`${process.env.REACT_APP_SERVER}/status`);
+  // const eventSource = new EventSource(`${process.env.REACT_APP_SERVER}/status`);
 
   const handleGenerateQuestion = async () => {
     try {
