@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
-import { generateQuestions } from "./analysis-probability-ai";
+import { generateQuestions } from "./AI";
 import "./Generator.css";
 
 const Generator = ({ course, unit }) => {
@@ -11,6 +11,20 @@ const Generator = ({ course, unit }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [status, setStatus] = useState("idle");
+
+  useEffect(() => {
+    const eventSource = new EventSource(`${process.env.REACT_APP_SERVER}/status`);
+
+    eventSource.addEventListener("status", (event) => {
+      console.log("Server Status:", event.data);
+      setStatus(event.data);
+    })
+
+    return () => {
+      eventSource.close();
+    };
+  }, []);
 
   const handleGenerateQuestion = async () => {
     try {
@@ -24,7 +38,6 @@ const Generator = ({ course, unit }) => {
       setError("An error occurred while generating the question.");
       console.error(err);
     }
-
   };
 
   const handleShowAnswer = () => {
@@ -40,11 +53,12 @@ const Generator = ({ course, unit }) => {
         disabled={loading}
       >
         {loading ? "Generating" : "Generate Question"}
-        {loading && (
-          <div className="spinner"></div>
-        )}
+        {loading && <div className="spinner"></div>}
       </button>
       <div className="Disclaimer">
+        {status === "idle" && <p>Server is idle</p>}
+        {status === "Request received" && <p>Server received request, generating response...</p>}
+        {status === "AI generation completed" && <p>Finished generating</p>}
         <p>Powered by GPT-4o-mini</p>
       </div>
       <div className="Questions">

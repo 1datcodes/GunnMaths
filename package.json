@@ -9,7 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
+    "express-sse": "^0.5.3",
     "fs": "^0.0.1-security",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.14",
@@ -24,7 +25,8 @@
     "react-scripts": "^5.0.1",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "ws": "^8.18.0"
   },
   "scripts": {
     "start": "react-scripts start",
