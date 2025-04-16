@@ -20,62 +20,62 @@ import apreview from "./calc-images/apreview.png";
 const units = [
   {
     text: "Unit 1: Limits and Continuity",
-    url: "/calcBC/unit1",
+    url: "/calc-bc/unit1",
     img: unit1,
   },
   {
     text: "Unit 2: Derivative",
-    url: "/calcBC/unit2",
+    url: "/calc-bc/unit2",
     img: unit2,
   },
   {
     text: "Unit 3: More Derivatives",
-    url: "/calcBC/unit3",
+    url: "/calc-bc/unit3",
     img: unit3,
   },
   {
     text: "Unit 4: Application of Derivatives",
-    url: "/calcBC/unit4",
+    url: "/calc-bc/unit4",
     img: unit4,
   },
   {
     text: "Unit 5: More Application",
-    url: "/calcBC/unit5",
+    url: "/calc-bc/unit5",
     img: unit5,
   },
   {
     text: "Unit 6: Integral",
-    url: "/calcBC/unit6",
+    url: "/calc-bc/unit6",
     img: unit6,
   },
   {
     text: "Differential Equations",
-    url: "/calcBC/unit7",
+    url: "/calc-bc/unit7",
     img: unit7,
   },
   {
     text: "Unit 8: Application of Integrals",
-    url: "/calcBC/unit8",
+    url: "/calc-bc/unit8",
     img: unit8,
   },
   {
     text: "Unit 9: Parametric and Polar",
-    url: "/calcBC/unit9",
+    url: "/calc-bc/unit9",
     img: unit9,
   },
   {
     text: "Unit 10: Sequences and Series",
-    url: "/calcBC/unit10",
+    url: "/calc-bc/unit10",
     img: unit10,
   },
   {
     text: "Midterms and Finals",
-    url: "/calcBC/midterms",
+    url: "/calc-bc/midterms",
     img: midterm,
   },
   {
     text: "AP Test Review",
-    url: "/calcBC/apreview",
+    url: "/calc-bc/apreview",
     img: apreview,
   }
 ];

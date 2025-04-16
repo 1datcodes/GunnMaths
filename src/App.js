@@ -20,6 +20,7 @@ import Midterms from "./Analysis/analysis-units/Midterms";
 import About from "./Header/About";
 import CalcBC from "./CalcBC/CalcBC";
 import UpdateLog from "./Header/UpdateLog";
+import CalcUnit1 from "./CalcBC/calc-units/unit1";
 
 // IMPORTANT: Update RouteConfig.js when creating new routes
 //            or changing existing routes
@@ -44,6 +45,8 @@ const routeMap = {
   "/analysis/gatm": "GAtM",
   "/analysis/calculus": "Calculus",
   "/analysis/midterms": "Midterms",
+
+  "/calc-bc/unit1": "CalcUnit1",
 };
 
 const componentMap = {
@@ -61,6 +64,7 @@ const componentMap = {
   About,
   CalcBC,
   UpdateLog,
+  CalcUnit1,
 };
 
 function App() {
