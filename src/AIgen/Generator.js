@@ -24,7 +24,6 @@ const Generator = ({ course, unit }) => {
       setError("An error occurred while generating the question.");
       console.error(err);
     }
-
   };
 
   const handleShowAnswer = () => {
@@ -40,9 +39,7 @@ const Generator = ({ course, unit }) => {
         disabled={loading}
       >
         {loading ? "Generating" : "Generate Question"}
-        {loading && (
-          <div className="spinner"></div>
-        )}
+        {loading && <div className="spinner"></div>}
       </button>
       <div className="Disclaimer">
         <p>Powered by GPT-4o-mini</p>

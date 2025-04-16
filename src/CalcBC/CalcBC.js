@@ -49,7 +49,7 @@ const units = [
     img: unit6,
   },
   {
-    text: "Differential Equations",
+    text: "Unit 7: Differential Equations",
     url: "/calc-bc/unit7",
     img: unit7,
   },
@@ -77,7 +77,7 @@ const units = [
     text: "AP Test Review",
     url: "/calc-bc/apreview",
     img: apreview,
-  }
+  },
 ];
 
 function CalcBC() {

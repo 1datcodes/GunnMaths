@@ -6,10 +6,10 @@ import Generator from "../../AIgen/Generator";
 
 const resources = [];
 
-function unit1() {
+function Midterm() {
   return (
-    <div className="unit1">
-      <Header headerTitle="Unit 1" description="Limits and Continuity" />
+    <div className="Midterm">
+      <Header headerTitle="Midterm" description="Midterms" />
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
@@ -18,4 +18,4 @@ function unit1() {
   );
 }
 
-export default unit1;
+export default Midterm;
