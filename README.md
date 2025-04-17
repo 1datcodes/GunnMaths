@@ -18,9 +18,9 @@ Visit https://www.gunnmaths.org/ to access the site.
 
 ## Contributing
 
-Original members: Michi Tanaka (Analysis class 2023-2024).
+Original members: Michi Tanaka (Analysis class 2023-2024), Kaicheng Luo (Analysis class 2022-2023).
 
-Contributing: If you have any tests or quizzes that you want to upload, send me an email at tanakamichi7@gmail.com.
+Contributing: If you have any tests or quizzes that you want to upload, send me an email at [email](tanakamichi7@gmail.com).
 
 ## License
 
