@@ -4,7 +4,18 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
-const resources = [];
+const resources = [
+  {
+    url: "/FRQ",
+    text: "Free Response Questions",
+    options: [],
+  },
+  {
+    url: "/MCQ",
+    text: "Multiple Choice Questions",
+    options: [],
+  }
+];
 
 function APReview() {
   return (

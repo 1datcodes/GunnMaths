@@ -4,7 +4,18 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
-const resources = [];
+const resources = [
+  {
+    url: "/tests",
+    text: "Tests",
+    options: []
+  },
+  {
+    url: "/reviewsheets",
+    text: "Review Sheets",
+    options: []
+  }
+];
 
 function unit1() {
   return (
