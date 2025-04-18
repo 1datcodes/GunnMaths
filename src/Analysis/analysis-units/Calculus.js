@@ -26,7 +26,8 @@ import rawQuiz1_2022 from "../documents/Calculus/Limits/2022_Quiz1_Raw.pdf";
 import rawQuiz2_2022 from "../documents/Calculus/Limits/2022_Quiz2_Raw.pdf";
 import rawQuiz3_2022 from "../documents/Calculus/Calc/2022_Quiz3_Raw.pdf";
 import rawQuiz1_2023 from "../documents/Calculus/Limits/2023_Quiz1_Raw.pdf";
-import rawQuiz2_2023 from "../documents/Calculus/Calc/2023_Quiz_Raw.pdf";
+import rawQuiz2_2023 from "../documents/Calculus/Limits/2023_Quiz2_Raw.pdf";
+import rawQuiz3_2023 from "../documents/Calculus/Calc/2023_Quiz_Raw.pdf";
 
 import blankQuiz1_2018 from "../documents/Calculus/Limits/2018_Quiz1_Blank.pdf";
 import blankQuiz2_2018 from "../documents/Calculus/Limits/2018_Quiz2_Blank.pdf";
@@ -180,8 +181,12 @@ const resources = [
             url: rawQuiz1_2023,
           },
           {
-            text: "2023 Calc Quiz (Raw)",
+            text: "2023 Limits Quiz 2 (Raw)",
             url: rawQuiz2_2023,
+          },
+          {
+            text: "2023 Calc Quiz (Raw)",
+            url: rawQuiz3_2023,
           },
         ],
       },

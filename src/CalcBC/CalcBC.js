@@ -3,22 +3,17 @@ import "./CalcBC.css";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
 
-const units = [
-    {
-        url: "calc-bc/review", text: "Test Review"
-    },
-    {
-        url: "calc-bc/tests", text: "Past Tests"
-    },
-];
+const units = [];
 
 function CalcBC() {
   return (
     <div className="Content">
       <Header headerTitle="CALCULUS BC" description="AP Calculus BC" />
-
       <div className="Units">
         <BackButton />
+        <div>
+          <h4>Coming Soon...</h4>
+        </div>
         <div className="icon-grid">
           {units.map((unit, index) => (
             <div className="units" key={index}>
