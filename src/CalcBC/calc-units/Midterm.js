@@ -14,7 +14,7 @@ const resources = [
     url: "/final",
     text: "Final",
     options: [],
-  }
+  },
 ];
 
 function Midterm() {

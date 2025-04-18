@@ -14,7 +14,7 @@ const resources = [
     url: "/MCQ",
     text: "Multiple Choice Questions",
     options: [],
-  }
+  },
 ];
 
 function APReview() {
