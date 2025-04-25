@@ -4,6 +4,12 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
+// import all files
+import min_max_handout from "../documents/unit5/reviewsheets/blank/BC Calc 5.5 optimization min max handout.pdf";
+
+import min_max_handout_answer from "../documents/unit5/reviewsheets/key/BC Calc 5.5 optimization min max handout - KEY.pdf";
+import unit5_frq from "../documents/unit5/reviewsheets/key/Unit 5 Student Practice FRQs answers.pdf";
+
 const resources = [
   {
     url: "/tests",
@@ -13,7 +19,32 @@ const resources = [
   {
     url: "/reviewsheets",
     text: "Review Sheets",
-    options: [],
+    options: [
+      {
+        url: "/reviewsheets/blanked",
+        text: "Blanked",
+        options: [
+          {
+            url: min_max_handout,
+            text: "Optimization Min Max Handout",
+          },
+        ],
+      },
+      {
+        url: "/reviewsheets/answers",
+        text: "Answers",
+        options: [
+          {
+            url: min_max_handout_answer,
+            text: "Optimization Min Max Handout Answer",
+          },
+          {
+            url: unit5_frq,
+            text: "Unit 5 FRQ Answers",
+          },
+        ],
+      },
+    ],
   },
 ];
 

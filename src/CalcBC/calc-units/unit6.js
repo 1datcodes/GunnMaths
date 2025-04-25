@@ -4,6 +4,8 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
+// import all files
+
 const resources = [
   {
     url: "/tests",
