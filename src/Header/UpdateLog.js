@@ -7,6 +7,10 @@ export const updates = () => {
   return (
     <div className="Update">
       <h1>Update Log</h1>
+      <h4>Version 4.0.3</h4>
+      <ul>
+        <li>cleaned up chapter 1-3 tests/reviewsheets</li>
+      </ul>
       <h4>Version 4.0.2</h4>
       <ul>
         <li>Unit 1-3 documents updated</li>
@@ -64,6 +68,10 @@ const UpdateLog = () => {
       <div className="Update">
         <BackButton />
         <h1>Update Log</h1>
+        <h4>Version 4.0.3</h4>
+        <ul>
+          <li>cleaned up chapter 1-3 tests/reviewsheets</li>
+        </ul>
         <h4>Version 4.0.2</h4>
         <ul>
           <li>Unit 1-3 documents updated</li>
