@@ -10,6 +10,7 @@ import review1_1_1 from "../documents/unit1/reviewsheets/blank/1_1_2_warmup.pdf"
 import answer1_2 from "../documents/unit1/reviewsheets/answers/1_2_answer.pdf";
 import test2019blank from "../documents/unit1/tests/blank/2019bctest.pdf";
 import test2019key from "../documents/unit1/tests/key/2019bckey.pdf";
+import ch1_quiz_2025 from "../documents/unit1/tests/blank/Ch 1 quiz 2025.pdf";
 
 const resources = [
   {
@@ -23,6 +24,10 @@ const resources = [
           {
             url: test2019blank,
             text: "2019 BC Test",
+          },
+          {
+            url: ch1_quiz_2025,
+            text: "Chapter 1 Quiz",
           },
         ],
       },

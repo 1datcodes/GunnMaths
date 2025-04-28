@@ -13,11 +13,34 @@ import convergence_tests_answer from "../documents/unit10/reviewsheets/key/Conve
 import FRQ_practice_1_answer from "../documents/unit10/reviewsheets/key/FRQ Practice 1 key.pdf";
 import FRQ_practice_2_answer from "../documents/unit10/reviewsheets/key/FRQ Practice 2 Scoring.pdf";
 
+import ch10_quiz_a_2025 from "../documents/unit10/tests/blank/BC 10A quiz 2025.pdf";
+import ch10_quiz_b_2025 from "../documents/unit10/tests/blank/BC 10B quiz 2025.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch10_quiz_a_2025,
+            text: "Chapter 10A Quiz 2025",
+          },
+          {
+            url: ch10_quiz_b_2025,
+            text: "Chapter 10B Quiz 2025",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      },
+    ],
   },
   {
     url: "/reviewsheets",

@@ -4,11 +4,25 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
+// import all files
+import chpt2_quiz from "../documents/unit2/tests/blank/BC Ch 2 quiz 2025.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: chpt2_quiz,
+            text: "Chapter 2 Quiz",
+          },
+        ],
+      },
+    ],
   },
   {
     url: "/reviewsheets",

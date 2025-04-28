@@ -7,12 +7,34 @@ import Generator from "../../AIgen/Generator";
 // import all files
 import chpt9_review from "../documents/unit9/reviewsheets/blank/Ch 9 Review Sheet.pdf";
 import chpt9_review_answer from "../documents/unit9/reviewsheets/key/Ch 9 Review Sheet key.pdf";
+import ch9_quiz_calc_2025 from "../documents/unit9/tests/blank/BC 9 Ch 9 quiz 2024-25 calc section.pdf";
+import ch9_quiz_non_calc_2025 from "../documents/unit9/tests/blank/BC 9 CH 9 quiz 2024-25 non-calc portion.pdf";
 
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch9_quiz_calc_2025,
+            text: "Chapter 9 Quiz 2025 (Calc Section)",
+          },
+          {
+            url: ch9_quiz_non_calc_2025,
+            text: "Chapter 9 Quiz 2025 (Non-Calc Section)",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      },
+    ],
   },
   {
     url: "/reviewsheets",

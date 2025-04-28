@@ -9,11 +9,29 @@ import volumes_by_shell from "../documents/unit8/reviewsheets/blank/8.4 - Volume
 
 import volumes_by_shell_answer from "../documents/unit8/reviewsheets/key/8.4 - Volumes by Cylindrical Shells - SOLUTIONS.pdf";
 
+import ch8_quiz_2025 from "../documents/unit8/tests/blank/BC Ch 8 quiz 2024-25.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch8_quiz_2025,
+            text: "Chapter 8 Quiz 2025",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      },
+    ],
   },
   {
     url: "/reviewsheets",

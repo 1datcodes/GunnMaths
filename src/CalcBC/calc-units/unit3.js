@@ -20,12 +20,38 @@ import reviewanswer_chainrulechallenge from "../documents/unit3/reviewsheets/key
 
 // import test2014blank from "../documents/unit3/tests/blank/Chap1-3_Test_2014.pdf"; // unused
 // import test2014key from "../documents/unit3/tests/key/Chap1-3_Test_2014_key.pdf"; // unused
+import ch3_quiz_2025 from "../documents/unit3/tests/blank/BC Ch 3 Quiz 2025.pdf";
 
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          // {
+          //   url: test2014blank,
+          //   text: "Chapter 1-3 Test 2014",
+          // },
+          {
+            url: ch3_quiz_2025,
+            text: "Chapter 3 Quiz",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [
+          // {
+          //   url: test2014key,
+          //   text: "Chapter 1-3 Test 2014 Key",
+          // },
+        ],
+      }
+    ],
   },
   {
     url: "/reviewsheets",

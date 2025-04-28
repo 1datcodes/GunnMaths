@@ -10,11 +10,29 @@ import min_max_handout from "../documents/unit5/reviewsheets/blank/BC Calc 5.5 o
 import min_max_handout_answer from "../documents/unit5/reviewsheets/key/BC Calc 5.5 optimization min max handout - KEY.pdf";
 import unit5_frq from "../documents/unit5/reviewsheets/key/Unit 5 Student Practice FRQs answers.pdf";
 
+import ch5_quiz_2025 from "../documents/unit5/tests/blank/BC Ch 5 Quiz 2025.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch5_quiz_2025,
+            text: "Chapter 5 Quiz 2025",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      }
+    ],
   },
   {
     url: "/reviewsheets",

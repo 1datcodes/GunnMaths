@@ -22,6 +22,10 @@ import worksheet_unit_4 from "../documents/Midterms/midterm1/reviewsheets/blank/
 import unit1_4_answer from "../documents/Midterms/midterm1/reviewsheets/key/Units 1x4 Review - SOLUTIONS.pdf";
 import worksheet_unit_4_answer from "../documents/Midterms/midterm1/reviewsheets/key/Worksheet Unit 4 Review - ANSWER KEY.pdf";
 
+import unit1_4_exam_2025 from "../documents/Midterms/midterm1/test/blank/BC Ch 1-4 exam MC.pdf";
+import ch1_3_test_2014 from "../documents/Midterms/midterm1/test/blank/Chap1-3_Test_2014.pdf";
+import ch1_3_test_2014_answer from "../documents/Midterms/midterm1/test/key/Chap1-3_Test_2014_key.pdf";
+
 const resources = [
   {
     url: "/midterm",
@@ -39,6 +43,14 @@ const resources = [
             url: worksheet_unit_4,
             text: "Worksheet Unit 4 Review",
           },
+          {
+            url: unit1_4_exam_2025,
+            text: "Unit 1-4 Exam (MC)",
+          },
+          {
+            url: ch1_3_test_2014,
+            text: "Ch 1-3 Test 2014",
+          },
         ],
       },
       {
@@ -52,6 +64,10 @@ const resources = [
           {
             url: worksheet_unit_4_answer,
             text: "Worksheet Unit 4 Review - ANSWER KEY",
+          },
+          {
+            url: ch1_3_test_2014_answer,
+            text: "Ch 1-3 Test 2014 Key",
           },
         ],
       },

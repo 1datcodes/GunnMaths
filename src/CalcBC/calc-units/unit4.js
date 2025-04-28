@@ -11,12 +11,29 @@ import related_rates_2 from "../documents/unit4/reviewsheets/blank/TR SB 4.4-4.5
 import related_rates_1_answer from "../documents/unit4/reviewsheets/key/BC 4.2 Related Rates Practice I ANSWERS.pdf";
 import related_rates_2_answer from "../documents/unit4/reviewsheets/key/CED 4.4-4.5 - Related Rates Problems CYU key.pdf";
 import unit4_frq from "../documents/unit4/reviewsheets/key/APC PC FRQs unit 4 (FL answers).pdf";
+import ch4_quiz_2025 from "../documents/unit4/tests/blank/BC Chapter 4 Quiz FRQ.pdf";
 
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch4_quiz_2025,
+            text: "Chapter 4 Quiz FRQ",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      }
+    ],
   },
   {
     url: "/reviewsheets",

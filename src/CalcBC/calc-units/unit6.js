@@ -16,11 +16,34 @@ import trig_integral_answer from "../documents/unit6/reviewsheets/key/Trigonomet
 import trig_substitution_answer from "../documents/unit6/reviewsheets/key/Trigonometric Substitution skill builder - SOLUTIONS.pdf";
 import unit6_frq from "../documents/unit6/reviewsheets/key/Unit 6 PC A2 and Student Practice FRQs key.pdf";
 
+import ch6_quiz_a_2025 from "../documents/unit6/tests/blank/BC 6A quiz 2025.pdf";
+import ch6_quiz_b_2025 from "../documents/unit6/tests/blank/BC 6B Quiz 2025.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch6_quiz_a_2025,
+            text: "Chapter 6A Quiz 2025",
+          },
+          {
+            url: ch6_quiz_b_2025,
+            text: "Chapter 6B Quiz 2025",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      }
+    ],
   },
   {
     url: "/reviewsheets",

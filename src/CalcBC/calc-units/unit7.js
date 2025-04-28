@@ -11,11 +11,29 @@ import chpt7_review from "../documents/unit7/reviewsheets/blank/Chapter7_Review_
 import diff_eq_handout_answer from "../documents/unit7/reviewsheets/key/BC 7.1 differential equations handout ANSWERS.pdf";
 import chpt7_review_answer from "../documents/unit7/reviewsheets/key/Chap7_Review_2020_answers.pdf";
 
+import ch7_quiz_2025 from "../documents/unit7/tests/blank/BC 7 quiz 2025.pdf";
+
 const resources = [
   {
     url: "/tests",
     text: "Tests",
-    options: [],
+    options: [
+      {
+        url: "/tests/blank",
+        text: "Blank",
+        options: [
+          {
+            url: ch7_quiz_2025,
+            text: "Chapter 7 Quiz 2025",
+          },
+        ],
+      },
+      {
+        url: "/tests/key",
+        text: "Key",
+        options: [],
+      }
+    ],
   },
   {
     url: "/reviewsheets",
