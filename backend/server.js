@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const OpenAI = require("openai");
 const cors = require("cors");
 const SSE = require("express-sse");
+const compression = require("compression"); // Add compression middleware
 
 require("dotenv").config();
 
@@ -15,9 +16,15 @@ const sse = new SSE();
 const app = express();
 app.use(cors());
 app.options("*", cors());
+app.use(compression()); // Ensure compression middleware is added before SSE
 app.use(bodyParser.json());
 
-app.get("/status", sse.init);
+app.get("/status", (req, res) => {
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Content-Type", "text/event-stream");
+  res.setHeader("Connection", "keep-alive");
+  sse.init(req, res); // Ensure SSE is properly initialized
+});
 
 app.post("/generate-questions", async (req, res) => {
   const { course, unit } = req.body;
