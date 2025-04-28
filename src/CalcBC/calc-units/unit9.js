@@ -49,6 +49,10 @@ function unit9() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Parametric, Polar, and Vector Functions"
+        />
       </div>
     </div>
   );

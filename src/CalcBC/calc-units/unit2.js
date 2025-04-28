@@ -24,6 +24,10 @@ function unit2() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Derivative and its properties"
+        />
       </div>
     </div>
   );

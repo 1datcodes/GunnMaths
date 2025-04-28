@@ -70,6 +70,10 @@ function unit10() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Sequences and Series, Taylor and Maclaurin Series, Power Series"
+        />
       </div>
     </div>
   );

@@ -6,20 +6,20 @@ import Generator from "../../AIgen/Generator";
 
 import review3_4 from "../documents/unit3/reviewsheets/blank/3_4_chain_rule_practice.pdf";
 import review3_4_2 from "../documents/unit3/reviewsheets/blank/3_4_log-o-rama.pdf";
-import review3_5 from "../documents/unit3/reviewsheets/blank/3_5_motion_practice.pdf"; // unused
+// import review3_5 from "../documents/unit3/reviewsheets/blank/3_5_motion_practice.pdf"; // unused
 import review_chainrulechallenge from "../documents/unit3/reviewsheets/blank/Chain_Rule_challenge.pdf";
-import reviewc1_c3 from "../documents/unit3/reviewsheets/blank/Chap1-3_Review.pdf"; // unused
-import review_tangentlinechallenge from "../documents/unit3/reviewsheets/blank/Tangent_Line_challenge.pdf"; // unused
+// import reviewc1_c3 from "../documents/unit3/reviewsheets/blank/Chap1-3_Review.pdf"; // unused
+// import review_tangentlinechallenge from "../documents/unit3/reviewsheets/blank/Tangent_Line_challenge.pdf"; // unused
 import reviewanswer_3_4 from "../documents/unit3/reviewsheets/key/3_4_chain_rule_practice_KEY.pdf";
 import reviewanswer_3_4_2 from "../documents/unit3/reviewsheets/key/3_4_log-o-rama_KEY.pdf";
-import reviewanswer_3_5 from "../documents/unit3/reviewsheets/key/3_5_motion_practice_KEY.pdf"; // unused
+// import reviewanswer_3_5 from "../documents/unit3/reviewsheets/key/3_5_motion_practice_KEY.pdf"; // unused
 import reviewanswer_chainrulechallenge from "../documents/unit3/reviewsheets/key/Chain_Rule_challenge_KEY.pdf";
-import reviewanswer_c1_c3 from "../documents/unit3/reviewsheets/key/Chap1-3_Review_KEY.pdf"; // unused
-import reviewanswer_tangentlinechallenge from "../documents/unit3/reviewsheets/key/tanlineAsolutions.JPG"; // unused
-import reviewanswer_tangentlinechallenge2 from "../documents/unit3/reviewsheets/key/TanlinesBsolutions.jpeg"; // unused
+// import reviewanswer_c1_c3 from "../documents/unit3/reviewsheets/key/Chap1-3_Review_KEY.pdf"; // unused
+// import reviewanswer_tangentlinechallenge from "../documents/unit3/reviewsheets/key/tanlineAsolutions.JPG"; // unused
+// import reviewanswer_tangentlinechallenge2 from "../documents/unit3/reviewsheets/key/TanlinesBsolutions.jpeg"; // unused
 
-import test2014blank from "../documents/unit3/tests/blank/Chap1-3_Test_2014.pdf"; // unused
-import test2014key from "../documents/unit3/tests/key/Chap1-3_Test_2014_key.pdf"; // unused
+// import test2014blank from "../documents/unit3/tests/blank/Chap1-3_Test_2014.pdf"; // unused
+// import test2014key from "../documents/unit3/tests/key/Chap1-3_Test_2014_key.pdf"; // unused
 
 const resources = [
   {
@@ -78,6 +78,10 @@ function unit3() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Derivative of composite, implicit, and inverse functions"
+        />
       </div>
     </div>
   );

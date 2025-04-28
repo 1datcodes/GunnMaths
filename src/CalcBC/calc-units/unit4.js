@@ -65,6 +65,10 @@ function unit4() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Contextual Applications of Differentiation"
+        />
       </div>
     </div>
   );

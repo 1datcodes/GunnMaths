@@ -54,6 +54,10 @@ function APReview() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="AP test review, FRQ, MCQ"
+        />
       </div>
     </div>
   );

@@ -85,6 +85,10 @@ function unit6() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Integral, techniques of integration"
+        />
       </div>
     </div>
   );

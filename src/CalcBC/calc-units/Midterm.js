@@ -120,6 +120,10 @@ function Midterm() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
+        <Generator
+          course="AP Calculus BC"
+          unit="Midterms and finals"
+        />
       </div>
     </div>
   );
