@@ -32,7 +32,7 @@ const resources = [
         url: "/tests/key",
         text: "Key",
         options: [],
-      }
+      },
     ],
   },
   {
@@ -78,10 +78,7 @@ function unit7() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator
-          course="AP Calculus BC"
-          unit="Differential Equations"
-        />
+        <Generator course="AP Calculus BC" unit="Differential Equations" />
       </div>
     </div>
   );

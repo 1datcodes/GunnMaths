@@ -32,7 +32,7 @@ const resources = [
         url: "/tests/key",
         text: "Key",
         options: [],
-      }
+      },
     ],
   },
   {

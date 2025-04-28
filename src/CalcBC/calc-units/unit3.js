@@ -50,7 +50,7 @@ const resources = [
           //   text: "Chapter 1-3 Test 2014 Key",
           // },
         ],
-      }
+      },
     ],
   },
   {

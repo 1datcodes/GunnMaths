@@ -14,12 +14,14 @@ const Generator = ({ course, unit }) => {
   const [status, setStatus] = useState("idle");
 
   useEffect(() => {
-    const eventSource = new EventSource(`${process.env.REACT_APP_SERVER}/status`);
+    const eventSource = new EventSource(
+      `${process.env.REACT_APP_SERVER}/status`,
+    );
 
     eventSource.addEventListener("status", (event) => {
       console.log("Server Status:", event.data);
       setStatus(event.data);
-    })
+    });
 
     return () => {
       eventSource.close();
@@ -57,7 +59,9 @@ const Generator = ({ course, unit }) => {
       </button>
       <div className="Disclaimer">
         {status === "idle" && <p>Server is idle</p>}
-        {status === "Request received" && <p>Server received request, generating response...</p>}
+        {status === "Request received" && (
+          <p>Server received request, generating response...</p>
+        )}
         {status === "AI generation completed" && <p>Finished generating</p>}
         <p>Powered by GPT-4o-mini</p>
       </div>

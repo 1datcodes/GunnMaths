@@ -54,7 +54,7 @@ const About = () => {
               I want to work on going forward
             </p>
             <p>
-              - One unimplemented feature is the search button as of May 2023
+              - One unimplemented feature is the search button as of May 2025
             </p>
             <p>
               - If time and resources allow it, I want to expand the website to
@@ -92,8 +92,8 @@ const About = () => {
               <li>Neeraj Gummalam (2024-2025)</li>
             </ul>
             <p>
-              - Thanks to my teacher Mrs. Hlasek for helping me out with blank
-              files
+              - Thanks to my teacher Mrs. Hlasek and Mr. Hahn for helping me out
+              with past year tests and quizzes!
             </p>
           </div>
         </div>
@@ -119,10 +119,24 @@ const About = () => {
                 Google Drive (2023-2024)
               </a>
             </p>
-            <h4>2023-2024 Calendar</h4>
+            <h4>2023-2024 Analysis Calendar</h4>
             <p>
               -{" "}
               <a href="https://docs.google.com/spreadsheets/d/1sH6J7tkWx5mKWlGE2LJB93MIX8ODSkp3ibttnPnbONk/edit?usp=sharing">
+                Class Schedule
+              </a>
+            </p>
+            <h4>Calc BC Google Drive</h4>
+            <p>
+              -{" "}
+              <a href="https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=drive_link">
+                Google Drive (2024-2025)
+              </a>
+            </p>
+            <h4>Calc BC Calendar</h4>
+            <p>
+              -{" "}
+              <a href="https://docs.google.com/spreadsheets/d/1avhyupwBX4ARf-DozDPSk6gtpP8Q9EI_F-DRthzujoQ/edit?usp=sharing">
                 Class Schedule
               </a>
             </p>

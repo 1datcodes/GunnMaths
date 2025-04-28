@@ -5,8 +5,8 @@ import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
 // import all files
-import ab_1998_a from "../documents/Midterms/final1/reviewsheets/blank/1998 AB Section I Part A.pdf"
-import ab_1998_b from "../documents/Midterms/final1/reviewsheets/blank/1998 AB Section I Part B.pdf"
+import ab_1998_a from "../documents/Midterms/final1/reviewsheets/blank/1998 AB Section I Part A.pdf";
+import ab_1998_b from "../documents/Midterms/final1/reviewsheets/blank/1998 AB Section I Part B.pdf";
 import ab_mc_2003 from "../documents/Midterms/final1/reviewsheets/blank/2003 ab mc.pdf";
 import integration_tech from "../documents/Midterms/final1/reviewsheets/blank/TB_BCTQIntegrationtechniques_Review_MC.pdf";
 
@@ -136,10 +136,7 @@ function Midterm() {
       <div className="Resources">
         <BackButton />
         <Accordion data={resources} />
-        <Generator
-          course="AP Calculus BC"
-          unit="Midterms and finals"
-        />
+        <Generator course="AP Calculus BC" unit="Midterms and finals" />
       </div>
     </div>
   );
