@@ -4,6 +4,13 @@ import BackButton from "../../BackButton";
 import Accordion from "../../Accordion";
 import Generator from "../../AIgen/Generator";
 
+// import all files
+import diff_eq_handout from "../documents/unit7/reviewsheets/blank/BC 7.1 differential equations handout.pdf";
+import chpt7_review from "../documents/unit7/reviewsheets/blank/Chapter7_Review_2020.pdf";
+
+import diff_eq_handout_answer from "../documents/unit7/reviewsheets/key/BC 7.1 differential equations handout ANSWERS.pdf";
+import chpt7_review_answer from "../documents/unit7/reviewsheets/key/Chap7_Review_2020_answers.pdf";
+
 const resources = [
   {
     url: "/tests",
@@ -13,7 +20,36 @@ const resources = [
   {
     url: "/reviewsheets",
     text: "Review Sheets",
-    options: [],
+    options: [
+      {
+        url: "/reviewsheets/blanked",
+        text: "Blanked",
+        options: [
+          {
+            url: diff_eq_handout,
+            text: "Differential Equations Handout",
+          },
+          {
+            url: chpt7_review,
+            text: "Chapter 7 Review",
+          },
+        ],
+      },
+      {
+        url: "/reviewsheets/answers",
+        text: "Answers",
+        options: [
+          {
+            url: diff_eq_handout_answer,
+            text: "Differential Equations Handout Answers",
+          },
+          {
+            url: chpt7_review_answer,
+            text: "Chapter 7 Review Answers",
+          },
+        ],
+      },
+    ],
   },
 ];
 
