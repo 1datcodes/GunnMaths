@@ -27,17 +27,17 @@ function HomePage() {
       <div className="Courses">
         <div className="icon-grid">
           {courses.map((course, index) => (
-            <div className="courses" key={index}>
-              <a className="courseLink" href={course.url}>
-                <img
-                  className="coverimage"
-                  src={course.img}
-                  alt={course.text}
-                />
-              </a>
-              {/* <button onClick={() => (window.location.href = course.url)}>
-                {course.text}
-              </button> */}
+            <div className="bundle" key={index}>
+              {/* <div className="gradient" /> */}
+              <div className="courses">
+                <a className="courseLink" href={course.url}>
+                  <img
+                    className="coverimage"
+                    src={course.img}
+                    alt={course.text}
+                  />
+                </a>
+              </div>
             </div>
           ))}
         </div>

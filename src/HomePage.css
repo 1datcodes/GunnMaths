@@ -15,11 +15,25 @@
 
 .icon-grid .courses {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 0;
 }
+
+.bundle {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .gradient {
+  background: linear-gradient(to right, black, transparent);
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 999;
+  width: 100%;
+} */
 
 .icon-grid .courseLink {
   width: 240px;
@@ -39,14 +53,6 @@
   cursor: pointer;
   transform: scale(1.02);
   background-color: #dddddd;
-}
-
-.courses button {
-  border-radius: 4px;
-  border: 1px solid #03045e;
-  padding: 5px 20px;
-  background-color: #ade8f4;
-  transition: all 0.3s ease-in-out;
 }
 
 .courses button:hover {
