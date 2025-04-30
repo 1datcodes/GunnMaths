@@ -92,9 +92,9 @@ function CalcBC() {
               <a className="unitLink" href={unit.url}>
                 <img src={unit.img} alt={unit.alt} />
               </a>
-              <button onClick={() => (window.location.href = unit.url)}>
+              {/* <button onClick={() => (window.location.href = unit.url)}>
                 {unit.text}
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

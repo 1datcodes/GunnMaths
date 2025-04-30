@@ -35,15 +35,13 @@ function HomePage() {
                   alt={course.text}
                 />
               </a>
-              <button onClick={() => (window.location.href = course.url)}>
+              {/* <button onClick={() => (window.location.href = course.url)}>
                 {course.text}
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
       </div>
-
-      {updates()}
     </div>
   );
 }
