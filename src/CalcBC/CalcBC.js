@@ -86,15 +86,21 @@ function CalcBC() {
       <Header headerTitle="CALCULUS BC" description="AP Calculus BC" />
       <div className="Units">
         <BackButton />
+        <div className="quick-title">
+          <h2>AP Calculus BC Resources</h2>
+        </div>
         <div className="icon-grid">
           {units.map((unit, index) => (
             <div className="units" key={index}>
               <a className="unitLink" href={unit.url}>
-                <img src={unit.img} alt={unit.alt} />
+                <div className="gradient-overlay">
+                  <h1 className="unit-text">{unit.text}</h1>
+                  <p className="unit-description">
+                    {unit.text} Unit Resources
+                  </p> 
+                </div>
+                <img className="coverimage" src={unit.img} alt={unit.alt} />
               </a>
-              {/* <button onClick={() => (window.location.href = unit.url)}>
-                {unit.text}
-              </button> */}
             </div>
           ))}
         </div>

@@ -56,6 +56,7 @@
     color: white;
     z-index: 2;
     padding-left: 1.5rem;
+    mix-blend-mode: hard-light;
   }
 }
 
