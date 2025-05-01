@@ -21,7 +21,7 @@
   padding: 0.625rem 3.125rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6.25rem;
+  gap: 6rem 1rem;
 }
 
 .unitLink {
