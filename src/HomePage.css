@@ -18,7 +18,7 @@
 }
 
 .icon-grid {
-  padding: .625rem 3.125rem;
+  padding: 0.625rem 3.125rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6.25rem;
@@ -26,10 +26,10 @@
 
 .courses {
   position: relative;
-  width: 75%; 
+  width: 75%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
   gap: 1.25rem;
   z-index: 0;
@@ -52,7 +52,8 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  h1, p {
+  h1,
+  p {
     color: white;
     z-index: 2;
     padding-left: 1.5rem;

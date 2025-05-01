@@ -6,7 +6,7 @@
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  background-color: #FB8500;
+  background-color: #fb8500;
   border: none;
   border-radius: 6px;
 
@@ -22,10 +22,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: #FB8500;
+  background-color: #fb8500;
   border: none;
   border-radius: 6px;
-  
+
   svg {
     padding: 0.2rem;
   }
@@ -34,4 +34,3 @@
 .uploadButton:hover {
   cursor: pointer;
 }
-

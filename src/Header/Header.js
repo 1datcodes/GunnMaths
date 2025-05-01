@@ -43,9 +43,18 @@ function Header({ headerTitle, description }) {
       </div>
       <div className="Right">
         <div className="Links">
-          <p className="About" onClick={() => window.location = "/about#top"}>About</p>
-          <p className="Contact" onClick={() => window.location = "/about#contact"}>Contact</p>
-          <p className="Updates" onClick={() => window.location = "/update"}>Updates</p>
+          <p className="About" onClick={() => (window.location = "/about#top")}>
+            About
+          </p>
+          <p
+            className="Contact"
+            onClick={() => (window.location = "/about#contact")}
+          >
+            Contact
+          </p>
+          <p className="Updates" onClick={() => (window.location = "/update")}>
+            Updates
+          </p>
         </div>
         <div className="Upload">
           <Upload />

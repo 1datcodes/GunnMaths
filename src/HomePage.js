@@ -31,7 +31,11 @@ function HomePage() {
       <div className="Courses">
         <div className="icon-grid">
           {courses.map((course, index) => (
-            <div className="courses" key={index} onClick={() => window.location.href = course.url}>
+            <div
+              className="courses"
+              key={index}
+              onClick={() => (window.location.href = course.url)}
+            >
               <a className="courseLink" href={course.url}>
                 <div className="gradient-overlay">
                   <h1 className="course-text">{course.text}</h1>
