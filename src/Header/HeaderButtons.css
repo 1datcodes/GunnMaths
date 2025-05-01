@@ -1,39 +1,37 @@
-.homeButton button {
-  width: 35px;
-  height: 35px;
+.homeButton {
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #FB8500;
+  border: none;
   border-radius: 6px;
+
+  svg {
+    padding: 0.3rem;
+  }
 }
 
-.uploadButton {
-  width: 33px;
-  height: 33px;
+.uploadButtonImg {
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #FB8500;
+  border: none;
   border-radius: 6px;
+  
+  svg {
+    padding: 0.2rem;
+  }
 }
 
 .uploadButton:hover {
   cursor: pointer;
 }
 
-.homeButton img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.uploadButtonImg {
-  width: 100%;
-  height: 100%;
-}
