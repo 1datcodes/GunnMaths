@@ -68,7 +68,7 @@ function Analysis() {
         </div>
         <div className="icon-grid">
           {units.map((unit, index) => (
-            <div className="units" key={index}>
+            <div className="units" key={index} onClick={() => window.location.href = unit.url}>
               <a className="unitLink" href={unit.url}>
                 <div className="gradient-overlay">
                   <h1 className="unit-text">{unit.text}</h1>
