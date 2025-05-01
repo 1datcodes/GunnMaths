@@ -24,12 +24,21 @@ function HomePage() {
         description="Collection of Gunn Math Resources"
       />
 
+      <div className="quick-title">
+        <h2 className="quick-title-text">Gunn Math Courses</h2>
+      </div>
+
       <div className="Courses">
         <div className="icon-grid">
           {courses.map((course, index) => (
             <div className="courses" key={index}>
               <a className="courseLink" href={course.url}>
-                <div className="gradient-overlay" />
+                <div className="gradient-overlay">
+                  <h1 className="course-text">{course.text}</h1>
+                  <p className="course-description">
+                    {course.text} Course Resources
+                  </p>
+                </div>
                 <img
                   className="coverimage"
                   src={course.img}
