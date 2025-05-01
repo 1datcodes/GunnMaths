@@ -27,17 +27,15 @@ function HomePage() {
       <div className="Courses">
         <div className="icon-grid">
           {courses.map((course, index) => (
-            <div className="bundle" key={index}>
-              {/* <div className="gradient" /> */}
-              <div className="courses">
-                <a className="courseLink" href={course.url}>
-                  <img
-                    className="coverimage"
-                    src={course.img}
-                    alt={course.text}
-                  />
-                </a>
-              </div>
+            <div className="courses" key={index}>
+              <a className="courseLink" href={course.url}>
+                <div className="gradient-overlay" />
+                <img
+                  className="coverimage"
+                  src={course.img}
+                  alt={course.text}
+                />
+              </a>
             </div>
           ))}
         </div>
