@@ -50,8 +50,9 @@
 .units:hover {
   cursor: pointer;
   transform: scale(1.02);
-  h1, p {
-    text-decoration: underline #FB8500;
+  h1,
+  p {
+    text-decoration: underline #fb8500;
   }
 }
 

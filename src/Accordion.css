@@ -9,14 +9,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: .325rem;
+  gap: 0.325rem;
   width: 100%;
   margin: 0;
   padding: 1.125rem;
   cursor: pointer;
   text-align: left;
   border: 1px solid black;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   outline: none;
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
@@ -44,12 +44,12 @@
 .Accordion div a {
   display: block;
   color: black;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
 .caret {
   display: inline-block;
-  margin-left: .325rem;
+  margin-left: 0.325rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -62,7 +62,7 @@
   flex-direction: column;
   border: 1px solid black;
   border-radius: 4px;
-  margin: .125rem 0 .125rem 1.125rem;
+  margin: 0.125rem 0 0.125rem 1.125rem;
   padding: 0 0 0 0px !important;
   width: calc(100% - 23px) !important;
 }

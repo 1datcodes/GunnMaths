@@ -58,7 +58,16 @@
     z-index: 2;
     padding-left: 1.5rem;
     padding-right: 1rem;
-    text-shadow: black 1px 1px 10px;
+    /* text-shadow: black 1px 1px 10px; */
+    text-shadow:
+      0.05em 0 black,
+      0 0.05em black,
+      -0.05em 0 black,
+      0 -0.05em black,
+      -0.05em -0.05em black,
+      -0.05em 0.05em black,
+      0.05em -0.05em black,
+      0.05em 0.05em black;
   }
 }
 
@@ -76,8 +85,9 @@
 .courses:hover {
   cursor: pointer;
   transform: scale(1.02);
-  h1, p {
-    text-decoration: underline #FB8500;
+  h1,
+  p {
+    text-decoration: underline #fb8500;
   }
 }
 
