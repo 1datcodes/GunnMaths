@@ -8,13 +8,57 @@ Gunn Maths is a website that holds past Analysis H tests. This website is built 
 - Organized by Unit and by category (quiz or test)
 - Includes blanked and raw files
 
-## Getting Started
+## Contributing
 
-Uploading files is not yet implemented at the moment.
+1. Clone repository
+   `git clone https://github.com/1datcodes/GunnMaths.git`
+
+2. Install dependencies
+   `npm i`
+
+3. Start dev environment
+   `npm start`
+
+4. Start backend for AI generation (ask for environment variables)
+   `node backend/server.js`
 
 ## Usage
 
 Visit https://www.gunnmaths.org/ to access the site.
+
+## Code Structure
+
+Our code is broken down into individual courses which is then broken into individual units.
+
+    Analysis
+        AtPS
+        Probability
+        Polar
+        Vector
+        Growth
+        Matrices
+        GAtM
+        Calculus
+    Calc BC
+        Unit 1
+        .
+        .
+        .
+        Unit 10
+
+Each course has its own Midterm+Final review
+
+Each course folder has its own documents folder that stores all the test and quiz pdf files.
+The pdf files are stored through Git LFS.
+
+Our AI generation code is in the AIgen folder and can be used by importing the component to each unit
+
+    import Generator from 'src/AIgen/Generator.js';
+
+    <Generator
+        course="course description"
+        unit="unit description + other keywords"
+    />
 
 ## Contributing
 
@@ -34,5 +78,6 @@ MIT License - see the [LICENSE.md](LICENSE.md) file for details
 ## Credits:
 
 - Logo taken from Vecteezy.com
-- Kaicheng
+- Kaicheng Luo for collaborating
+- Jesse Li for new color scheme and layout ideas
 - Everyone who has uploaded their tests
