@@ -26,3 +26,6 @@ yarn-error.log*
 
 # api keys
 /src/api.js
+
+# linting
+eslint.config.mjs

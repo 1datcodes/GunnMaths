@@ -1,5 +1,4 @@
 import React from "react";
-import { updates } from "./Header/UpdateLog";
 import "./HomePage.css";
 
 // Images
