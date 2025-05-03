@@ -1,34 +1,10 @@
-import { React, useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import HomeButton from "./HomeButton";
 import Upload from "./UploadButton";
 
-function Header({ headerTitle, description }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);
-  const buttonRef = useRef(null);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (
-      menuRef.current &&
-      !menuRef.current.contains(event.target) &&
-      buttonRef.current &&
-      !buttonRef.current.contains(event.target)
-    ) {
-      setMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
+function Header() {
   return (
     <div className="Header">
       <div className="Left">

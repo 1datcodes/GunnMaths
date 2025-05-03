@@ -11,6 +11,10 @@ const UpdateLog = () => {
       <div className="Update">
         <BackButton />
         <h1>Update Log</h1>
+        <h4>Version 5.0.1</h4>
+        <ul>
+          <li>Fixed unused variables</li>
+        </ul>
         <h4>Version 5.0.0</h4>
         <ul>
           <li>
