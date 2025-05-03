@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import HomePage from "./HomePage";
+import About from "./Header/About";
 
 const courseModules = import.meta.glob("./Courses/*/*.jsx", { eager: true });
 const courses = Object.keys(courseModules).map((key) => {
@@ -9,11 +10,20 @@ const courses = Object.keys(courseModules).map((key) => {
     component: courseModules[key].default,
   }
 })
-console.log(courses);
+
 function App() {
   return (
     <Router>
       <Routes>
+        <Route
+          path="/"
+          element={<HomePage />}
+        />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        
         {courses.map((course, index) => (
           <Route 
             key={index}
@@ -21,10 +31,6 @@ function App() {
             element={<course.component />}
           />
         ))}
-        <Route
-          path="/"
-          element={<HomePage />}
-        />
       </Routes>
     </Router>
   );
