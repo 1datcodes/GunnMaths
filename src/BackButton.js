@@ -26,13 +26,13 @@ function BackButton() {
         viewBox="0 0 386.242 386.242"
         xmlSpace="preserve"
         stroke="#000000"
-        stroke-width="1"
+        strokeWidth="1"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
