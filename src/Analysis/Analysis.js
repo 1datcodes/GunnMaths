@@ -59,19 +59,27 @@ const units = [
 function Analysis() {
   return (
     <div className="Content">
-      <Header headerTitle="ANALYSIS" description="Analysis Honors" />
+      <Header />
 
       <div className="Units">
         <BackButton />
+        <div className="quick-title">
+          <h2>Analysis Resources</h2>
+        </div>
         <div className="icon-grid">
           {units.map((unit, index) => (
-            <div className="units" key={index}>
+            <div
+              className="units"
+              key={index}
+              onClick={() => (window.location.href = unit.url)}
+            >
               <a className="unitLink" href={unit.url}>
-                <img src={unit.img} alt={unit.alt} />
+                <div className="gradient-overlay">
+                  <h1 className="unit-text">{unit.text}</h1>
+                  <p className="unit-description">{unit.alt} Unit Resources</p>
+                </div>
+                <img className="coverimage" src={unit.img} alt={unit.alt} />
               </a>
-              <button onClick={() => (window.location.href = unit.url)}>
-                {unit.text}
-              </button>
             </div>
           ))}
         </div>

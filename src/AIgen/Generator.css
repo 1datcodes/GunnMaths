@@ -9,8 +9,8 @@
 .generator-button,
 .answer-button {
   max-width: 200px;
-  background-color: #90e0ef;
-  border: none;
+  background-color: #eee;
+  border: 1px solid black;
   color: black;
   padding: 10px 20px;
   text-align: center;
@@ -27,7 +27,7 @@
 
 .generator-button:hover,
 .answer-button:hover {
-  background-color: #48cae4;
+  background-color: #ddd;
   color: black;
 }
 
@@ -50,7 +50,7 @@
 /* necessary? */
 .question-title {
   background-color: #ffffff;
-  border: 1px solid #03045e;
+  border: 1px solid black;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -62,8 +62,8 @@
 
 .answer-content {
   margin-top: 10px;
-  background-color: #ade8f4;
-  border: 1px solid #00b4d8;
+  background-color: #eee;
+  border: 1px solid black;
   padding: 15px;
   border-radius: 8px;
 }

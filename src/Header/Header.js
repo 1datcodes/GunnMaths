@@ -1,92 +1,42 @@
-import { React, useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import HomeButton from "./HomeButton";
 import Upload from "./UploadButton";
 
-function Header({ headerTitle, description }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);
-  const buttonRef = useRef(null);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (
-      menuRef.current &&
-      !menuRef.current.contains(event.target) &&
-      buttonRef.current &&
-      !buttonRef.current.contains(event.target)
-    ) {
-      setMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
+function Header() {
   return (
-    <header className="Header">
-      <div ref={menuRef} className={`Mobile-Menu${menuOpen ? " Open" : ""}`}>
-        <Link to="/" className="Mobile-Menu-Item">
-          Home
-        </Link>
-        <Link
-          to="https://forms.gle/VdKwSKc2ugAiC13V7"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="Mobile-Menu-Item"
-        >
-          Upload Test
-        </Link>
-        <Link to="/about#top" className="Mobile-Menu-Item">
-          About Us
-        </Link>
-        <Link to="/about#contact" className="Mobile-Menu-Item">
-          Contact Us
-        </Link>
-        <Link to="/update" className="Mobile-Menu-Item">
-          Update Log
-        </Link>
-      </div>
-
-      <div className="Main-Header">
-        <button
-          ref={buttonRef}
-          className={`Menu-Button${menuOpen ? " Open" : ""}`}
-          onClick={toggleMenu}
-        >
-          ☰
-        </button>
-        <HomeButton />
-        <div className="Texts">
-          <h1 className="Title">{headerTitle}</h1>
-          <p className="Description">{description}</p>
-        </div>
-        <Upload />
-      </div>
-      <div className="Sub-Header">
-        <div className="About-Page">
-          <Link to="/about#top" className="About-Page">
-            About Us
+    <div className="Header">
+      <div className="Left">
+        <div className="HomeButton">
+          <Link to="/">
+            <HomeButton />
           </Link>
         </div>
-        <div className="Contact-Page">
-          <Link to="/about#contact" className="Contact-Page">
-            Contact Us
-          </Link>
-        </div>
-        <div className="Contact-Page">
-          <Link to="/update" className="Update-Log">
-            Update Log
-          </Link>
+        <div className="WebsiteTitle">
+          <h1>Gunn Maths</h1>
         </div>
       </div>
-    </header>
+      <div className="Right">
+        <div className="Links">
+          <p className="About" onClick={() => (window.location = "/about#top")}>
+            About
+          </p>
+          <p
+            className="Contact"
+            onClick={() => (window.location = "/about#contact")}
+          >
+            Contact
+          </p>
+          <p className="Updates" onClick={() => (window.location = "/update")}>
+            Updates
+          </p>
+        </div>
+        <div className="Upload">
+          <Upload />
+        </div>
+      </div>
+    </div>
   );
 }
 

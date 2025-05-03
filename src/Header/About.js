@@ -24,57 +24,34 @@ const About = () => {
           <h1>About Us</h1>
           <div className="Text">
             <h4>Who are we?</h4>
-            <p>
-              - We are a group of students from Gunn High School who has taken
-              Analysis H in the past.
-            </p>
+            <p>- We are a small group of students from Gunn High School.</p>
             <p>
               - Our goal is to provide a platform for students to access past
-              tests and quizzes to study for the class.
+              tests and quizzes to study for their math classes.
             </p>
             <h4>What is this website?</h4>
             <p>
-              - This website aims to contain all of the past tests and quizzes
-              from Analysis H class and organize them in an intuitive layout for
-              ease of access
+              - This website is an archive of past tests, quizzes, and other
+              study resources for Gunn's Analysis, Calc BC, and in the future,
+              AP Stats classes.
             </p>
             <h4>Why did we make this website?</h4>
             <p>
-              - I made this website because I personally found it difficult to
-              navigate many different Google Drive folders for past tests and
-              quizzes to study
+              - We found that navigating through various Google Drive folders to
+              find study materials was tedious and time-consuming and often left
+              us with less options than we wanted
             </p>
             <p>
               and I wanted to create an easier alternative to the current
               system.
             </p>
-            <h4>The future of this website</h4>
-            <p>
-              - Currently, there are many unimplemented features and ideas that
-              I want to work on going forward
-            </p>
-            <p>
-              - One unimplemented feature is the search button as of May 2025
-            </p>
-            <p>
-              - If time and resources allow it, I want to expand the website to
-              all other math classes offered at Gunn
-            </p>
-            <p>
-              - I also want to add a feature where students can submit their own
-              tests and quizzes to the website
-            </p>
             <h4>How can you help?</h4>
             <p>
-              - Currently, the only option to help is to contact me through
+              - Currently, the only option to help is to contact us through
               e-mail, opening a pull request on GitHub, or directly contacting
-              me in person
+              us in person
             </p>
-            <p>
-              - In the future, I intend to implement some form of feedback
-              system
-            </p>
-            <p>- If you have suggestions, feel free to contact me</p>
+            <p>- If you have suggestions, feel free to contact us</p>
           </div>
         </div>
         <div id="thanks" className="Thanks">
@@ -95,6 +72,10 @@ const About = () => {
               - Thanks to my teacher Mrs. Hlasek and Mr. Hahn for helping me out
               with past year tests and quizzes!
             </p>
+            <p>
+              - Thanks to Jesse Li for helping me with the website design and
+              colors
+            </p>
           </div>
         </div>
         <div id="contact" className="Contact">
@@ -102,8 +83,12 @@ const About = () => {
           <div className="Text">
             <h4>Our team</h4>
             <p>
-              - Michi Tanaka (Class of 2025)
-              <br />- Kaicheng Luo (Class of 2025)
+              - Michi Tanaka (Class of 2025){" "}
+              <a href="mailto:tanakamichi7@gmail.com">tanakamichi7@gmail.com</a>
+              <br />- Kaicheng Luo (Class of 2025){" "}
+              <a href="mailto:kaichengluo888@gmail.com">
+                kaichengluo888@gmail.com
+              </a>
             </p>
             <h4>Our location</h4>
             <p>- Palo Alto, California</p>
@@ -133,7 +118,7 @@ const About = () => {
                 Google Drive (2024-2025)
               </a>
             </p>
-            <h4>Calc BC Calendar</h4>
+            <h4>2024-2025 Calc BC Calendar</h4>
             <p>
               -{" "}
               <a href="https://docs.google.com/spreadsheets/d/1avhyupwBX4ARf-DozDPSk6gtpP8Q9EI_F-DRthzujoQ/edit?usp=sharing">

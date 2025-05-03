@@ -1,63 +1,59 @@
 .Content {
-  margin: 0px 0px 50px 0px;
+  margin-bottom: 3rem;
 }
 
 .Units {
-  padding: 20px 60px;
+  padding: 2.5rem 3.75rem;
 }
 
-.Units .icon-grid {
-  padding: 10px 50px;
+.quick-title {
+  color: black;
+  padding-top: 1rem;
+  padding-left: 3.75rem;
+
+  h2 {
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.icon-grid {
+  padding: 0.625rem 3.125rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 6rem 1rem;
 }
 
-.icon-grid .unitLink {
-  width: 240px;
-  height: 240px;
-  padding: 0px;
+.unitLink {
+  width: 15rem;
+  height: 15rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid #023e8a;
-  border-radius: 12px;
-  box-shadow: 1px 1px 4px 1px #ade8f4;
-  transition: transform 0.3s ease;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
-.icon-grid .unitLink:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-}
-
-.icon-grid .unitLink img {
-  width: 240px;
-  height: 240px;
-  object-fit: contain;
-  background-color: white;
-}
-
 .units {
+  position: relative;
+  width: 75%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  gap: 10px;
-}
-
-.units button {
-  background-color: #ade8f4;
-  border: 1px solid #03045e;
-  border-radius: 4px;
-  padding: 5px 20px;
+  gap: 1.25rem;
+  z-index: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.units button:hover {
+.units:hover {
   cursor: pointer;
-  background-color: #90e0ef;
+  transform: scale(1.02);
+  h1,
+  p {
+    text-decoration: underline #fb8500;
+  }
 }
 
 @media only screen and (max-width: 768px) {

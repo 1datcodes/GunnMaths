@@ -1,33 +1,33 @@
 .Accordion {
-  padding-top: 15px;
+  padding-top: 1rem;
   width: 100%;
 }
 
 .Dropdown {
-  background: #ade8f4;
+  background: #f0f0f0;
   color: #333;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 0.325rem;
   width: 100%;
   margin: 0;
-  padding: 18px;
+  padding: 1.125rem;
   cursor: pointer;
   text-align: left;
-  border: 1px solid #00b4d8;
-  border-radius: 4px;
+  border: 1px solid black;
+  border-radius: 0.25rem;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
 .Dropdown:hover {
-  background: #90e0ef;
+  background: #ddd;
 }
 
 .Accordion div {
-  padding-left: 18px;
+  padding-left: 1.125rem;
   width: calc(100% - 18px);
   padding-top: 1px;
   padding-bottom: 1px;
@@ -43,13 +43,13 @@
 
 .Accordion div a {
   display: block;
-  color: #03045e;
-  padding: 8px 16px;
+  color: black;
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
 .caret {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.325rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -60,22 +60,22 @@
 .File {
   display: flex;
   flex-direction: column;
-  border: 1px solid #00b4d8;
+  border: 1px solid black;
   border-radius: 4px;
-  margin: 2px 0 2px 18px;
-  padding: 0 0 0 4px !important;
+  margin: 0.125rem 0 0.125rem 1.125rem;
+  padding: 0 0 0 0px !important;
   width: calc(100% - 23px) !important;
 }
 
 .Accordion .File a {
-  padding: 6px 0;
+  border-radius: inherit;
   text-decoration: none;
-  color: #03045e;
+  color: black;
 }
 
 .Accordion .File a:hover {
   cursor: pointer;
-  background-color: #ade8f4;
+  background-color: #f0f0f0;
   text-decoration: underline;
 }
 

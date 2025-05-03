@@ -1,63 +1,92 @@
 .Content {
-  margin: 0px 0px 50px 0px;
+  margin: 0 0 3rem 0;
+}
+
+.quick-title {
+  color: black;
+  padding-top: 1rem;
+  padding-left: 3.75rem;
+
+  .quick-title-text {
+    padding-left: 3.2rem;
+    margin-bottom: 0;
+  }
 }
 
 .Courses {
-  padding: 40px 60px;
+  padding: 2.5rem 3.75rem;
 }
 
-.Courses .icon-grid {
-  padding: 10px 50px;
+.icon-grid {
+  padding: 0.625rem 3.125rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 6.25rem;
 }
 
-.icon-grid .courses {
+.courses {
+  position: relative;
+  width: 75%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  gap: 20px;
-}
-
-.icon-grid .courseLink {
-  width: 240px;
-  height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #03045e;
-  border-radius: 12px;
-  box-shadow: 1px 1px 4px 1px #ade8f4;
-  transition: transform 0.3s ease;
-  overflow: hidden;
-}
-
-.icon-grid .courseLink:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  background-color: #dddddd;
-}
-
-.courses button {
-  border-radius: 4px;
-  border: 1px solid #03045e;
-  padding: 5px 20px;
-  background-color: #ade8f4;
+  gap: 1.25rem;
+  z-index: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.courses button:hover {
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #023047 25%, 70%, transparent);
+  z-index: 1;
+  border-radius: inherit;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  h1,
+  p {
+    color: white;
+    z-index: 2;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    text-shadow: black 1px 1px 10px;
+  }
+}
+
+.courseLink {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.courses:hover {
   cursor: pointer;
-  background-color: #90e0ef;
+  transform: scale(1.02);
+  h1,
+  p {
+    text-decoration: underline #fb8500;
+  }
 }
 
 .coverimage {
   width: 100%;
-  height: 400px;
+  height: 15rem;
   object-fit: cover;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
