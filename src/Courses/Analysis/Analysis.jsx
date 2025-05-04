@@ -1,7 +1,11 @@
+import Header from "../../Header/Header";
+import BackButton from "../../BackButton";
+
 const Analysis = () => {
     return (
-        <div>
-            <h1>Analysis</h1>
+        <div id="content" className="">
+            <Header />
+            <BackButton />
         </div>
     )
 }

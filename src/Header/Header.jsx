@@ -14,7 +14,7 @@ const Header = () => {
           id="home-button"
           className="flex justify-center items-center overflow-hidden cursor-pointer bg-highlight border-none rounded-[6px] w-[45px] h-[45px]"
         >
-          <Link to="/home">
+          <Link to="/">
             <svg
               className="p-[0.3rem] w-[45px] h-[45px]"
               viewBox="0 0 24 24"
