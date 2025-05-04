@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
 import BackButton from "../../BackButton";
 
-const unitModules = import.meta.glob("./documents/*/*", { eager: true });
+const unitModules = import.meta.glob(`./documents/**/*`, { eager: true }); // dynamically import all files regardless of the depth
 const groupedUnits = Object.keys(unitModules).reduce((accumulator, filePath) => { // accumulator is the object that will hold the units, filePath is the path to the file
     const folderName = filePath.split("/")[2]; // Get the folder name
     if (!accumulator[folderName]) {
@@ -15,22 +15,14 @@ const groupedUnits = Object.keys(unitModules).reduce((accumulator, filePath) => 
 
     return accumulator; // Return the accumulator for the next iteration
 }, {}); // initial value is an empty object
-console.log(groupedUnits);
 
 const units = Object.keys(groupedUnits).map((unit) => {
     return {
         name: unit,
         path: `/analysis/${unit.toLowerCase()}`,
-        documents: groupedUnits[unit].map((doc) => {
-            return {
-                name: doc.name,
-                path: doc.path,
-            };
-        }),
+        documents: groupedUnits[unit],
     };
 });
-console.log(units);
-
 
 const Analysis = () => {
     return (
