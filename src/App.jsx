@@ -6,7 +6,7 @@ const courseModules = import.meta.glob("./Courses/*/*.jsx", { eager: true });
 const courses = Object.keys(courseModules).map((key) => {
   const componentName = key.split("/").pop().replace(".jsx", "");
   return {
-    path: `/${componentName.toLowerCase()}`,
+    path: `/${componentName.toLowerCase()}/*`,
     component: courseModules[key].default,
   };
 });
