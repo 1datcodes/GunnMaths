@@ -2,6 +2,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import HomePage from "./HomePage";
 import About from "./Header/About";
 import Course from "./Courses/Course";
+import Unit from "./Courses/Unit";
 
 const courseModules = import.meta.glob(["./Courses/**/*", "!**/*.jsx"], { eager: true }); // dynamically import all files regardless of the depth
 const groupedCourses = Object.keys(courseModules).reduce(
@@ -28,8 +29,8 @@ const groupedCourses = Object.keys(courseModules).reduce(
     accumulator[courseName][unitName]["name"] = unitName; // Get the unit name
     accumulator[courseName][unitName]["path"] = `/${courseName.toLowerCase()}/${unitName.toLowerCase()}`; // Get the path for the unit
     accumulator[courseName][unitName].push({
-      name: filePath.split("/").pop().replace(".pdf", ""), // Get the file name without the extension
-      path: filePath, // Get the full path to the file
+      name: filePath.split("/").pop().replace(".pdf", "").replaceAll("_", " "), // Get the file name without the extension
+      file: courseModules[filePath].default, // Get the full path to the file
     });
 
     return accumulator; // Return the accumulator for the next iteration
@@ -51,10 +52,20 @@ function App() {
               path={groupedCourses[index]["path"]}
               element={<Course units={groupedCourses[index]} />}
             />
-            <Route
-              key={index}
-              path={`${groupedCourses[index]["path"]}/:unit`}
-              element={<div></div>} />
+           {
+            Object.keys(groupedCourses[index]).map((count) => {
+              if (count === "path" || count === "images") {
+                return null; // Skip the images unit
+              }
+              return (
+                <Route
+                  key={count}
+                  path={groupedCourses[index][count]["path"]}
+                  element={<Unit resources={groupedCourses[index][count]} />}
+                />
+              );
+            })
+           } 
           </>
         ))}
       </Routes>
