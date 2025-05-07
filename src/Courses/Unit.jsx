@@ -11,6 +11,8 @@ function Unit({ resources }) {
       ...prev,
       [category]: !prev[category],
     }))
+    console.log("open categories", openCategories);
+    console.log("open types", openTypes);
   };
   const toggleType = (category, type) => {
     if (openCategories[category]) {
@@ -68,7 +70,6 @@ function Unit({ resources }) {
     }
     return accumulator;
   }, []);
-  console.log(organizedResources);
 
   return (
     <div id="content" className="">
