@@ -126,38 +126,40 @@ function Unit({ resources }) {
                           </button>
                           <div
                             id="dropdown-content"
-                            className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                            className={`flex justify-end overflow-hidden transition-all duration-300 ease-in-out ${
                               activeIndex[category]?.[subcategory]
                                 ? "max-h-screen"
                                 : "max-h-0"
                             }`}
                           >
-                            {organizedResources[category][subcategory].map(
-                              (resource, resourceIndex) => {
-                                const active = activeIndex[category]
-                                  ? activeIndex[category][subcategory]
-                                    ? true
-                                    : false
-                                  : false;
+                            <div id="files" className="w-9/10 border-1 my-1 rounded-sm">
+                              {organizedResources[category][subcategory].map(
+                                (resource, resourceIndex) => {
+                                  const active = activeIndex[category]
+                                    ? activeIndex[category][subcategory]
+                                      ? true
+                                      : false
+                                    : false;
 
-                                return active ? (
-                                  <div key={resourceIndex} className="border-1 mt-2 p-2 rounded-md bg-white">
-                                    <a
-                                      href={
-                                        resource.file
-                                      }
-                                      className="text-blue-500 hover:underline"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      {
-                                        resource.name
-                                      }
-                                    </a>
-                                  </div>
-                                ) : null;
-                              },
-                            )}
+                                  return active ? (
+                                    <div key={resourceIndex} onClick={() => window.open(resource.file, "_blank", "noopener, noreferrer")} className="px-[1rem] py-[0.25rem] hover:bg-gray-100 hover:cursor-pointer hover:underline">
+                                      <a
+                                        href={
+                                          resource.file
+                                        }
+                                        className=""
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {
+                                          resource.name
+                                        }
+                                      </a>
+                                    </div>
+                                  ) : null;
+                                },
+                              )}
+                            </div>
                           </div>
                         </div>
                       );
