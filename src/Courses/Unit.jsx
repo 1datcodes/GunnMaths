@@ -1,26 +1,35 @@
-import { useState } from "react";
+import { act, useState } from "react";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
 
 function Unit({ resources }) {
-  const [openCategories, setOpenCategories] = useState({});
-  const [openTypes, setOpenTypes] = useState({});
+  const [activeIndex, setActiveIndex] = useState({
+    Tests: false,
+    Quizzes: false,
+  });
 
-  const toggleCategory = (category) => {
-    setOpenCategories((prev) => ({
-      ...prev,
-      [category]: !prev[category],
-    }))
-    console.log("open categories", openCategories);
-    console.log("open types", openTypes);
-  };
-  const toggleType = (category, type) => {
-    if (openCategories[category]) {
-      setOpenTypes((prev) => ({
-        ...prev,
-        [`${category}-${type}`]: !prev[`${category}-${type}`],
-      }));
-    };
+  const handleClick = (category, type = null) => {
+    if (type === null) {
+      if (!activeIndex[category]) {
+        setActiveIndex((prevIndex) => ({
+          ...prevIndex,
+          [category]: true,
+        }));
+      } else {
+        setActiveIndex((prevIndex) => ({
+          ...prevIndex,
+          [category]: !prevIndex[category],
+        }));
+      }
+      return;
+    }
+    setActiveIndex((prevIndex) => ({
+      ...prevIndex,
+      [category]: {
+        ...prevIndex[category],
+        [type]: !prevIndex[category]?.[type],
+      },
+    }));
   };
 
   const organizedResources = resources.reduce((accumulator, resource) => {
@@ -70,39 +79,94 @@ function Unit({ resources }) {
     }
     return accumulator;
   }, []);
-
   return (
     <div id="content" className="">
       <Header />
-      <div id="resources" className="">
+      <div id="resources" className="p-[2rem]">
         <BackButton />
         {Object.keys(organizedResources).map((category, index) => {
-          console.log(category);
           return (
-            <div key={index} id="category" className="" onClick={() => toggleCategory(category)}>
-              <h1>{category}</h1>
-              {openCategories[category] && (
-                <div id="container" className="">
-                  {Object.keys(organizedResources[category]).map((type, index) => {
+            <div key={index}>
+              <button
+                id="dropdown"
+                onClick={() => handleClick(category)}
+                className="border-1 w-full text-left mt-2 p-2 rounded-md bg-gray-200"
+              >
+                {category}{" "}
+                <span id="arrow" className={activeIndex[index] ? "rotate" : ""}>
+                  ▶
+                </span>
+              </button>
+              <div id="dropdown-content" className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                activeIndex[category] ? "max-h-screen" : "max-h-0"
+              }`}>
+                {Object.keys(organizedResources[category]).map(
+                  (subcategory, subIndex) => {
+                    const active = activeIndex[category] ? true : false;
                     return (
-                      <div key={index} id="type" className="" onClick={() => toggleType(category, type)}>
-                        <h1>{type}</h1>
-                        {openTypes[`${category}-${type}`] && (
-                        <div id="resources" className="">
-                          {organizedResources[category][type].map((resource, index) => {
-                            return (
-                              <a href={resource.file} target="_blank" rel="noopener noreferrer" key={index} className="">{resource.name}</a>
-                            )
-                          })}
+                      <div
+                        key={subIndex}
+                        className="border-1 mt-2 p-2 rounded-md bg-gray-100"
+                      >
+                        <button
+                          id="dropdown"
+                          key={subIndex}
+                          onClick={() => handleClick(category, subcategory)}
+                          className="w-full text-left flex justify-between items-center"
+                        >
+                          {subcategory}{" "}
+                          <span
+                            id="arrow"
+                            className={`transform transition-transform duration-300 ease-in-out ${
+                              activeIndex[category]?.[subcategory]
+
+                            }`}
+                          >
+                            ▶
+                          </span>
+                        </button>
+                        <div
+                          id="dropdown-content"
+                          className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                            activeIndex[category]?.[subcategory]
+                              ? "max-h-screen"
+                              : "max-h-0"
+                          }`}
+                        >
+                          {organizedResources[category][subcategory].map(
+                            (resource, resourceIndex) => {
+                              const active = activeIndex[category]
+                                ? activeIndex[category][subcategory]
+                                  ? true
+                                  : false
+                                : false;
+
+                              return active ? (
+                                <div key={resourceIndex} className="border-1 mt-2 p-2 rounded-md bg-white">
+                                  <a
+                                    href={
+                                      resource.file
+                                    }
+                                    className="text-blue-500 hover:underline"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {
+                                      resource.name
+                                    }
+                                  </a>
+                                </div>
+                              ) : null;
+                            },
+                          )}
                         </div>
-                        )}
                       </div>
-                    )
-                  })}
-                </div>
-              )}
+                    );
+                  },
+                )}
+              </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
