@@ -82,92 +82,92 @@ function Unit({ resources }) {
   return (
     <div id="content" className="">
       <Header />
-      <div id="resources" className="p-[2rem]">
+      <div id="resources" className="px-[1.5rem] py-[1rem]">
         <BackButton />
-        {Object.keys(organizedResources).map((category, index) => {
-          return (
-            <div key={index}>
-              <button
-                id="dropdown"
-                onClick={() => handleClick(category)}
-                className="border-1 w-full text-left mt-2 p-2 rounded-md bg-gray-200"
-              >
-                {category}{" "}
-                <span id="arrow" className={activeIndex[index] ? "rotate" : ""}>
-                  ▶
-                </span>
-              </button>
-              <div id="dropdown-content" className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                activeIndex[category] ? "max-h-screen" : "max-h-0"
-              }`}>
-                {Object.keys(organizedResources[category]).map(
-                  (subcategory, subIndex) => {
-                    const active = activeIndex[category] ? true : false;
-                    return (
-                      <div
-                        key={subIndex}
-                        className="border-1 mt-2 p-2 rounded-md bg-gray-100"
-                      >
-                        <button
-                          id="dropdown"
+        <div id="accordion" className="pt-[1rem] w-full">
+          {Object.keys(organizedResources).map((category, index) => {
+            return (
+              <div key={index} className="py-0.5 pl-5 flex flex-col">
+                <button
+                  id="dropdown"
+                  onClick={() => handleClick(category)}
+                  className="items-center bg-gray-200 border-1 rounded-sm text-black cursor-pointer flex text-base gap-1.5 justify-start w-full p-4.5 text-left"
+                >
+                  {category}{" "}
+                  <span id="arrow" className={`transition-all duration-300 ease-in-out ${activeIndex[category] ? "rotate-90" : "rotate-none"}`}>
+                    ▶
+                  </span>
+                </button>
+                <div id="dropdown-content" className={`overflow-hidden transition-all duration-300 ease-in-out w-9/10 self-end ${
+                  activeIndex[category] ? "max-h-screen" : "max-h-0"
+                }`}>
+                  {Object.keys(organizedResources[category]).map(
+                    (subcategory, subIndex) => {
+                      return (
+                        <div
                           key={subIndex}
-                          onClick={() => handleClick(category, subcategory)}
-                          className="w-full text-left flex justify-between items-center"
+                          className="mt-1"
                         >
-                          {subcategory}{" "}
-                          <span
-                            id="arrow"
-                            className={`transform transition-transform duration-300 ease-in-out ${
+                          <button
+                            id="dropdown"
+                            key={subIndex}
+                            onClick={() => handleClick(category, subcategory)}
+                            className="items-center bg-gray-200 border-1 rounded-sm text-black cursor-pointer flex text-base gap-1.5 justify-start w-full p-4.5 text-left"
+                          >
+                            {subcategory}{" "}
+                            <span
+                              id="arrow"
+                              className={`transform transition-transform duration-300 ease-in-out ${
+                                activeIndex[category]?.[subcategory] ? "rotate-90" : "rotate-none"
+                              }`}
+                            >
+                              ▶
+                            </span>
+                          </button>
+                          <div
+                            id="dropdown-content"
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${
                               activeIndex[category]?.[subcategory]
-
+                                ? "max-h-screen"
+                                : "max-h-0"
                             }`}
                           >
-                            ▶
-                          </span>
-                        </button>
-                        <div
-                          id="dropdown-content"
-                          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                            activeIndex[category]?.[subcategory]
-                              ? "max-h-screen"
-                              : "max-h-0"
-                          }`}
-                        >
-                          {organizedResources[category][subcategory].map(
-                            (resource, resourceIndex) => {
-                              const active = activeIndex[category]
-                                ? activeIndex[category][subcategory]
-                                  ? true
-                                  : false
-                                : false;
+                            {organizedResources[category][subcategory].map(
+                              (resource, resourceIndex) => {
+                                const active = activeIndex[category]
+                                  ? activeIndex[category][subcategory]
+                                    ? true
+                                    : false
+                                  : false;
 
-                              return active ? (
-                                <div key={resourceIndex} className="border-1 mt-2 p-2 rounded-md bg-white">
-                                  <a
-                                    href={
-                                      resource.file
-                                    }
-                                    className="text-blue-500 hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    {
-                                      resource.name
-                                    }
-                                  </a>
-                                </div>
-                              ) : null;
-                            },
-                          )}
+                                return active ? (
+                                  <div key={resourceIndex} className="border-1 mt-2 p-2 rounded-md bg-white">
+                                    <a
+                                      href={
+                                        resource.file
+                                      }
+                                      className="text-blue-500 hover:underline"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      {
+                                        resource.name
+                                      }
+                                    </a>
+                                  </div>
+                                ) : null;
+                              },
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    );
-                  },
-                )}
+                      );
+                    },
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
