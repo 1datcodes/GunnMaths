@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { act, useState, useRef } from "react";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
 
@@ -79,19 +79,25 @@ function Unit({ resources }) {
     }
     return accumulator;
   }, []);
+
+  const getHeight = (ref) => {
+    return ref.current ? ref.current.scrollHeight : 0;
+  };
+
   return (
-    <div id="content" className="">
+    <div id="content" className="h-fit w-full z-0 mb-[10rem]">
       <Header />
       <div id="resources" className="px-[1.5rem] py-[1rem]">
         <BackButton />
         <div id="accordion" className="pt-[1rem] w-full">
           {Object.keys(organizedResources).map((category, index) => {
+            const categoryRef = useRef(null);
             return (
               <div key={index} className="py-0.5 pl-5 flex flex-col">
                 <button
                   id="dropdown"
                   onClick={() => handleClick(category)}
-                  className="items-center bg-gray-100 border-1 rounded-sm text-black cursor-pointer flex text-base gap-1.5 justify-start w-full p-4.5 text-left"
+                  className="items-center bg-gray-100 border-1 rounded-sm text-black cursor-pointer flex text-base gap-1.5 justify-start w-full p-4.5 text-left hover:bg-gray-150"
                 >
                   {category}{" "}
                   <span
@@ -103,14 +109,17 @@ function Unit({ resources }) {
                 </button>
                 <div
                   id="dropdown-content"
-                  className={`overflow-hidden transition-all duration-300 ease-in-out w-95/100 self-end ${
-                    activeIndex[category] ? "max-h-screen" : "max-h-0"
-                  }`}
+                  ref={categoryRef}
+                  style={{
+                    height: activeIndex[category] ? "fit-content" : "0",
+                  }}
+                  className={`overflow-hidden transition-all duration-300 ease-in-out w-95/100 self-end`}
                 >
                   {Object.keys(organizedResources[category]).map(
                     (subcategory, subIndex) => {
+                      const subcategoryRef = useRef(null);
                       return (
-                        <div key={subIndex} className="mt-1">
+                        <div key={subIndex} className="pt-1">
                           <button
                             id="dropdown"
                             key={subIndex}
@@ -131,25 +140,23 @@ function Unit({ resources }) {
                           </button>
                           <div
                             id="dropdown-content"
-                            className={`flex justify-end overflow-hidden transition-all duration-300 ease-in-out ${
-                              activeIndex[category]?.[subcategory]
-                                ? "opacity-100 scale-y-100 pointer-events-none"
-                                : "opacity-0 scale-y-0 pointer-events-none"
-                            }`}
+                            ref={subcategoryRef}
+                            style={{
+                              height: activeIndex[category]?.[subcategory]
+                                ? `${getHeight(subcategoryRef)}px`
+                                : "0",
+                            }}
+                            className={`flex justify-end overflow-hidden transition-all duration-300 ease-in-out`}
                           >
                             <div
                               id="files"
-                              className="w-95/100 border-1 my-1 rounded-sm"
+                              className="w-95/100 border-1 my-1 rounded-sm h-fit z-10"
                             >
                               {organizedResources[category][subcategory].map(
                                 (resource, resourceIndex) => {
-                                  const active = activeIndex[category]
-                                    ? activeIndex[category][subcategory]
-                                      ? true
-                                      : false
-                                    : false;
-
-                                  return active ? (
+                                  return organizedResources[category]?.[
+                                    subcategory
+                                  ] ? (
                                     <div
                                       key={resourceIndex}
                                       onClick={() =>
