@@ -3,10 +3,8 @@ import Header from "../Header/Header";
 import BackButton from "../BackButton";
 
 function Unit({ resources }) {
-  const [activeIndex, setActiveIndex] = useState({
-    Tests: false,
-    Quizzes: false,
-  });
+  console.log("Resources:", resources);
+  const [activeIndex, setActiveIndex] = useState({});
 
   const handleClick = (category, type = null) => {
     if (type === null) {
@@ -33,15 +31,12 @@ function Unit({ resources }) {
   };
 
   const organizedResources = resources.reduce((accumulator, resource) => {
-    if (!accumulator["Tests"]) {
-      accumulator["Tests"] = [];
-    }
-    if (!accumulator["Quizzes"]) {
-      accumulator["Quizzes"] = [];
+    if (!accumulator[resource.category]) {
+      accumulator[resource.category] = [];
     }
 
     if (resource.name.includes("Test")) {
-      if (resource.name.includes("Raw")) {
+      if (resource.name.includes("Raw") || resource.name.includes("Answer") || resource.name.includes("Key")) {
         if (!accumulator["Tests"]["Raw"]) {
           accumulator["Tests"]["Raw"] = [];
         }
