@@ -13,7 +13,7 @@ const courses = [
     description: "Analysis Course Resources",
   },
   {
-    url: "calc-bc",
+    url: "calcbc",
     title: "Calc BC",
     image: calcBC,
     description: "Calculus BC Course Resources",

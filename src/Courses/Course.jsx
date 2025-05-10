@@ -51,7 +51,7 @@ function Course({ units }) {
                       id="unit-description"
                       className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] text-shadow-sm group-hover:underline decoration-highlight"
                     >
-                      {units[unit].length} Tests and Quizzes
+                      {units[unit].length} Study Resources
                     </p>
                   </div>
                   <img

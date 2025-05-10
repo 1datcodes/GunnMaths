@@ -35,12 +35,13 @@ function Unit({ resources }) {
       accumulator[resource.category] = [];
     }
 
-    if (resource.name.toLowerCase().includes("raw") || resource.name.toLowerCase().includes("answer") || resource.name.toLowerCase().includes("key")) {
-      if (!accumulator[resource.category]["Raw"]) {
-        accumulator[resource.category]["Raw"] = [];
+    const name = resource.name.toLowerCase();
+    if (name.includes("raw") || name.includes("answer") || name.includes("key") || name.includes("guide") || name.includes("scor")) {
+      if (!accumulator[resource.category]["Key"]) {
+        accumulator[resource.category]["Key"] = [];
       };
 
-      accumulator[resource.category]["Raw"].push({
+      accumulator[resource.category]["Key"].push({
         name: resource.name,
         file: resource.file,
       });
@@ -54,45 +55,6 @@ function Unit({ resources }) {
       });
     }
 
-    /*
-    if (resource.name.includes("Test")) {
-      if (resource.name.includes("Raw") || resource.name.includes("Answer") || resource.name.includes("Key")) {
-        if (!accumulator["Tests"]["Raw"]) {
-          accumulator["Tests"]["Raw"] = [];
-        }
-        accumulator["Tests"]["Raw"].push({
-          name: resource.name,
-          file: resource.file,
-        });
-      } else if (resource.name.includes("Blank")) {
-        if (!accumulator["Tests"]["Blank"]) {
-          accumulator["Tests"]["Blank"] = [];
-        }
-        accumulator["Tests"]["Blank"].push({
-          name: resource.name,
-          file: resource.file,
-        });
-      }
-    } else if (resource.name.includes("Quiz")) {
-      if (resource.name.includes("Raw")) {
-        if (!accumulator["Quizzes"]["Raw"]) {
-          accumulator["Quizzes"]["Raw"] = [];
-        }
-        accumulator["Quizzes"]["Raw"].push({
-          name: resource.name,
-          file: resource.file,
-        });
-      } else if (resource.name.includes("Blank")) {
-        if (!accumulator["Quizzes"]["Blank"]) {
-          accumulator["Quizzes"]["Blank"] = [];
-        }
-        accumulator["Quizzes"]["Blank"].push({
-          name: resource.name,
-          file: resource.file,
-        });
-      }
-    }
-    */
     return accumulator;
   }, []);
 
