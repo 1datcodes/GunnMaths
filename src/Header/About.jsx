@@ -41,6 +41,7 @@ const markdown = `
 ## Calc BC Google Drive
 - [Google Drive (2024-25)](https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=drive_link)
 ## 2024-25 Calc BC Calendar
+- [Class Schedule](https://docs.google.com/spreadsheets/d/1avhyupwBX4ARf-DozDPSk6gtpP8Q9EI_F-DRthzujoQ/edit?usp=sharing)
 # GitHub Repository
 - [Repository](https://github.com/1datcodes/GunnMaths)
 
@@ -94,6 +95,8 @@ const About = () => {
             a: ({ node, ...props }) => (
               <a
                 className="text-blue-500 hover:text-blue-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
                 {...props}
               />
             ),
