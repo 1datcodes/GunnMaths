@@ -1,6 +1,7 @@
 # Gunn Maths
 
 Gunn Maths is a website that holds past Analysis H tests. This website is built with React Library.
+Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 
 ## Features
 
@@ -17,7 +18,8 @@ Gunn Maths is a website that holds past Analysis H tests. This website is built 
    `npm i`
 
 3. Start dev environment
-   `npm start`
+   `npm start` (< v6.0.0)
+   `npm run dev` (> v6.0.0)
 
 4. Start backend for AI generation (ask for environment variables)
    `node backend/server.js`
@@ -45,6 +47,29 @@ Our code is broken down into individual courses which is then broken into indivi
         .
         .
         Unit 10
+Our restructured file system (since v6.0.0) has the following structure:
+    src
+        Courses
+            Analysis
+                documents
+                    AtPS
+                    ...
+            CalcBC
+                documents
+                    Derivatives
+                    ...
+        Course.jsx
+        Unit.jsx
+This way it is more easier to add courses.
+If you want to add more courses, simply create a new folder with the course name:
+    src
+        Courses
+            ...
+            NewCourseName
+                documents
+                    unit1
+                    ...
+Course.jsx and Unit.jsx should take care of the rest.
 
 Each course has its own Midterm+Final review
 
