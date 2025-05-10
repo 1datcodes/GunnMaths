@@ -51,12 +51,19 @@ const groupedCourses = Object.keys(courseModules).reduce(
   },
   {},
 ); // initial value is an empty object
+// groupedCourses["Additional Resources"] = [];
+// groupedCourses["Additional Resources"]["name"] = "Additional"; // Get the course name
+// groupedCourses["Additional Resources"]["path"] = "/additional-resources"; // Get the path for the course
+// groupedCourses["Additional Resources"]["images"] = []; // Initialize an array for the images if it doesn't exist already
+// This section is for the additional resources
+
+console.log(groupedCourses); // Log the grouped courses object to the console
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage Courses={groupedCourses} />} />
         <Route path="/about" element={<About />} />
         <Route path="/updates" element={<Updates />} />
 

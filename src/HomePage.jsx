@@ -2,25 +2,15 @@ import { Link } from "react-router-dom";
 import Header from "./Header/Header";
 
 // Course Images
+// Need a way to dynamically import images but I'm tired
 import analysis from "./Course-Images/Analysis-cover.png";
-import calcBC from "./Course-Images/CalcBC-cover.png";
+import calcbc from "./Course-Images/CalcBC-cover.png";
+const images = {
+  analysis: analysis,
+  calcbc: calcbc,
+}
 
-const courses = [
-  {
-    url: "analysis",
-    title: "Analysis",
-    image: analysis,
-    description: "Analysis Course Resources",
-  },
-  {
-    url: "calcbc",
-    title: "Calc BC",
-    image: calcBC,
-    description: "Calculus BC Course Resources",
-  },
-];
-
-const HomePage = () => {
+const HomePage = ({ Courses }) => {
   return (
     <div id="content" className="mb-[3rem]">
       <Header />
@@ -35,16 +25,16 @@ const HomePage = () => {
           id="grid"
           className="py-[0.625rem] px-[3.125rem] grid grid-cols-3 gap-[6.25rem]"
         >
-          {courses.map((course, index) => (
+          {Object.keys(Courses).map((course, index) => (
             <div
               id="course"
               key={index}
               className="group relative w-full flex flex-row justify-end items-center gap-[1.25rem] z-0 transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-102"
-              onClick={() => (window.location.href = course.url)}
+              onClick={() => (window.location.href = Courses[course].path)}
             >
               <Link
                 id="course-link"
-                to={course.url}
+                to={Courses[course].path}
                 className="w-[15rem] h-[15rem] flex flex-row justify-between items-center rounded-[1rem] overflow-hidden"
               >
                 <div
@@ -55,19 +45,19 @@ const HomePage = () => {
                     id="course-title"
                     className="text-white text-3xl font-bold z-20 pl-[1.5rem] pr-[1rem] my-[1.25rem] text-shadow-[black 1px 1px 10px] group-hover:underline decoration-highlight"
                   >
-                    {course.title}
+                    {Courses[course].name}
                   </h1>
                   <p
                     id="course-description"
                     className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] text-shadow-[black 1px 1px 10px] group-hover:underline decoration-highlight"
                   >
-                    {course.description}
+                    {Courses[course].name} Course Resources
                   </p>
                 </div>
                 <img
                   id="course-image"
-                  src={course.image}
-                  alt={course.title}
+                  src={images[course.toLowerCase()]}
+                  alt={Courses[course].name}
                   className="w-full h-[15rem] object-cover relative"
                 />
               </Link>
