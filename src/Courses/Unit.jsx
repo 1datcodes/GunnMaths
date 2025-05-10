@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import BackButton from "../BackButton";
 
 function Unit({ resources }) {
-  console.log("Resources:", resources);
   const [activeIndex, setActiveIndex] = useState({});
 
   const handleClick = (category, type = null) => {
@@ -36,10 +35,16 @@ function Unit({ resources }) {
     }
 
     const name = resource.name.toLowerCase();
-    if (name.includes("raw") || name.includes("answer") || name.includes("key") || name.includes("guide") || name.includes("scor")) {
+    if (
+      name.includes("raw") ||
+      name.includes("answer") ||
+      name.includes("key") ||
+      name.includes("guide") ||
+      name.includes("scor")
+    ) {
       if (!accumulator[resource.category]["Key"]) {
         accumulator[resource.category]["Key"] = [];
-      };
+      }
 
       accumulator[resource.category]["Key"].push({
         name: resource.name,

@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import HomePage from "./HomePage";
 import About from "./Header/About";
+import Updates from "./Header/Updates";
 import Course from "./Courses/Course";
 import Unit from "./Courses/Unit";
 
@@ -36,7 +37,13 @@ const groupedCourses = Object.keys(courseModules).reduce(
     pathClone.pop();
     accumulator[courseName][unitName].push({
       category: pathClone.pop().replaceAll("_", " "), // Get the category name
-      name: filePath.split("/").pop().replace(".pdf", "").replace(".jpg", "").replace(".jpeg", "").replaceAll("_", " "), // Get the file name without the extension
+      name: filePath
+        .split("/")
+        .pop()
+        .replace(".pdf", "")
+        .replace(".jpg", "")
+        .replace(".jpeg", "")
+        .replaceAll("_", " "), // Get the file name without the extension
       file: courseModules[filePath].default, // Get the full path to the file
     });
 
@@ -44,7 +51,6 @@ const groupedCourses = Object.keys(courseModules).reduce(
   },
   {},
 ); // initial value is an empty object
-console.log("Grouped Courses:", groupedCourses);
 
 function App() {
   return (
@@ -52,6 +58,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/updates" element={<Updates />} />
 
         {Object.keys(groupedCourses).map((index) => (
           <>

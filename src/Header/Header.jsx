@@ -63,7 +63,7 @@ const Header = () => {
               About
             </p>
           </Link>
-          <Link id="contact" to="/about#contact">
+          <Link id="contact" to="/about#contact-us">
             <p className="hover:underline  decoration-highlight cursor-pointer">
               Contact
             </p>
