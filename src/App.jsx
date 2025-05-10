@@ -43,6 +43,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
   },
   {},
 ); // initial value is an empty object
+console.log("Grouped Courses:", groupedCourses);
 
 function App() {
   return (

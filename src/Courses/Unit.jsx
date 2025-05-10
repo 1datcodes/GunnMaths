@@ -35,6 +35,26 @@ function Unit({ resources }) {
       accumulator[resource.category] = [];
     }
 
+    if (resource.name.toLowerCase().includes("raw") || resource.name.toLowerCase().includes("answer") || resource.name.toLowerCase().includes("key")) {
+      if (!accumulator[resource.category]["Raw"]) {
+        accumulator[resource.category]["Raw"] = [];
+      };
+
+      accumulator[resource.category]["Raw"].push({
+        name: resource.name,
+        file: resource.file,
+      });
+    } else {
+      if (!accumulator[resource.category]["Blank"]) {
+        accumulator[resource.category]["Blank"] = [];
+      }
+      accumulator[resource.category]["Blank"].push({
+        name: resource.name,
+        file: resource.file,
+      });
+    }
+
+    /*
     if (resource.name.includes("Test")) {
       if (resource.name.includes("Raw") || resource.name.includes("Answer") || resource.name.includes("Key")) {
         if (!accumulator["Tests"]["Raw"]) {
@@ -72,6 +92,7 @@ function Unit({ resources }) {
         });
       }
     }
+    */
     return accumulator;
   }, []);
 
