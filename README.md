@@ -47,28 +47,29 @@ Our code is broken down into individual courses which is then broken into indivi
         .
         .
         Unit 10
+
 Our restructured file system (since v6.0.0) has the following structure:
-    src
-        Courses
-            Analysis
-                documents
-                    AtPS
-                    ...
-            CalcBC
-                documents
-                    Derivatives
-                    ...
-        Course.jsx
-        Unit.jsx
+src
+Courses
+Analysis
+documents
+AtPS
+...
+CalcBC
+documents
+Derivatives
+...
+Course.jsx
+Unit.jsx
 This way it is more easier to add courses.
 If you want to add more courses, simply create a new folder with the course name:
-    src
-        Courses
-            ...
-            NewCourseName
-                documents
-                    unit1
-                    ...
+src
+Courses
+...
+NewCourseName
+documents
+unit1
+...
 Course.jsx and Unit.jsx should take care of the rest.
 
 Each course has its own Midterm+Final review
