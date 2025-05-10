@@ -14,6 +14,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
     if (!accumulator[courseName]) {
       accumulator[courseName] = []; // Initialize an array for the folder if it doesn't exist already
     }
+    accumulator[courseName]["name"] = courseName; // Get the course name
     accumulator[courseName]["path"] = `/${courseName.toLowerCase()}`; // Get the path for the course
     if (filePath.includes("images")) {
       if (!accumulator[courseName]["images"]) {

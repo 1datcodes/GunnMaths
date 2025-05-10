@@ -14,14 +14,14 @@ function Course({ units }) {
           id="quick-title"
           className="text-black pt-[3rem] pl-[3.75rem] text-2xl font-bold"
         >
-          <h2 className="mb-[1rem]">Analysis Resources</h2>
+          <h2 className="mb-[1rem]">{units["name"]} Resources</h2>
         </div>
         <div
           id="grid"
           className="py-[0.625rem] px-[3.125rem] grid grid-cols-3 gap-[6rem]"
         >
           {Object.keys(units).map((unit, index) => {
-            if (unit === "images" || unit === "path") {
+            if (unit === "images" || unit === "path" || unit === "name") {
               return null; // Skip the images unit
             }
 
@@ -45,7 +45,7 @@ function Course({ units }) {
                       id="unit-title"
                       className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1.5rem] text-shadow-sm text-3xl font-bold group-hover:underline decoration-highlight"
                     >
-                      {units[unit]["name"]}
+                      {units[unit]["name"].replaceAll("_", " ")}
                     </h1>
                     <p
                       id="unit-description"
@@ -56,9 +56,9 @@ function Course({ units }) {
                   </div>
                   <img
                     id="unit-image"
-                    src={coverImages[index - 2].image} // Adjusted index to skip images and path
+                    src={coverImages[index - 3].image} // Adjusted index to skip name, images and path
                     alt={"image"}
-                    className="w-full h-[15rem] object-cover relative"
+                    className="w-full h-[15rem] object-contain relative"
                   />
                 </Link>
               </div>
