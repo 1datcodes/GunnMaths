@@ -110,7 +110,7 @@ Overhauled AI generation code uses `prompts.json` to store all prompts for each 
 
 Original members: Michi Tanaka (Analysis class 2023-2024), Kaicheng Luo (Analysis class 2022-2023).
 
-Contributing: If you have any tests or quizzes that you want to upload, send an email at [email](tanakamichi7@gmail.com) or [email](kaichengluo888@gmail.com)
+Contributing: If you have any tests or quizzes that you want to upload, send an email at [tanakamichi7@gmail.com](tanakamichi7@gmail.com) or [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 
 ## License
 
