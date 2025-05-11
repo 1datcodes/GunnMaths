@@ -8,7 +8,7 @@ import calcbc from "./Course-Images/CalcBC-cover.png";
 const images = {
   analysis: analysis,
   calcbc: calcbc,
-}
+};
 
 const HomePage = ({ Courses }) => {
   return (

@@ -67,7 +67,6 @@ function Unit({ course, unit, resources }) {
   const getHeight = (ref) => {
     return ref.current ? ref.current.scrollHeight : 0;
   };
-  console.log(course, unit);
 
   return (
     <div id="content" className="h-fit w-full z-0 mb-[10rem]">
@@ -76,7 +75,7 @@ function Unit({ course, unit, resources }) {
         <BackButton />
         <div
           id="quick-title"
-          className="text-black pt-[3rem] pl-[3.75rem] text-2xl font-bold"
+          className="text-black pt-[2rem] pl-[2.75rem] text-2xl font-bold"
         >
           <h2 className="mb-[1rem]">{unit} Resources</h2>
         </div>

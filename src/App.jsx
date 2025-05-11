@@ -57,7 +57,6 @@ const groupedCourses = Object.keys(courseModules).reduce(
 // groupedCourses["Additional Resources"]["images"] = []; // Initialize an array for the images if it doesn't exist already
 // This section is for the additional resources
 
-
 function App() {
   return (
     <Router>
@@ -82,7 +81,13 @@ function App() {
                 <Route
                   key={count}
                   path={groupedCourses[index][count]["path"]}
-                  element={<Unit course={groupedCourses[index]["name"]} unit={groupedCourses[index][count]["name"]} resources={groupedCourses[index][count]} />}
+                  element={
+                    <Unit
+                      course={groupedCourses[index]["name"]}
+                      unit={groupedCourses[index][count]["name"]}
+                      resources={groupedCourses[index][count]}
+                    />
+                  }
                 />
               );
             })}
