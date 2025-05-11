@@ -95,7 +95,7 @@ To fetch files stored in Git LFS do the following:
 1. Fetch `git lfs fetch`
 2. Populate with real content `git lfs checkout`
 
-Our AI generation code is in the AIgen folder and can be used by importing the component to each unit (<6.0.0>)
+Our AI generation code is in the AIgen folder and can be used by importing the component to each unit (< v6.0.0)
 
     import Generator from 'src/AIgen/Generator.js';
 
