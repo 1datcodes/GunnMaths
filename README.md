@@ -27,6 +27,7 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 ## Usage
 
 Visit https://www.gunnmaths.org/ to access the site.
+Visit https://overhaul.gunnmaths.org/ to access overhauled (>v.6.0.0) version.
 
 ## Code Structure
 
@@ -49,35 +50,38 @@ Our code is broken down into individual courses which is then broken into indivi
         Unit 10
 
 Our restructured file system (since v6.0.0) has the following structure:
-src
-Courses
-Analysis
-documents
-AtPS
-...
-CalcBC
-documents
-Derivatives
-...
-Course.jsx
-Unit.jsx
+    src
+        Courses
+            Analysis
+                documents
+                    AtPS
+                    ...
+            CalcBC
+                documents
+                    Derivatives
+                    ...
+            Course.jsx
+            Unit.jsx
 This way it is more easier to add courses.
 If you want to add more courses, simply create a new folder with the course name:
-src
-Courses
-...
-NewCourseName
-documents
-unit1
-...
+    src
+        Courses
+            ...
+            NewCourseName
+                documents
+                    unit1
+                    ...
 Course.jsx and Unit.jsx should take care of the rest.
 
 Each course has its own Midterm+Final review
 
 Each course folder has its own documents folder that stores all the test and quiz pdf files.
 The pdf files are stored through Git LFS.
+To fetch files stored in Git LFS do the following:
+1. Fetch `git lfs fetch`
+2. Populate with real content `git lfs checkout`
 
-Our AI generation code is in the AIgen folder and can be used by importing the component to each unit
+Our AI generation code is in the AIgen folder and can be used by importing the component to each unit (<6.0.0>)
 
     import Generator from 'src/AIgen/Generator.js';
 
@@ -85,6 +89,8 @@ Our AI generation code is in the AIgen folder and can be used by importing the c
         course="course description"
         unit="unit description + other keywords"
     />
+
+Overhauled AI generation code uses `prompts.json` to store all prompts for each individual courses and units. `Generator.js` then imports the prompts and passes it to `server.js` to fetch.
 
 ## Contributing
 
@@ -104,6 +110,7 @@ MIT License - see the [LICENSE.md](LICENSE.md) file for details
 ## Credits:
 
 - Logo taken from Vecteezy.com
+- Various SVG logos from svgrepo.com
 - Kaicheng Luo for collaborating
 - Jesse Li for new color scheme and layout ideas
 - Everyone who has uploaded their tests

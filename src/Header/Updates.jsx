@@ -4,66 +4,65 @@ import BackButton from "../BackButton";
 
 const markdown = `
 # Update Log
+
+### Version  6.1.0
+- Added AI generation from old codebase to new codebase
+- Created prompts.json file to store all prompts
+- Fixed LaTeX and markdown rendering issues that's been plaguing us since AI was first added
+- Mobile support has been deleted
+
 ## Version 6.0.0
 - Since both Kaicheng and I are graduating, we are overhauling the codebase to make it easier for future developers to maintain
 - We've also restructured the file system to make it easier to add new courses and units
 - AP Stats is under development and will be added soon
 - We are looking for a new maintainer for this website, so if you're interested, please contact us!
+
 ### Version 5.0.1
 - Fixed unused variables
+
 ## Version 5.0.0
 -   Due to widespread critism, we are changing the color scheme and site layout
 -   Thanks to Jesse Li for cooking up something in 30 mins!
 -   If you have some more ideas on how to make this website beautiful, please let us know before we leave
 -   We are also implementing AP Stats page!
-### Version 4.1.0
 
+### Version 4.1.0
 -   All calc bc units are up now!
 -   remember to contact us if you would like to contribute!
 
 ### Version 4.0.3
-
 -   cleaned up chapter 1-3 tests/reviewsheets
 
 ### Version 4.0.2
-
 -   Unit 1-3 documents updated
 
 ### Version 4.0.1
-
 -   Fixed BackButton routing error in CalcBC
 -   Tests and study materials are coming soon...
 
 ## Version 4.0.0
-
 -   Due to popular demands, we have initialized CalcBC pages!
 -   Added 10 new units, Midterm and AP Review Pages
 
 ### Version 3.0.1
-
 -   Fixed API Key leak (thanks Leo Jeong!)
 
 ## Version 3.0.0
-
 -   Changed color scheme
 -   Switched from Google Gemini 1.5 flash to GPT-4o from OpenAI
 
 ### Version 2.0.2alpha
-
 -   Updated About Us page
 -   Probably the last major change before Calc BC
 
 ### Version 2.0.1alpha
-
 -   Added mobile support
 
 ## Version 2.0.0alpha
-
 -   Added Calc BC folder (to be completed later)
 -   AI available for Analysis Units
 
 ## Version 1.0.0alpha
-
 -   Initial release
 -   All Analysis tests and quizzes added
 `;
