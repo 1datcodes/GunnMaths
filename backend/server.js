@@ -21,34 +21,43 @@ app.post("/generate-questions", async (req, res) => {
   }
 
   try {
+    const prompt = String.raw`
+        Generate an unrealistic and difficult college level question for ${unit} unit in ${course} course.
+        Clearly indicate where the question and answer starts with title 2 size (##)
+
+        example:
+        ## Question:
+        [question text]
+
+        ## Answer:
+        [answer-text]
+        end
+
+
+        Generate question using LaTeX. Use:
+        - $...$ for inline math
+        - $$...$$ for block math
+        - DO NOT use \(...\) or \[...\] for math
+
+        For currency, spell out the word (dollars, euros, yen, etc.)
+    `
     const completion = await openai.responses.create({
       model: "gpt-4o-mini",
       input: [
         {
           role: "system",
           content: `You are a college math teacher creating unique challenge questions for extra credit.
-                    The system uses rehype-katex and remark-math to render LaTeX math equations.
-                  Format questions with LaTeX for equations and Markdown for structure.
-                  Make sure to sandwich LaTeX code with $$ so that remark-math can render it.`,
+                    `,
         },
         {
           role: "user",
-          content: `
-                  Generate an unrealistic and difficult college level question for ${unit} unit in ${course} course.
-                  Clearly indicate where the question and answer starts with title 2 size (##)
-                  example:
-                  ## Question:
-                  [question]
-                  ## Answer:
-                  [answer]
-
-                  For currency, spell out the word (dollars, euros, yen, etc.)
-                `,
+          content: prompt,
         },
       ],
     });
 
-    const text = completion.output_text;
+    const rawText = completion.output_text;
+    const text = rawText.replace(/\((.+?)\)/gs, '$$$1$$').replace(/\[(.+?)\]/gs, '$$$$ $1 $$$$');
     const answerStart = text.indexOf("## Answer:");
     const question = text.substring(0, answerStart).trim();
     const answer = text.substring(answerStart).trim();

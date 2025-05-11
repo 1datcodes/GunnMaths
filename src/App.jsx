@@ -15,7 +15,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
     if (!accumulator[courseName]) {
       accumulator[courseName] = []; // Initialize an array for the folder if it doesn't exist already
     }
-    accumulator[courseName]["name"] = courseName; // Get the course name
+    accumulator[courseName]["name"] = courseName.replaceAll("_", " "); // Get the course name
     accumulator[courseName]["path"] = `/${courseName.toLowerCase()}`; // Get the path for the course
     if (filePath.includes("images")) {
       if (!accumulator[courseName]["images"]) {
@@ -30,7 +30,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
     if (!accumulator[courseName][unitName]) {
       accumulator[courseName][unitName] = []; // Initialize an array for the unit if it doesn't exist already
     }
-    accumulator[courseName][unitName]["name"] = unitName; // Get the unit name
+    accumulator[courseName][unitName]["name"] = unitName.replaceAll("_", " "); // Get the unit name
     accumulator[courseName][unitName]["path"] =
       `/${courseName.toLowerCase()}/${unitName.toLowerCase()}`; // Get the path for the unit
     const pathClone = filePath.split("/");
