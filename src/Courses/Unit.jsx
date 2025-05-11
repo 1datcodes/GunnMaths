@@ -1,8 +1,9 @@
-import { act, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
+import Generator from "../AIgen/Generator";
 
-function Unit({ resources }) {
+function Unit({ course, unit, resources }) {
   const [activeIndex, setActiveIndex] = useState({});
 
   const handleClick = (category, type = null) => {
@@ -66,12 +67,19 @@ function Unit({ resources }) {
   const getHeight = (ref) => {
     return ref.current ? ref.current.scrollHeight : 0;
   };
+  console.log(course, unit);
 
   return (
     <div id="content" className="h-fit w-full z-0 mb-[10rem]">
       <Header />
-      <div id="resources" className="px-[1.5rem] py-[1rem]">
+      <div id="resources" className="py-[2.5rem] px-[3.75rem] flex flex-col">
         <BackButton />
+        <div
+          id="quick-title"
+          className="text-black pt-[3rem] pl-[3.75rem] text-2xl font-bold"
+        >
+          <h2 className="mb-[1rem]">{unit} Resources</h2>
+        </div>
         <div id="accordion" className="pt-[1rem] w-full">
           {Object.keys(organizedResources).map((category, index) => {
             const categoryRef = useRef(null);
@@ -174,6 +182,7 @@ function Unit({ resources }) {
             );
           })}
         </div>
+        <Generator course={course} unit={unit} />
       </div>
     </div>
   );

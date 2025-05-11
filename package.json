@@ -11,10 +11,17 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.5",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "katex": "^0.16.22",
+    "openai": "^4.98.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.5.3",
+    "remark-math": "^6.0.0",
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
