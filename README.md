@@ -12,21 +12,26 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 ## Contributing
 
 1. Clone repository
+
    `git clone https://github.com/1datcodes/GunnMaths.git`
 
 2. Install dependencies
+
    `npm i`
 
 3. Start dev environment
+
    `npm start` (< v6.0.0)
    `npm run dev` (> v6.0.0)
 
 4. Start backend for AI generation (ask for environment variables)
+
    `node backend/server.js`
 
 ## Usage
 
 Visit https://www.gunnmaths.org/ to access the site.
+
 Visit https://overhaul.gunnmaths.org/ to access overhauled (>v.6.0.0) version.
 
 ## Code Structure
@@ -50,6 +55,7 @@ Our code is broken down into individual courses which is then broken into indivi
         Unit 10
 
 Our restructured file system (since v6.0.0) has the following structure:
+
     src
         Courses
             Analysis
@@ -62,8 +68,11 @@ Our restructured file system (since v6.0.0) has the following structure:
                     ...
             Course.jsx
             Unit.jsx
+
 This way it is more easier to add courses.
+
 If you want to add more courses, simply create a new folder with the course name:
+
     src
         Courses
             ...
@@ -71,13 +80,18 @@ If you want to add more courses, simply create a new folder with the course name
                 documents
                     unit1
                     ...
+
 Course.jsx and Unit.jsx should take care of the rest.
 
 Each course has its own Midterm+Final review
 
+## Working with Git LFS
+
 Each course folder has its own documents folder that stores all the test and quiz pdf files.
 The pdf files are stored through Git LFS.
+
 To fetch files stored in Git LFS do the following:
+
 1. Fetch `git lfs fetch`
 2. Populate with real content `git lfs checkout`
 
