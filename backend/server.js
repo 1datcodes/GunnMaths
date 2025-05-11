@@ -15,14 +15,16 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post("/generate-questions", async (req, res) => {
-  const { course, unit } = req.body;
-  if (!course || !unit) {
+  const { course, courseDescription, unit, unitDescription } = req.body;
+  if (!course || !unit || !unitDescription) {
     return res.status(400).send({ error: "Course and unit are required" });
   }
 
   try {
     const prompt = String.raw`
-        Generate an unrealistic and difficult college level question for ${unit} unit in ${course} course.
+        Generate an unrealistic and difficult high school level question for ${unit} unit in ${course} course.
+        Here is a quick course description: ${courseDescription}
+        Here is a quick description of the unit: ${unitDescription}
         Clearly indicate where the question and answer starts with title 2 size (##)
 
         example:
@@ -40,13 +42,13 @@ app.post("/generate-questions", async (req, res) => {
         - DO NOT use \(...\) or \[...\] for math
 
         For currency, spell out the word (dollars, euros, yen, etc.)
-    `
+    `;
     const completion = await openai.responses.create({
       model: "gpt-4o-mini",
       input: [
         {
           role: "system",
-          content: `You are a college math teacher creating unique challenge questions for extra credit.
+          content: `You are a high school math teacher creating unique challenge questions for extra credit.
                     `,
         },
         {
@@ -57,7 +59,9 @@ app.post("/generate-questions", async (req, res) => {
     });
 
     const rawText = completion.output_text;
-    const text = rawText.replace(/\((.+?)\)/gs, '$$$1$$').replace(/\[(.+?)\]/gs, '$$$$ $1 $$$$');
+    const text = rawText
+      .replace(/\((.+?)\)/gs, "$$$1$$")
+      .replace(/\[(.+?)\]/gs, "$$$$ $1 $$$$");
     const answerStart = text.indexOf("## Answer:");
     const question = text.substring(0, answerStart).trim();
     const answer = text.substring(answerStart).trim();

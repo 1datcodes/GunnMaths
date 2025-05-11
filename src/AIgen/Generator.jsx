@@ -4,10 +4,11 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 import { generateQuestions } from "./AI";
+import prompts from "./prompt.json";
 
 const remarkMathOptions = {
   singleDollarTextMath: false,
-}
+};
 
 const Generator = ({ course, unit }) => {
   const [questionData, setQuestionData] = useState(null);
@@ -17,9 +18,15 @@ const Generator = ({ course, unit }) => {
 
   const handleGenerateQuestion = async () => {
     setLoading(true);
-    console.log("Generating question for course:", course, "unit:", unit);
     try {
-      const data = await generateQuestions(course, unit);
+      const data = await generateQuestions(
+        course,
+        prompts.courses[course.toLowerCase()].course_description,
+        prompts.courses[course.toLowerCase()].units[unit.toLowerCase()]
+          .unit_name,
+        prompts.courses[course.toLowerCase()].units[unit.toLowerCase()]
+          .unit_description,
+      );
       console.log(data);
       setQuestionData(data);
       setShowAnswer(false);
@@ -35,7 +42,6 @@ const Generator = ({ course, unit }) => {
     setShowAnswer(!showAnswer);
   };
 
-
   return (
     <div
       id="generated-content"
@@ -50,9 +56,31 @@ const Generator = ({ course, unit }) => {
       >
         {loading ? "Generating" : "Generate Question"}
         {loading && (
-            <div id="spinner" className="animate-spin w-full">
-                <svg width="24px" height="24px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.0001 12C20.0001 13.3811 19.6425 14.7386 18.9623 15.9405C18.282 17.1424 17.3022 18.1477 16.1182 18.8587C14.9341 19.5696 13.5862 19.9619 12.2056 19.9974C10.825 20.0328 9.45873 19.7103 8.23975 19.0612" stroke="#000000" strokeWidth="2.4" strokeLinecap="round"></path> </g></svg>
-            </div>
+          <div id="spinner" className="animate-spin w-full">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24.00 24.00"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  d="M20.0001 12C20.0001 13.3811 19.6425 14.7386 18.9623 15.9405C18.282 17.1424 17.3022 18.1477 16.1182 18.8587C14.9341 19.5696 13.5862 19.9619 12.2056 19.9974C10.825 20.0328 9.45873 19.7103 8.23975 19.0612"
+                  stroke="#000000"
+                  strokeWidth="2.4"
+                  strokeLinecap="round"
+                ></path>{" "}
+              </g>
+            </svg>
+          </div>
         )}
       </button>
       <div id="disclaimer" className="text-center p-1.5">
@@ -69,6 +97,7 @@ const Generator = ({ course, unit }) => {
               children={questionData.question}
               remarkPlugins={[remarkMath]}
               rehypePlugins={[rehypeKatex]}
+              remarkRehypeOptions={remarkMathOptions}
               components={{
                 h1: ({ node, ...props }) => {
                   return (
@@ -106,6 +135,7 @@ const Generator = ({ course, unit }) => {
                   children={questionData.answer}
                   remarkPlugins={[remarkMath]}
                   rehypePlugins={[rehypeKatex]}
+                  remarkRehypeOptions={remarkMathOptions}
                   components={{
                     h1: ({ node, ...props }) => {
                       return (

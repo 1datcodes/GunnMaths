@@ -1,48 +1,90 @@
 {
-    {
-        "course": "analysis",
-        "course_description": "precalculus, analysis, algebra, probability, vectors, matrices, etc.",
-        "units": [
-            {
-                "unit": "atps",
-                "unit_name": "algebra through problem solving",
-                "unit_description": "pascal's triangle, binomial theorem, fibonacci numbers, etc." 
-            },
-            {
-                "unit": "limits and calculus",
-                "unit_name": "limits and calculus",
-                "unit_description": "ap calculus a, easy limits, derivatives up to chain rule, very light antiderivatives, etc."
-            },
-            {
-                "unit": "gatm",
-                "unit_name": "geometric approach to matrices",
-                "unit_description": "eigenvectors, eigenvalues, 2d rotation matrices, mapping planes to matrices"
-            },
-            {
-                "unit": "growth",
-                "unit_name": "growth",
-                "unit_description": "finance, population, half-life, decay, etc."
-            },
-            {
-                "unit": "matrices",
-                "unit_name": "matrices",
-                "unit_description": "addition, multiplication, identity, gauss-jordan, markov chain, determinant, very light application, etc."
-            },
-            {
-                "unit": "polar and 3d",
-                "unit_name": "polar and 3d",
-                "unit_description": "polar coordinates, polar shapes (lemniscate, polar rose, etc.), polar to rectangular, 3d graphics, 3d conics (hyperbola, sphere, etc.), all algebraic, no calculus, etc."
-            },
-            {
-                "unit": "probability",
-                "unit_name": "probability",
-                "unit_description": "dice, cards, gambling, lottery, population, choices, venn diagrams, etc."
-            },
-            {
-                "unit": "vectors and parametrics",
-                "unit_name": "vectors and parametrics",
-                "unit_description": "unit vectors, normal vectors, planes, dot product, cross product, 3d vectors, 2d conics, parametric equations, parametric curves, parametric surfaces, etc."
-            }
-        ]
+  "courses": {
+    "analysis": {
+      "course_description": "precalculus, analysis, algebra, probability, vectors, matrices, etc.",
+      "units": {
+        "atps": {
+          "unit_name": "algebra through problem solving",
+          "unit_description": "pascal's triangle, binomial theorem, fibonacci numbers, etc."
+        },
+        "limits and calculus": {
+          "unit_name": "limits and calculus",
+          "unit_description": "ap calculus a, easy limits, derivatives up to chain rule, very light antiderivatives, etc."
+        },
+        "gatm": {
+          "unit_name": "geometric approach to matrices",
+          "unit_description": "eigenvectors, eigenvalues, 2d rotation matrices, mapping planes to matrices"
+        },
+        "growth": {
+          "unit_name": "growth",
+          "unit_description": "finance, population, half-life, decay, etc."
+        },
+        "matrices": {
+          "unit_name": "matrices",
+          "unit_description": "addition, multiplication, identity, gauss-jordan, markov chain, determinant, very light application, etc."
+        },
+        "polar and 3d": {
+          "unit_name": "polar and 3d",
+          "unit_description": "polar coordinates, polar shapes (lemniscate, polar rose, etc.), polar to rectangular, 3d graphics, 3d conics (hyperbola, sphere, etc.), all algebraic, no calculus, etc."
+        },
+        "probability": {
+          "unit_name": "probability",
+          "unit_description": "dice, cards, gambling, lottery, population, choices, venn diagrams, etc."
+        },
+        "vectors and parametrics": {
+          "unit_name": "vectors and parametrics",
+          "unit_description": "unit vectors, normal vectors, planes, dot product, cross product, 3d vectors, 2d conics, parametric equations, parametric curves, parametric surfaces, etc."
+        }
+      }
+    },
+    "calcbc": {
+      "course_description": "ap calculus bc, single variable derivatives and integrals, differential equations, etc.",
+      "units": {
+        "ap test review": {
+          "unit_name": "ap test review",
+          "unit_description": "ap test review, free response, multiple choice, cumulative review, etc."
+        },
+        "application of derivatives": {
+          "unit_name": "application of derivatives",
+          "unit_description": "related rates, differentials, etc."
+        },
+        "application of integrals": {
+          "unit_name": "application of integrals",
+          "unit_description": "area, volume, arc length, surface area, etc."
+        },
+        "derivatives": {
+          "unit_name": "derivatives",
+          "unit_description": "basic derivatives, iroc, aroc, differentiable, etc."
+        },
+        "differential equations": {
+          "unit_name": "differential equations",
+          "unit_description": "separation of variables, slope fields, euler's method, logistic growth, etc."
+        },
+        "integrals": {
+          "unit_name": "integrals",
+          "unit_description": "u-sub, trig integrals, trig substitution, integration by parts, partial fractions, etc."
+        },
+        "limits and continuity": {
+          "unit_name": "limits and continuity",
+          "unit_description": "limits at infinity, limits with l'hopital's rule, continuity, etc."
+        },
+        "more application of derivatives": {
+          "unit_name": "more application of derivatives",
+          "unit_description": "linear approximations, mean value theorem, relative extrema, absolute extrema, increasing/decreasing, concavity, inflection points, etc."
+        },
+        "more derivatives": {
+          "unit_name": "more derivatives",
+          "unit_description": "tangent line of a curve, inverse functions, nth derivative, etc."
+        },
+        "polar and parametric": {
+          "unit_name": "parametric and polar",
+          "unit_description": "parametric derivatives and differentials, polar areas, polar arc length, etc."
+        },
+        "sequences and series": {
+          "unit_name": "series and sequences",
+          "unit_description": "Taylor series, Maclaurin series, convergence tests (ratio test, root test), power series, etc."
+        }
+      }
     }
+  }
 }

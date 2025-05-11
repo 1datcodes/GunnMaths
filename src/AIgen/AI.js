@@ -1,13 +1,18 @@
 const server = import.meta.env.VITE_SERVER || "http://localhost:5050";
 console.log(`Server running on ${server}`);
 
-export const generateQuestions = async (course, unit) => {
+export const generateQuestions = async (
+  course,
+  courseDescription,
+  unit,
+  unitDescription,
+) => {
   const response = await fetch(`${server}/generate-questions`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ course, unit }),
+    body: JSON.stringify({ course, courseDescription, unit, unitDescription }),
   });
 
   if (!response.ok) {
