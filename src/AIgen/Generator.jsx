@@ -20,7 +20,7 @@ const Generator = ({ course, unit }) => {
     console.log("Generating question for course:", course, "unit:", unit);
     try {
       const data = await generateQuestions(course, unit);
-      console.log(data.answer);
+      console.log(data);
       setQuestionData(data);
       setShowAnswer(false);
       setLoading(false);
