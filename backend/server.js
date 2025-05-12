@@ -60,8 +60,8 @@ app.post("/generate-questions", async (req, res) => {
 
     const rawText = completion.output_text;
     const text = rawText
-      .replace(/\((.+?)\)/gs, "$$$1$$")
-      .replace(/\[(.+?)\]/gs, "$$$$ $1 $$$$");
+      .replace(/\\\((.+?)\\\)/gs, "$$$1$$");
+      // .replace(/\[(.+?)\]/gs, "$$$$ $1 $$$$");
     const answerStart = text.indexOf("## Answer:");
     const question = text.substring(0, answerStart).trim();
     const answer = text.substring(answerStart).trim();
