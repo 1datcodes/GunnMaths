@@ -4,6 +4,9 @@ import BackButton from "../BackButton";
 
 function Course({ units }) {
   const coverImages = units["images"];
+  const unitKeys = Object.keys(units).filter(
+    (key) => !["images", "path", "name"].includes(key), // removes all the keys that are not units
+  );
 
   return (
     <div id="content" className="mb-[3rem]">
@@ -20,10 +23,10 @@ function Course({ units }) {
           id="grid"
           className="py-[0.625rem] px-[3.125rem] grid grid-cols-3 gap-[6rem]"
         >
-          {Object.keys(units).map((unit, index) => {
-            if (unit === "images" || unit === "path" || unit === "name") {
-              return null; // Skip the images unit
-            }
+          {unitKeys.map((unit, index) => {
+            // if (unit === "images" || unit === "path" || unit === "name") {
+            //   return null; // Skip the images unit
+            // }
 
             return (
               <div
@@ -56,7 +59,8 @@ function Course({ units }) {
                   </div>
                   <img
                     id="unit-image"
-                    src={coverImages[index - 3].image} // Adjusted index to skip name, images and path
+                    src={coverImages[index]?.image}
+                    // src={coverImages[index - 3].image} // Adjusted index to skip name, images and path
                     alt={"image"}
                     className="w-full h-[15rem] object-contain relative"
                   />

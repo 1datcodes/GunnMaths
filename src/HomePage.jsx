@@ -5,9 +5,11 @@ import Header from "./Header/Header";
 // Need a way to dynamically import images but I'm tired
 import analysis from "./Course-Images/Analysis-cover.png";
 import calcbc from "./Course-Images/CalcBC-cover.png";
+import stats from "./Course-Images/Stats-cover.png";
 const images = {
   analysis: analysis,
   calcbc: calcbc,
+  stats: stats,
 };
 
 const HomePage = ({ Courses }) => {
