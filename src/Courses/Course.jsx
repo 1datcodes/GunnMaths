@@ -5,7 +5,7 @@ import BackButton from "../BackButton";
 function Course({ units }) {
   const coverImages = units["images"];
   const unitKeys = Object.keys(units).filter(
-    (key) => !["images", "path", "name"].includes(key), // removes all the keys that are not units
+    (key) => !["images", "path", "name"].includes(key), // Removes all the keys that are not units (pray this works)
   );
 
   return (

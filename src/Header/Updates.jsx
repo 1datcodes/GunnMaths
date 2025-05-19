@@ -5,6 +5,10 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+## Version 6.2.1
+- All units for stats are up!
+- To do: scan my own tests, add AP review if needed
+
 ## Version 6.2.0
 - Added stats
 - More stats resources will be added soon

@@ -43,6 +43,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
         .replace(".pdf", "")
         .replace(".jpg", "")
         .replace(".jpeg", "")
+        .replace(".png", "")
         .replaceAll("_", " "), // Get the file name without the extension
       file: courseModules[filePath].default, // Get the full path to the file
     });
