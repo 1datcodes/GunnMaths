@@ -5,6 +5,16 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+## Version 6.2.1
+- All units for stats are up!
+- To do: scan my own tests, add AP review if needed
+
+## Version 6.2.0
+- Added stats
+- More stats resources will be added soon
+- Fixed(hopefully) rendering issues for Stats
+- Thanks to Ms. Congress for approving Stats resources!
+
 ### Version  6.1.0
 - Added AI generation from old codebase to new codebase
 - Created prompts.json file to store all prompts

@@ -9,7 +9,7 @@ const markdown = `
 - We are a small group of students from Gunn High School
 - Our goal is to provide a platform for students to access past tests, quizzes, and review materials to study for their math classes.
 ## What is this website?
-- This website is an archive of past test, quizzes, and other study resources for Gunn's Analysis, Calc BC, and in the future, AP Stats classes.
+- This website is an archive of past test, quizzes, and other study resources for Gunn's Analysis, Calc BC and AP Stats classes.
 ## Why did we make this website?
 - We found that navigating through various Google Drive folders to find study materials was tedious and time-consuming and often left us with less options than we wanted and we wanted to create an easier alternative to the system.
 ## How can you help?
@@ -25,7 +25,7 @@ const markdown = `
 - Justin Oh (2022-23)
 - Andersen Tanriverdi (2023-24)
 - Neeraj Gummalam (2024-25)
-- Thanks to our teacher Mrs. Hlasek and Mr. Hahn for helping us out with past year resources!
+- Thanks to our teacher Mrs. Hlasek, Mr. Hahn and Ms. Congress for helping us out with past year resources!
 - Thanks to Jesse Li for helping us out with the website design/color schemes (iykyk)
 # Contact Us
 ## Our Team

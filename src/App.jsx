@@ -43,6 +43,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
         .replace(".pdf", "")
         .replace(".jpg", "")
         .replace(".jpeg", "")
+        .replace(".png", "")
         .replaceAll("_", " "), // Get the file name without the extension
       file: courseModules[filePath].default, // Get the full path to the file
     });
@@ -51,6 +52,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
   },
   {},
 ); // initial value is an empty object
+console.log(groupedCourses); // Log the grouped courses to the console
 // groupedCourses["Additional Resources"] = [];
 // groupedCourses["Additional Resources"]["name"] = "Additional"; // Get the course name
 // groupedCourses["Additional Resources"]["path"] = "/additional-resources"; // Get the path for the course
