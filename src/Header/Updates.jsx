@@ -5,6 +5,10 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+## Version 6.2.2
+- Fixed JPG rendering issues
+- Cleaned up code and added documentation
+
 ## Version 6.2.1
 - All units for stats are up!
 - To do: scan my own tests, add AP review if needed
