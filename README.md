@@ -1,13 +1,15 @@
 # Gunn Maths
 
-Gunn Maths is a website that holds past Analysis H tests. This website is built with React Library.
+Gunn Maths is a website that holds past tests for AnalysisH, Calc BC, and AP Stats.
+
+This website is built with React Library.
 Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 
 ## Features
 
-- Holds past tests and quizzes
-- Organized by Unit and by category (quiz or test)
-- Includes blanked and raw files
+- Holds past tests, quizzes, reviewsheets, and homework answers on one site.
+- Organized by course, unit/chapter, and category (reviewsheet, test, etc.)
+- Includes blank files and keys/raw files. 
 
 ## Contributing
 
@@ -22,17 +24,18 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 3. Start dev environment
 
    `npm start` (< v6.0.0)
+
    `npm run dev` (> v6.0.0)
 
 4. Start backend for AI generation (ask for environment variables)
 
    `node backend/server.js`
 
-## Usage
+## Access 
 
 Visit https://www.gunnmaths.org/ to access the site.
 
-Visit https://overhaul.gunnmaths.org/ to access overhauled (>v.6.0.0) version.
+Visit https://overhaul.gunnmaths.org/ to access overhauled (> v6.0.0) version.
 
 ## Code Structure
 
@@ -85,16 +88,6 @@ Course.jsx and Unit.jsx should take care of the rest.
 
 Each course has its own Midterm+Final review
 
-## Working with Git LFS
-
-Each course folder has its own documents folder that stores all the test and quiz pdf files.
-The pdf files are stored through Git LFS.
-
-To fetch files stored in Git LFS do the following:
-
-1. Fetch `git lfs fetch`
-2. Populate with real content `git lfs checkout`
-
 Our AI generation code is in the AIgen folder and can be used by importing the component to each unit (< v6.0.0)
 
     import Generator from 'src/AIgen/Generator.js';
@@ -106,15 +99,25 @@ Our AI generation code is in the AIgen folder and can be used by importing the c
 
 Overhauled AI generation code uses `prompts.json` to store all prompts for each individual courses and units. `Generator.js` then imports the prompts and passes it to `server.js` to fetch.
 
+## Working with Git LFS
+
+Each course folder has its own documents folder that stores all the test and quiz pdf files.
+The pdf files are stored through Git LFS.
+
+To fetch files stored in Git LFS do the following:
+
+1. Fetch `git lfs fetch`
+2. Populate with real content `git lfs checkout`
+
 ## Contributing
 
-Original members: Michi Tanaka (Analysis class 2023-2024), Kaicheng Luo (Analysis class 2022-2023).
+Original members: Michi Tanaka (Class of 2025), Kaicheng Luo (Class of 2025).
 
 Contributing: If you have any tests or quizzes that you want to upload, send an email at [tanakamichi7@gmail.com](tanakamichi7@gmail.com) or [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 
 ## License
 
-MIT License - see the [LICENSE.md](LICENSE.md) file for details
+MIT License - see the [LICENSE](LICENSE.md) file for details
 
 ## Acknowledgments
 
