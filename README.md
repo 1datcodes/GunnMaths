@@ -9,7 +9,7 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 
 - Holds past tests, quizzes, reviewsheets, and homework answers on one site.
 - Organized by course, unit/chapter, and category (reviewsheet, test, etc.)
-- Includes blank files and keys/raw files. 
+- Includes blank files and keys/raw files.
 
 ## Contributing
 
@@ -31,7 +31,7 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 
    `node backend/server.js`
 
-## Access 
+## Access
 
 Visit https://www.gunnmaths.org/ to access the site.
 

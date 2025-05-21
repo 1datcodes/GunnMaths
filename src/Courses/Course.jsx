@@ -48,7 +48,7 @@ function Course({ units }) {
                       id="unit-title"
                       className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1.5rem] text-shadow-sm text-3xl font-bold group-hover:underline decoration-highlight"
                     >
-                      {units[unit]["name"].replaceAll("_", " ")}
+                      {units[unit]["name"]}
                     </h1>
                     <p
                       id="unit-description"

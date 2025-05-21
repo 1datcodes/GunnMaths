@@ -41,7 +41,7 @@ function Unit({ course, unit, resources }) {
       name.includes("answer") ||
       name.includes("key") ||
       name.includes("guide") ||
-      name.includes("scor") || 
+      name.includes("scor") ||
       name.includes("rubric")
     ) {
       if (!accumulator[resource.category]["Key"]) {

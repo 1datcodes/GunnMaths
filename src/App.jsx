@@ -38,12 +38,14 @@ const groupedCourses = Object.keys(courseModules).reduce(
     accumulator[courseName][unitName].push({
       category: pathClone.pop().replaceAll("_", " "), // Get the category name
       name: filePath
+        .toLowerCase()
         .split("/")
         .pop()
         .replace(".pdf", "")
         .replace(".jpg", "")
         .replace(".jpeg", "")
         .replace(".png", "")
+        .replace(".doc", "")
         .replaceAll("_", " "), // Get the file name without the extension
       file: courseModules[filePath].default, // Get the full path to the file
     });
