@@ -5,6 +5,10 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+## Version 6.2.3
+- Fixed stats AI generation issues
+- Fixed chapter 1 stats image cover issues
+
 ## Version 6.2.2
 - Fixed JPG rendering issues
 - Cleaned up code and added documentation
