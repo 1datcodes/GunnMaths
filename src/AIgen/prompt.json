@@ -85,6 +85,47 @@
           "unit_description": "Taylor series, Maclaurin series, convergence tests (ratio test, root test), power series, etc."
         }
       }
+    },
+    "stats": {
+      "course_description": "ap statistics, data analysis, probability, confidence integral, chi square tests, etc.",
+      "units": {
+        "c1 & c2 describing data": {
+          "unit_name": "c1 & c2 describing data",
+          "unit_description": "data, distributions, histograms, box plots, stem and leaf plots, mean, median, mode, range, variance, standard deviation, z scores, etc, do not include difficult tests like t-test, chi square, hypothesis testing, etc."
+        },
+        "c3 two-variable, scatterplots, linear regression": {
+          "unit_name": "c3 two-variable, scatterplots, linear regression",
+          "unit_description": "scatterplots, correlation, linear regression (linear, not quadratic), residuals, least squares regression line, etc, no hypothesis testing, no t-test, no chi square, etc."
+        },
+        "c4 experimental design": {
+          "unit_name": "c4 experimental design",
+          "unit_description": "experiments, observational studies, surveys, bias, randomization, confounding variables, how to design an experiment, different experimental designs, etc, no confidence intervals, no hypothesis testing, no t-test, no chi square, etc."
+        },
+        "c5 & c6 probability and random variables": {
+          "unit_name": "c5 & c6 probability and random variables",
+          "unit_description": "probability, random variables, binomial distribution, geometric distribution, normal distribution, standard normal distribution, z-scores, etc."
+        },
+        "c7 sampling distributions": {
+          "unit_name": "c7 sampling distributions",
+          "unit_description": "sampling distributions, central limit theorem, standard error, etc."
+        },
+        "c8 confidence intervals": {
+          "unit_name": "c8 confidence intervals",
+          "unit_description": "confidence intervals, margin of error, t-distribution, z-distribution, conditions, etc."
+        },
+        "c9 & c10 significance tests and more cis": {
+          "unit_name": "c9 & c10 significance tests and more CIs",
+          "unit_description": "significance tests, hypothesis testing, p-values, type I and type II errors, power of a test, confidence intervals for proportions, t-tests and z-tests, means, and differences, etc."
+        },
+        "c11 chi-square sig tests": {
+          "unit_name": "c11 chi-square sig tests",
+          "unit_description": "chi-square tests, goodness of fit, independence, homogeneity, etc."
+        },
+        "c12 linear regression t-int and t-test": {
+          "unit_name": "c12 linear regression t-int and t-test",
+          "unit_description": "linear regression, t-tests, confidence intervals for slope, residuals, etc."
+        }
+      }
     }
   }
 }
