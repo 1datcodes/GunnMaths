@@ -64,7 +64,6 @@ function Unit({ course, unit, resources }) {
 
     return accumulator;
   }, []);
-  console.log(unit.toLowerCase());
 
   const getHeight = (ref) => {
     return ref.current ? ref.current.scrollHeight : 0;

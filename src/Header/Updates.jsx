@@ -5,19 +5,22 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
-## Version 6.2.3
+### Version 6.2.4
+- Added additional resources like GAtM textbook, Snap tool, Trig drill generator, and more
+
+### Version 6.2.3
 - Fixed stats AI generation issues
 - Fixed chapter 1 stats image cover issues
 
-## Version 6.2.2
+### Version 6.2.2
 - Fixed JPG rendering issues
 - Cleaned up code and added documentation
 
-## Version 6.2.1
+### Version 6.2.1
 - All units for stats are up!
 - To do: scan my own tests, add AP review if needed
 
-## Version 6.2.0
+### Version 6.2.0
 - Added stats
 - More stats resources will be added soon
 - Fixed(hopefully) rendering issues for Stats
