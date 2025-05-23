@@ -54,10 +54,43 @@ const groupedCourses = Object.keys(courseModules).reduce(
   },
   {},
 ); // initial value is an empty object
-console.log(groupedCourses); // Log the grouped courses to the console
 
 // Custom resources for courses
-
+groupedCourses["Analysis"]["GAtM"].push({
+  category: "Other",
+  name: "GAtM Textbook",
+  file: "https://gunn-gatm.github.io/",
+});
+groupedCourses["Analysis"]["GAtM"].push({
+  category: "Other",
+  name: "Snap Tool",
+  file: "https://gunn-gatm.github.io/interactives/snaps",
+});
+groupedCourses["Analysis"]["GAtM"].push({
+  category: "Other",
+  name: "Symmetry Groups Tool",
+  file: "https://gunn-gatm.github.io/interactives/symmetry_groups",
+});
+groupedCourses["Analysis"]["Polar_and_3D"].push({
+  category: "Other",
+  name: "Trig Drill Generator",
+  file: "https://sheeptester.github.io/hello-world/drills.html",
+});
+groupedCourses["CalcBC"]["Polar_and_Parametric"].push({
+  category: "Other",
+  name: "Trig Drill Generator",
+  file: "https://sheeptester.github.io/hello-world/drills.html",
+});
+groupedCourses["Analysis"]["Polar_and_3D"].push({
+  category: "Other",
+  name: "Polar Graph Quiz",
+  file: "https://csplatti.github.io/ghstools/Tools/polarPractice/polarPractice.html",
+});
+groupedCourses["CalcBC"]["Polar_and_Parametric"].push({
+  category: "Other",
+  name: "Polar Graph Quiz",
+  file: "https://csplatti.github.io/ghstools/Tools/polarPractice/polarPractice.html",
+});
 
 function App() {
   return (
