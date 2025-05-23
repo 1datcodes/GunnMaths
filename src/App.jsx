@@ -55,11 +55,9 @@ const groupedCourses = Object.keys(courseModules).reduce(
   {},
 ); // initial value is an empty object
 console.log(groupedCourses); // Log the grouped courses to the console
-// groupedCourses["Additional Resources"] = [];
-// groupedCourses["Additional Resources"]["name"] = "Additional"; // Get the course name
-// groupedCourses["Additional Resources"]["path"] = "/additional-resources"; // Get the path for the course
-// groupedCourses["Additional Resources"]["images"] = []; // Initialize an array for the images if it doesn't exist already
-// This section is for the additional resources
+
+// Custom resources for courses
+
 
 function App() {
   return (
