@@ -5,6 +5,9 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+### Version 6.2.5
+- Added Buy Me a Coffee button
+
 ### Version 6.2.4
 - Added additional resources like GAtM textbook, Snap tool, Trig drill generator, and more
 
