@@ -62,13 +62,43 @@ const Header = () => {
           className="sm:hidden flex justify-center items-center overflow-hidden cursor-pointer bg-highlight border-none rounded-[6px] w-[2.5rem] h-[2.5rem]"
           onClick={toggleMenu}
         >
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Hamburger_MD"> <path id="Vector" d="M5 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <g id="Menu / Hamburger_MD">
+                {" "}
+                <path
+                  id="Vector"
+                  d="M5 17H19M5 12H19M5 7H19"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>{" "}
+              </g>{" "}
+            </g>
+          </svg>
         </div>
         <div
           id="mobile-menu-open"
           className={`sm:hidden flex flex-col items-center justify-start py-30 gap-5 text-xl absolute top-0 left-0 w-1/2 h-full bg-header opacity-90 z-20 transition-transform duration-300 ease-in-out transform overflow-hidden
             ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
         >
+          <Link id="home" to="/">
+            <p className="hover:underline decoration-highlight cursor-pointer">
+              Home
+            </p>
+          </Link>
           <Link id="about" to="/about#top">
             <p className="hover:underline decoration-highlight cursor-pointer">
               About
@@ -83,7 +113,17 @@ const Header = () => {
             <p className="hover:underline decoration-highlight cursor-pointer">
               Updates
             </p>
-          </Link>         
+          </Link>
+          <Link
+            id="upload"
+            to="https://forms.gle/2MymH9jiCXaag2947"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="hover:underline decoration-highlight cursor-pointer">
+              Upload
+            </p>
+          </Link>
         </div>
         <div id="website-title" className="text-3xl font-bold">
           <h1 className="">Gunn Maths</h1>
@@ -92,7 +132,7 @@ const Header = () => {
 
       <div
         id="right"
-        className="flex items-center justify-center px-[2rem] py-[0.5rem] gap-[2rem]"
+        className="hidden sm:flex items-center justify-center px-[2rem] py-[0.5rem] gap-[2rem]"
       >
         <div
           id="quick-links"

@@ -17,7 +17,7 @@ const HomePage = ({ Courses }) => {
     <div id="content" className="mb-[3rem]">
       <Header />
       <div id="quick-title" className="text-black pt-[3rem] pl-[3.75rem]">
-        <h2 className="pl-[3.2rem] mb-0 text-2xl font-bold">
+        <h2 className="pl-[1rem] sm:pl-[3.2rem] mb-0 text-2xl font-bold">
           Gunn Math Resources
         </h2>
       </div>
@@ -25,7 +25,7 @@ const HomePage = ({ Courses }) => {
       <div id="courses" className="py-[2.5rem] px-[3.75rem]">
         <div
           id="grid"
-          className="py-[0.625rem] px-[3.125rem] grid sm:grid-cols-3 grid-cols-1 gap-[6.25rem]"
+          className="py-[0.625rem] px-[1.25rem] sm:px-[3.125rem] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[6.25rem]"
         >
           {Object.keys(Courses).map((course, index) => (
             <div
@@ -73,9 +73,11 @@ const HomePage = ({ Courses }) => {
           <h1 className="text-2xl font-bold text-black">
             Support the development of this website!
           </h1>
-          <a 
-          className="transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-102"
-          href="https://www.buymeacoffee.com/gunnmaths" target="_blank">
+          <a
+            className="transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-102"
+            href="https://www.buymeacoffee.com/gunnmaths"
+            target="_blank"
+          >
             <img
               src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
               alt="Buy Me A Coffee"

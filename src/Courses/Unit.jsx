@@ -72,7 +72,10 @@ function Unit({ course, unit, resources }) {
   return (
     <div id="content" className="h-fit w-full z-0 mb-[10rem]">
       <Header />
-      <div id="resources" className="py-[2.5rem] px-[3.75rem] flex flex-col">
+      <div
+        id="resources"
+        className="py-[2.5rem] px-[1.5rem] sm:px-[3.75rem] flex flex-col"
+      >
         <BackButton />
         <div
           id="quick-title"
