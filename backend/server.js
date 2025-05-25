@@ -59,6 +59,7 @@ app.post("/generate-questions", async (req, res) => {
     });
 
     const rawText = completion.output_text;
+    console.log("rawText", rawText);
     const text = rawText.replace(/\\\((.+?)\\\)/gs, "$$$1$$");
     // .replace(/\[(.+?)\]/gs, "$$$$ $1 $$$$");
     const answerStart = text.indexOf("## Answer:");
@@ -66,8 +67,8 @@ app.post("/generate-questions", async (req, res) => {
     const answer = text.substring(answerStart).trim();
 
     res.json({ question, answer });
-  } catch (error) {
-    res.status(500).send({ error: "Error generating question" });
+  } catch (err) {
+    res.status(500).send({ error: "Error generating question", err });
   }
 });
 app.listen(port, () => {
