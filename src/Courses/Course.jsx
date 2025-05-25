@@ -21,7 +21,7 @@ function Course({ units }) {
         </div>
         <div
           id="grid"
-          className="py-[0.625rem] px-[1.5rem] sm:px-[3.125rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[6rem]"
+          className="py-[0.625rem] px-[1.5rem] sm:px-[3.125rem] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[6rem]"
         >
           {unitKeys.map((unit, index) => {
             // if (unit === "images" || unit === "path" || unit === "name") {
@@ -46,13 +46,13 @@ function Course({ units }) {
                   >
                     <h1
                       id="unit-title"
-                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] sm:my-[1.5rem] text-shadow-sm text-2xl sm:text-3xl font-bold group-hover:underline decoration-highlight"
+                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] lg:my-[1.5rem] text-shadow-sm text-2xl lg:text-3xl font-bold group-hover:underline decoration-highlight"
                     >
                       {units[unit]["name"]}
                     </h1>
                     <p
                       id="unit-description"
-                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[0.5rem] sm:my-[1rem] text-shadow-sm group-hover:underline decoration-highlight"
+                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[0.5rem] lg:my-[1rem] text-shadow-sm group-hover:underline decoration-highlight"
                     >
                       {units[unit].length} Study Resources
                     </p>

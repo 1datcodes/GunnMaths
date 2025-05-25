@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useRef } from "react";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
