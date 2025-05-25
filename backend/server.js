@@ -39,7 +39,6 @@ app.post("/generate-questions", async (req, res) => {
         Generate question using LaTeX. Use:
         - $...$ for inline math
         - $$...$$ for block math
-        - DO NOT use \(...\) or \[...\] for math
 
         For currency, spell out the word (dollars, euros, yen, etc.)
     `;
@@ -59,9 +58,7 @@ app.post("/generate-questions", async (req, res) => {
     });
 
     const rawText = completion.output_text;
-    console.log("rawText", rawText);
     const text = rawText.replace(/\\\((.+?)\\\)/gs, "$$$1$$");
-    // .replace(/\[(.+?)\]/gs, "$$$$ $1 $$$$");
     const answerStart = text.indexOf("## Answer:");
     const question = text.substring(0, answerStart).trim();
     const answer = text.substring(answerStart).trim();
