@@ -4,6 +4,7 @@ Gunn Maths is a website that holds past tests for AnalysisH, Calc BC, and AP Sta
 
 This website is built with React Library.
 Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
+CSS code written using Tailwind CSS since v6.0.0
 
 ## Features
 
@@ -34,8 +35,6 @@ Overhaul (since v6.0.0) code is built using Vite+React with .jsx files
 ## Access
 
 Visit https://www.gunnmaths.org/ to access the site.
-
-Visit https://overhaul.gunnmaths.org/ to access overhauled (> v6.0.0) version.
 
 ## Code Structure
 

@@ -5,6 +5,10 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+### Version 6.2.6
+- Mobile support is back
+- Ready to add current year's tests
+
 ### Version 6.2.5
 - Added Buy Me a Coffee button
 
