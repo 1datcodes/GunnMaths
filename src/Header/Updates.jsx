@@ -5,6 +5,10 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+### Version 6.2.6
+- Mobile support is back
+- Ready to add current year's tests
+
 ### Version 6.2.5
 - Added Buy Me a Coffee button
 
@@ -99,7 +103,7 @@ const Updates = () => {
         <BackButton />
         <Markdown
           components={{
-            h1: ({ node, ...props }) => {
+            h1: ({...props }) => {
               const text = props.children;
               const id = text.toLowerCase().replace(/\s+/g, "-");
               return (
@@ -110,19 +114,19 @@ const Updates = () => {
                 />
               );
             },
-            h2: ({ node, ...props }) => (
+            h2: ({...props }) => (
               <h2 className="text-2xl font-bold pl-8" {...props} />
             ),
-            h3: ({ node, ...props }) => (
+            h3: ({...props }) => (
               <h3 className="text-xl font-bold pl-8" {...props} />
             ),
-            p: ({ node, ...props }) => (
+            p: ({...props }) => (
               <p className="text-lg mb-1.5" {...props} />
             ),
-            li: ({ node, ...props }) => (
+            li: ({...props }) => (
               <li className="text-lg list-disc ml-8 p-1" {...props} />
             ),
-            a: ({ node, ...props }) => (
+            a: ({...props }) => (
               <a
                 className="text-blue-500 hover:text-blue-700 underline"
                 {...props}
