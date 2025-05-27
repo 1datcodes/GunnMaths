@@ -11,7 +11,7 @@ function Course({ units }) {
   return (
     <div id="content" className="mb-[3rem]">
       <Header />
-      <div id="units" className="py-[2.5rem] px-[3.75rem]">
+      <div id="units" className="py-[2.5rem] px-[1.5rem] sm:px-[3.75rem]">
         <BackButton />
         <div
           id="quick-title"
@@ -21,7 +21,7 @@ function Course({ units }) {
         </div>
         <div
           id="grid"
-          className="py-[0.625rem] px-[3.125rem] grid grid-cols-3 gap-[6rem]"
+          className="py-[0.625rem] px-[1.5rem] sm:px-[3.125rem] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[6rem]"
         >
           {unitKeys.map((unit, index) => {
             // if (unit === "images" || unit === "path" || unit === "name") {
@@ -38,7 +38,7 @@ function Course({ units }) {
                 <Link
                   to={units[unit]["path"]}
                   id="unit-link"
-                  className="w-[15rem] h-[15rem] flex flex-row justify-between items-center rounded-[1rem] overflow-hidden"
+                  className="w-[12rem] h-[12rem] sm:w-[15rem] sm:h-[15rem] flex flex-row justify-between items-center rounded-[1rem] overflow-hidden"
                 >
                   <div
                     id="gradient-overlay"
@@ -46,13 +46,13 @@ function Course({ units }) {
                   >
                     <h1
                       id="unit-title"
-                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1.5rem] text-shadow-sm text-3xl font-bold group-hover:underline decoration-highlight"
+                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] lg:my-[1.5rem] text-shadow-sm text-2xl lg:text-3xl font-bold group-hover:underline decoration-highlight"
                     >
                       {units[unit]["name"]}
                     </h1>
                     <p
                       id="unit-description"
-                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[1rem] text-shadow-sm group-hover:underline decoration-highlight"
+                      className="text-white z-20 pl-[1.5rem] pr-[1rem] my-[0.5rem] lg:my-[1rem] text-shadow-sm group-hover:underline decoration-highlight"
                     >
                       {units[unit].length} Study Resources
                     </p>
@@ -62,7 +62,7 @@ function Course({ units }) {
                     src={coverImages[index]?.image}
                     // src={coverImages[index - 3].image} // Adjusted index to skip name, images and path
                     alt={"image"}
-                    className="w-full h-[15rem] object-contain relative"
+                    className="w-full h-[12rem] sm:h-[15rem] object-contain relative"
                   />
                 </Link>
               </div>
