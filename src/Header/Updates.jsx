@@ -5,6 +5,9 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+### Version 6.2.7
+- New files for Calc BC and AP Stats!
+
 ### Version 6.2.6
 - Mobile support is back
 - Ready to add current year's tests
