@@ -30,6 +30,7 @@ const groupedCourses = Object.keys(courseModules).reduce(
     if (!accumulator[courseName][unitName]) {
       accumulator[courseName][unitName] = []; // Initialize an array for the unit if it doesn't exist already
     }
+    accumulator[courseName][unitName]["order"] = parseInt(unitName.split("|")[0]); // Get the order of the unit
     accumulator[courseName][unitName]["name"] = unitName.split("|").pop().replaceAll("_", " "); // Get the unit name
     accumulator[courseName][unitName]["path"] =
       `/${courseName.toLowerCase()}/${unitName.toLowerCase()}`; // Get the path for the unit
@@ -76,7 +77,7 @@ groupedCourses["Analysis"]["3|Polar_and_3D"].push({
   name: "Trig Drill Generator",
   file: "https://sheeptester.github.io/hello-world/drills.html",
 });
-groupedCourses["CalcBC"]["Polar_and_Parametric"].push({
+groupedCourses["CalcBC"]["9|Polar_and_Parametric"].push({
   category: "Other",
   name: "Trig Drill Generator",
   file: "https://sheeptester.github.io/hello-world/drills.html",
@@ -86,10 +87,19 @@ groupedCourses["Analysis"]["3|Polar_and_3D"].push({
   name: "Polar Graph Quiz",
   file: "https://csplatti.github.io/ghstools/Tools/polarPractice/polarPractice.html",
 });
-groupedCourses["CalcBC"]["Polar_and_Parametric"].push({
+groupedCourses["CalcBC"]["9|Polar_and_Parametric"].push({
   category: "Other",
   name: "Polar Graph Quiz",
   file: "https://csplatti.github.io/ghstools/Tools/polarPractice/polarPractice.html",
+});
+
+// Sort units by "order" property
+Object.keys(groupedCourses).forEach((course) => {
+  groupedCourses[course] = Object.fromEntries(
+    Object.entries(groupedCourses[course]).sort((a, b) => {
+      return a[1]["order"] - b[1]["order"];
+    }),
+  );
 });
 
 function App() {
