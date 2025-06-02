@@ -8,7 +8,7 @@ const markdown = `
 ### Version 6.2.8
 - Reordered units by unit 1, unit 2, etc instead of alphabetically
 - Added announcements stream on home page
-- minor bug fixes and documentation updates
+- Minor bug fixes and documentation updates
 
 ### Version 6.2.7
 - New files for Calc BC and AP Stats!
