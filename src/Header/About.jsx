@@ -69,7 +69,7 @@ const About = () => {
         <span className="p-2"></span>
         <Markdown
           components={{
-            h1: ({ node, ...props }) => {
+            h1: ({ ...props }) => {
               const text = props.children;
               const id = text.toLowerCase().replace(/\s+/g, "-");
               return (
@@ -80,19 +80,19 @@ const About = () => {
                 />
               );
             },
-            h2: ({ node, ...props }) => (
+            h2: ({ ...props }) => (
               <h2 className="text-2xl font-bold pl-8" {...props} />
             ),
-            h3: ({ node, ...props }) => (
+            h3: ({ ...props }) => (
               <h3 className="text-xl font-bold" {...props} />
             ),
-            p: ({ node, ...props }) => (
+            p: ({ ...props }) => (
               <p className="text-lg mb-1.5" {...props} />
             ),
-            li: ({ node, ...props }) => (
-              <li className="text-lg list-disc ml-5 p-1" {...props} />
+            li: ({ ...props }) => (
+              <li className="text-lg list-disc ml-16 p-1" {...props} />
             ),
-            a: ({ node, ...props }) => (
+            a: ({ ...props }) => (
               <a
                 className="text-blue-500 hover:text-blue-700 underline"
                 target="_blank"
