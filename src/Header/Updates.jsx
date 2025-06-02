@@ -106,7 +106,7 @@ const Updates = () => {
         <BackButton />
         <Markdown
           components={{
-            h1: ({...props }) => {
+            h1: ({ ...props }) => {
               const text = props.children;
               const id = text.toLowerCase().replace(/\s+/g, "-");
               return (
@@ -117,19 +117,17 @@ const Updates = () => {
                 />
               );
             },
-            h2: ({...props }) => (
+            h2: ({ ...props }) => (
               <h2 className="text-2xl font-bold pl-8" {...props} />
             ),
-            h3: ({...props }) => (
+            h3: ({ ...props }) => (
               <h3 className="text-xl font-bold pl-8" {...props} />
             ),
-            p: ({...props }) => (
-              <p className="text-lg mb-1.5" {...props} />
-            ),
-            li: ({...props }) => (
+            p: ({ ...props }) => <p className="text-lg mb-1.5" {...props} />,
+            li: ({ ...props }) => (
               <li className="text-lg list-disc ml-8 p-1" {...props} />
             ),
-            a: ({...props }) => (
+            a: ({ ...props }) => (
               <a
                 className="text-blue-500 hover:text-blue-700 underline"
                 {...props}

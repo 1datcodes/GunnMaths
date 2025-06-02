@@ -22,7 +22,10 @@ const HomePage = ({ Courses }) => {
         </h2>
       </div>
 
-      <div id="courses" className="flex flex-col justify-around py-[2.5rem] px-[3.75rem] h-[80vh]">
+      <div
+        id="courses"
+        className="flex flex-col justify-around py-[2.5rem] px-[3.75rem] h-[80vh]"
+      >
         <div
           id="grid"
           className="py-[0.625rem] px-[1.25rem] sm:px-[3.125rem] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[6.25rem]"
@@ -67,11 +70,16 @@ const HomePage = ({ Courses }) => {
           ))}
         </div>
         <div id="announcements" className="mt-10 sm:ml-15">
-          <h1 id="announce-title" className="flex sm:block text-3xl font-bold">Announcements!</h1>
+          <h1 id="announce-title" className="flex sm:block text-3xl font-bold">
+            Announcements!
+          </h1>
           <ul className="text-xl font-semibold list-disc *:text-md *:ml-8 *:p-2">
             <li>Stats page live!</li>
             <li>2025 Calc raw tests uploaded</li>
-            <li>Kaicheng and Michi graduated! New members will be maintaining this website</li>
+            <li>
+              Kaicheng and Michi graduated! New members will be maintaining this
+              website
+            </li>
           </ul>
         </div>
         <div

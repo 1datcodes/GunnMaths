@@ -30,8 +30,13 @@ const groupedCourses = Object.keys(courseModules).reduce(
     if (!accumulator[courseName][unitName]) {
       accumulator[courseName][unitName] = []; // Initialize an array for the unit if it doesn't exist already
     }
-    accumulator[courseName][unitName]["order"] = parseInt(unitName.split("|")[0]); // Get the order of the unit
-    accumulator[courseName][unitName]["name"] = unitName.split("|").pop().replaceAll("_", " "); // Get the unit name
+    accumulator[courseName][unitName]["order"] = parseInt(
+      unitName.split("|")[0],
+    ); // Get the order of the unit
+    accumulator[courseName][unitName]["name"] = unitName
+      .split("|")
+      .pop()
+      .replaceAll("_", " "); // Get the unit name
     accumulator[courseName][unitName]["path"] =
       `/${courseName.toLowerCase()}/${unitName.toLowerCase()}`; // Get the path for the unit
     const pathClone = filePath.split("/");
