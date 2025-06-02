@@ -38,6 +38,8 @@ Visit https://www.gunnmaths.org/ to access the site.
 
 ## Code Structure
 
+### <v6.0.0 (deprecated)
+
 Our code is broken down into individual courses which is then broken into individual units.
 
     Analysis
@@ -55,6 +57,8 @@ Our code is broken down into individual courses which is then broken into indivi
         .
         .
         Unit 10
+
+### >v6.0.0 (current)
 
 Our restructured file system (since v6.0.0) has the following structure:
 
@@ -85,7 +89,22 @@ If you want to add more courses, simply create a new folder with the course name
 
 Course.jsx and Unit.jsx should take care of the rest.
 
+## Naming scheme
+
+Each course has units in the order unit1, unit2, etc and to keep the order, each unit folder will have `<unit number>|<unit name>` format.
+
+For example:
+
+    Analysis
+        documents
+            1|AtPS
+            2|Probability
+
+Each unit image must have the corresponding order (not necessarily the same name, although it would be easy to maintain).
+
 Each course has its own Midterm+Final review
+
+## AI Generator
 
 Our AI generation code is in the AIgen folder and can be used by importing the component to each unit (< v6.0.0)
 
@@ -97,6 +116,8 @@ Our AI generation code is in the AIgen folder and can be used by importing the c
     />
 
 Overhauled AI generation code uses `prompts.json` to store all prompts for each individual courses and units. `Generator.js` then imports the prompts and passes it to `server.js` to fetch.
+
+Our current model is `GPT-4o-mini` from OpenAI.
 
 ## Working with Git LFS
 

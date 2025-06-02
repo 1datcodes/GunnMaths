@@ -5,6 +5,11 @@ import BackButton from "../BackButton";
 const markdown = `
 # Update Log
 
+### Version 6.2.8
+- Reordered units by unit 1, unit 2, etc instead of alphabetically
+- Added announcements stream on home page
+- minor bug fixes and documentation updates
+
 ### Version 6.2.7
 - New files for Calc BC and AP Stats!
 
@@ -125,7 +130,7 @@ const Updates = () => {
             ),
             p: ({ ...props }) => <p className="text-lg mb-1.5" {...props} />,
             li: ({ ...props }) => (
-              <li className="text-lg list-disc ml-8 p-1" {...props} />
+              <li className="text-lg list-disc ml-16 p-1" {...props} />
             ),
             a: ({ ...props }) => (
               <a
