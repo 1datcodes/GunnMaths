@@ -116,7 +116,7 @@ const Header = () => {
           </Link>
           <Link
             id="upload"
-            to="https://forms.gle/2MymH9jiCXaag2947"
+            to="https://forms.gle/t2VPyN1isC3HwTRk7"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -160,7 +160,7 @@ const Header = () => {
         >
           <a
             className=""
-            href="https://forms.gle/2MymH9jiCXaag2947"
+            href="https://forms.gle/t2VPyN1isC3HwTRk7"
             target="_blank"
             rel="noopener noreferrer"
           >

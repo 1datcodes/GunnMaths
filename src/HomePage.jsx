@@ -74,6 +74,8 @@ const HomePage = ({ Courses }) => {
             Announcements!
           </h1>
           <ul className="text-xl font-semibold list-disc *:text-md *:ml-8 *:p-2">
+            <li> Hi! This is one of the new people maintaining the website! If you are interested in providing raw tests for the 2025-2026 school year,
+              please fill out the form or email me at gracetliu7@gmail.com </li>
             <li>Stats page live!</li>
             <li>2025 Calc raw tests uploaded</li>
             <li>
