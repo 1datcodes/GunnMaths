@@ -37,11 +37,11 @@ const markdown = `
 - Henry M. Gunn High School, no classroom
 # Other Resources
 ## Analysis Google Drive
-- [Google Drive (2023-24)](https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link)
+- [Google Drive (2025-26)](https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link)
 ## 2023-24 Analysis Calendar
 - [Class Schedule](https://docs.google.com/spreadsheets/d/1sH6J7tkWx5mKWlGE2LJB93MIX8ODSkp3ibttnPnbONk/edit?usp=sharing)
 ## Calc BC Google Drive
-- [Google Drive (2024-25)](https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=drive_link)
+- [Google Drive (2025-26)](https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=drive_link)
 ## 2024-25 Calc BC Calendar
 - [Class Schedule](https://docs.google.com/spreadsheets/d/1avhyupwBX4ARf-DozDPSk6gtpP8Q9EI_F-DRthzujoQ/edit?usp=sharing)
 # GitHub Repository
