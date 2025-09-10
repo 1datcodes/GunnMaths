@@ -25,14 +25,16 @@ const markdown = `
 - Justin Oh (2022-23)
 - Andersen Tanriverdi (2023-24)
 - Neeraj Gummalam (2024-25)
+- Davide Illouz (2025-26)
 - Thanks to our teacher Mrs. Hlasek, Mr. Hahn and Ms. Congress for helping us out with past year resources!
 - Thanks to Jesse Li for helping us out with the website design/color schemes (iykyk)
 # Contact Us
 ## Our Team
 - Michi Tanaka (Class of 2025) [tanakamichi7@gmail.com](tanakamichi7@gmail.com)
 - Kaicheng Luo (Class of 2025) [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
+- Grace Liu (Class of 2026) [gracetliu7@gmail.com](gracetliu7@gmail.com)
 ## Our Location
-- Henry M. Gunn High School, Paley's classroom (N-215)
+- Henry M. Gunn High School, no classroom
 # Other Resources
 ## Analysis Google Drive
 - [Google Drive (2023-24)](https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link)
