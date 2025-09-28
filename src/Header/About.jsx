@@ -8,6 +8,7 @@ const markdown = `
 ## Who are we
 - We are a small group of students from Gunn High School
 - Our goal is to provide a platform for students to access past tests, quizzes, and review materials to study for their math classes.
+- Not affiliated with Gunn Math Circle
 ## What is this website?
 - This website is an archive of past test, quizzes, and other study resources for Gunn's Analysis, Calc BC and AP Stats classes.
 ## Why did we make this website?
@@ -25,7 +26,7 @@ const markdown = `
 - Justin Oh (2022-23)
 - Andersen Tanriverdi (2023-24)
 - Neeraj Gummalam (2024-25)
-- Davide Illouz (2025-26)
+- Davide Illouz and Agustya Sinha(2025-26)
 - Thanks to our teacher Mrs. Hlasek, Mr. Hahn and Ms. Congress for helping us out with past year resources!
 - Thanks to Jesse Li for helping us out with the website design/color schemes (iykyk)
 # Contact Us
@@ -34,16 +35,16 @@ const markdown = `
 - Kaicheng Luo (Class of 2025) [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 - Grace Liu (Class of 2026) [gracetliu7@gmail.com](gracetliu7@gmail.com)
 ## Our Location
-- Henry M. Gunn High School, no classroom
+- Henry M. Gunn High School, no classroom 
 # Other Resources
 ## Analysis Google Drive
 - [Google Drive (2023-24)](https://drive.google.com/drive/folders/14YfGVUC4NG2_tZ0IDPhWV2UpcZSZrnGR?usp=drive_link)
 ## 2023-24 Analysis Calendar
 - [Class Schedule](https://docs.google.com/spreadsheets/d/1sH6J7tkWx5mKWlGE2LJB93MIX8ODSkp3ibttnPnbONk/edit?usp=sharing)
 ## Calc BC Google Drive
-- [Google Drive (2024-25)](https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=drive_link)
-## 2024-25 Calc BC Calendar
-- [Class Schedule](https://docs.google.com/spreadsheets/d/1avhyupwBX4ARf-DozDPSk6gtpP8Q9EI_F-DRthzujoQ/edit?usp=sharing)
+- [Google Drive (2025-26)](https://drive.google.com/drive/folders/1XN5fkN9JDDSLaZJxybOlqTqYftrmnGxI?usp=sharing)
+## 2025-26 Calc BC Calendar
+- [Class Schedule](https://docs.google.com/spreadsheets/d/1FVylMjEFpzNF1_cpK45LGaREgsWdeSr4OXZTJGK02II/edit?usp=sharing)
 # GitHub Repository
 - [Repository](https://github.com/1datcodes/GunnMaths)
 
