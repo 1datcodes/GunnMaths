@@ -24,7 +24,7 @@ const markdown = `
 - Alan Lee (2019-20)
 - Chris Lee and Michelle Koo (2021-22)
 - Justin Oh (2022-23)
-- Andersen Tanriverdi (2023-24, 2024-25)
+- Andersen Tanriverdi (2023-25)
 - Neeraj Gummalam (2024-25)
 - Davide Illouz and Agustya Sinha(2025-26)
 - Thanks to our teacher Mrs. Hlasek, Mr. Hahn and Ms. Congress for helping us out with past year resources!
@@ -34,7 +34,6 @@ const markdown = `
 - Michi Tanaka (Class of 2025) [tanakamichi7@gmail.com](tanakamichi7@gmail.com)
 - Kaicheng Luo (Class of 2025) [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 - Grace Liu (Class of 2026) [gracetliu7@gmail.com](gracetliu7@gmail.com)
-- Aakash Koneru (Class of 2026) [aakash.koneru1@gmail.com](aakash.koneru1@gmail.com)
 ## Our Location
 - Henry M. Gunn High School, no classroom 
 # Other Resources

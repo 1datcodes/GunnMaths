@@ -74,11 +74,11 @@ const HomePage = ({ Courses }) => {
             Announcements!
           </h1>
           <ul className="text-xl font-semibold list-disc *:text-md *:ml-8 *:p-2">
-            <li>Added GATM Tests!</li>
+            <li>Added blank 2025 AtPS test!</li>
             <li>Stats page live!</li>
             <li>2025 Calc raw tests uploaded</li>
             <li>
-              Kaicheng and Michi graduated!
+              Kaicheng, Michi, and Grace graduated! New members will be maintaining the website!
             </li>
           </ul>
         </div>
