@@ -129,9 +129,20 @@ To fetch files stored in Git LFS do the following:
 1. Fetch `git lfs fetch`
 2. Populate with real content `git lfs checkout`
 
+## Adding New Tests
+
+Make sure that the test is named using the proper convention.
+To add a test using terminal, do the following:
+1. Go to terminal and write mv (followed by a space)
+2.  Drag the folder that the test will be added to or write out the entire path (eg. '/Users/gracie/GunnMaths/src/Courses/Analysis/documents') (followed by a space)
+3.  Drag the test or write out the entire path (eg. '/Users/gracie/Downloads/2025_Quiz_Blank.pdf') (followed by a space), click enter
+
+Then just push changes to your branch.
+
 ## Contributing
 
 Original members: Michi Tanaka (Class of 2025), Kaicheng Luo (Class of 2025).
+Graduated members: Grace Liu (Class of 2026)
 
 Contributing: If you have any tests or quizzes that you want to upload, send an email at [tanakamichi7@gmail.com](tanakamichi7@gmail.com) or [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 
