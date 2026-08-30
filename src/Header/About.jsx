@@ -35,6 +35,7 @@ const markdown = `
 - Kaicheng Luo (Class of 2025) [kaichengluo888@gmail.com](kaichengluo888@gmail.com)
 - Grace Liu (Class of 2026) [gracetliu7@gmail.com](gracetliu7@gmail.com)
 - Aakash Koneru (Class of 2026) [aakash.koneru1@gmail.com](aakash.koneru1@gmail.com)
+- Jacob Jiang (Class of 2026) [trashnotbysweat@gmail.com] (trashnotbysweat@gmail.com)
 ## Our Location
 - Henry M. Gunn High School, no classroom 
 # Other Resources
