@@ -131,7 +131,7 @@ To fetch files stored in Git LFS do the following:
 
 ## Adding New Tests
 
-Make sure that the test is named using the proper convention.
+Make sure that the test is named using the proper convention, which includes indicating the type of document it is (eg. raw, answer, blank, key, etc)
 To add a test using terminal, do the following:
 1. Go to terminal and write mv (followed by a space)
 2.  Drag the folder that the test will be added to or write out the entire path (eg. '/Users/gracie/GunnMaths/src/Courses/Analysis/documents') (followed by a space)
