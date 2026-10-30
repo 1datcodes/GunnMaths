@@ -82,28 +82,30 @@ const HomePage = ({ Courses }) => {
             </li>
           </ul>
         </div>
-        <div
-          id="buy-me-a-coffee"
-          className="w-full flex flex-col justify-center items-center mt-10 gap-[1.25rem] z-0"
-        >
-          <h1 className="text-2xl font-bold text-black text-center">
-            Support the development of this website!
-          </h1>
-          <a
-            className="transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-102"
-            href="https://www.buymeacoffee.com/gunnmaths"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
-              alt="Buy Me A Coffee"
-              style={{ height: 60 + "px", width: 217 + "px" }}
-            />
-          </a>
-        </div>
       </div>
     </div>
   );
 };
 
 export default HomePage;
+
+// for reference
+// <div
+//   id="buy-me-a-coffee"
+//   className="w-full flex flex-col justify-center items-center mt-10 gap-[1.25rem] z-0"
+// >
+//   <h1 className="text-2xl font-bold text-black text-center">
+//     Support the development of this website!
+//   </h1>
+//   <a
+//     className="transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-102"
+//     href="https://www.buymeacoffee.com/gunnmaths"
+//     target="_blank"
+//   >
+//     <img
+//       src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+//       alt="Buy Me A Coffee"
+//       style={{ height: 60 + "px", width: 217 + "px" }}
+//     />
+//   </a>
+// </div>

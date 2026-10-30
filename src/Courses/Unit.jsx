@@ -2,7 +2,7 @@
 import { useState, useRef } from "react";
 import Header from "../Header/Header";
 import BackButton from "../BackButton";
-import Generator from "../AIgen/Generator";
+// import Generator from "../AIgen/Generator";
 
 function Unit({ course, unit, resources }) {
   const [activeIndex, setActiveIndex] = useState({});
@@ -124,11 +124,10 @@ function Unit({ course, unit, resources }) {
                             {subcategory}{" "}
                             <span
                               id="arrow"
-                              className={`transform transition-transform duration-300 ease-in-out ${
-                                activeIndex[category]?.[subcategory]
-                                  ? "rotate-90"
-                                  : "rotate-none"
-                              }`}
+                              className={`transform transition-transform duration-300 ease-in-out ${activeIndex[category]?.[subcategory]
+                                ? "rotate-90"
+                                : "rotate-none"
+                                }`}
                             >
                               ▶
                             </span>
@@ -186,10 +185,11 @@ function Unit({ course, unit, resources }) {
             );
           })}
         </div>
-        <Generator course={course} unit={unit} />
       </div>
     </div>
   );
 }
+// <Generator course={course} unit={unit} /> for reference
+
 
 export default Unit;
